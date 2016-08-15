@@ -1,0 +1,69 @@
+{
+	"AS_Button_9b47fc42d74448f3969cbf1d29245a21": {
+		"id": "AS_Button_9b47fc42d74448f3969cbf1d29245a21",
+		"type": "ACTION_SEQUENCE",
+		"params": [
+			{
+				"datatype": "collection",
+				"name": "eventobject"
+			}
+		],
+		"actions": [
+			{
+				"id": "___onClick_128817cdeba048239bd8b0a773678f43",
+				"type": "MOVE_ACTION",
+				"itemType": "FORM",
+				"itemId": "frmHome",
+				"widgetId": "flxMain",
+				"itemKUID": "b6093aeea378405ca657b85742495ef8",
+				"widgetKUID": "f9d3c0f769a440978fb9903938ce9aca",
+				"animationObject": {
+					"left": "80%",
+					"anchorPoint": {},
+					"stepConfig": {
+						"timingFunction": "kony.anim.EASE"
+					}
+				},
+				"config": {
+					"delay": "0",
+					"iterationCount": 1,
+					"fillMode": "kony.anim.FILL_MODE_FORWARDS",
+					"duration": "250"
+				},
+				"start": "Immediately",
+				"animationId": "MOVE_ACTION____de8b680b2dbf4df4ad525095e35b1c04",
+				"displayAnimationId": "MOVE_ACTION____de8b680b2dbf4df4ad525095e35b1c04",
+				"forkedPlatform": "all",
+				"callbackType": null
+			},
+			{
+				"id": "___onClick_79319e7082134bcd8bd108519205fe3a",
+				"type": "MOVE_ACTION",
+				"itemType": "FORM",
+				"itemId": "frmHome",
+				"widgetId": "flxSideMenu",
+				"itemKUID": "b6093aeea378405ca657b85742495ef8",
+				"widgetKUID": "c2a1ff1e25c745eca8fc17ef59106286",
+				"animationObject": {
+					"left": "0%",
+					"anchorPoint": {},
+					"stepConfig": {
+						"timingFunction": "kony.anim.EASE"
+					}
+				},
+				"config": {
+					"delay": "0",
+					"iterationCount": 1,
+					"fillMode": "kony.anim.FILL_MODE_FORWARDS",
+					"duration": "250"
+				},
+				"start": "Immediately",
+				"parentAnimation": "MOVE_ACTION____de8b680b2dbf4df4ad525095e35b1c04",
+				"animationId": "MOVE_ACTION____71c0485956b848aebf383d5bada15616",
+				"displayAnimationId": "MOVE_ACTION____71c0485956b848aebf383d5bada15616",
+				"forkedPlatform": "all",
+				"callbackType": null
+			}
+		]
+	}
+}

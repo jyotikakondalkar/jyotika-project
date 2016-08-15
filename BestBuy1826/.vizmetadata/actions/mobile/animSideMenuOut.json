@@ -1,0 +1,80 @@
+{
+	"AS_FlexContainer_f28d83b279064f30addcfa0d37238348": {
+		"id": "AS_FlexContainer_f28d83b279064f30addcfa0d37238348",
+		"type": "ACTION_SEQUENCE",
+		"name": "animSideMenuOut",
+		"params": [
+			{
+				"datatype": "collection",
+				"name": "eventobject"
+			},
+			{
+				"datatype": "string",
+				"name": "x"
+			},
+			{
+				"datatype": "string",
+				"name": "y"
+			}
+		],
+		"actions": [
+			{
+				"id": "MOVE_ACTION____d7698bc87e604077a037f4dc5784f4f3",
+				"type": "MOVE_ACTION",
+				"itemType": "FORM",
+				"itemId": "frmProducts",
+				"widgetId": "flxSideMenu",
+				"itemKUID": "4d590ee68ed94c1295c4f29ea4369a7d",
+				"widgetKUID": "890ba320502545048ab83bb483ab59ce",
+				"animationObject": {
+					"left": "-100%",
+					"anchorPoint": {},
+					"stepConfig": {
+						"timingFunction": "kony.anim.EASE"
+					}
+				},
+				"config": {
+					"delay": "0",
+					"iterationCount": 1,
+					"fillMode": "kony.anim.FILL_MODE_FORWARDS",
+					"duration": "250"
+				},
+				"start": "Immediately",
+				"animationId": "MOVE_ACTION____d7698bc87e604077a037f4dc5784f4f3",
+				"displayAnimationId": "MOVE_ACTION____d7698bc87e604077a037f4dc5784f4f3",
+				"forkedPlatform": "all",
+				"parentId": null,
+				"callbackType": null
+			},
+			{
+				"id": "MOVE_ACTION____e6e47fe085bc4b7eb4a9cf2d248ad5f0",
+				"type": "MOVE_ACTION",
+				"itemType": "FORM",
+				"itemId": "frmProducts",
+				"widgetId": "flxMain",
+				"itemKUID": "4d590ee68ed94c1295c4f29ea4369a7d",
+				"widgetKUID": "6abd5c057db84c0b87311f6ec99e1fe2",
+				"animationObject": {
+					"left": "0%",
+					"anchorPoint": {},
+					"stepConfig": {
+						"timingFunction": "kony.anim.EASE"
+					}
+				},
+				"config": {
+					"delay": "0",
+					"iterationCount": 1,
+					"fillMode": "kony.anim.FILL_MODE_FORWARDS",
+					"duration": "250"
+				},
+				"start": "Immediately",
+				"parentAnimation": "MOVE_ACTION____d7698bc87e604077a037f4dc5784f4f3",
+				"animationId": "MOVE_ACTION____e6e47fe085bc4b7eb4a9cf2d248ad5f0",
+				"displayAnimationId": "MOVE_ACTION____e6e47fe085bc4b7eb4a9cf2d248ad5f0",
+				"forkedPlatform": "all",
+				"parentId": null,
+				"callbackType": null
+			}
+		]
+	}
+}

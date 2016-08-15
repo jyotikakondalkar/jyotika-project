@@ -1,0 +1,42 @@
+{
+	"AS_Button_60d459e79c6b4c8885e37668e1721d2f": {
+		"id": "AS_Button_60d459e79c6b4c8885e37668e1721d2f",
+		"type": "ACTION_SEQUENCE",
+		"params": [
+			{
+				"datatype": "collection",
+				"name": "eventobject"
+			}
+		],
+		"actions": [
+			{
+				"id": "MOVE_ACTION____dddb79cf20ef4b139f73836968233b44",
+				"type": "MOVE_ACTION",
+				"itemType": "FORM",
+				"itemId": "frmProductDetails",
+				"widgetId": "flxReviews",
+				"itemKUID": "da7c07c3987e48cb98a667678952261c",
+				"widgetKUID": "4101e4f75014401a931381af2b24c7a5",
+				"animationObject": {
+					"top": "65%",
+					"anchorPoint": {},
+					"stepConfig": {
+						"timingFunction": "kony.anim.EASE"
+					}
+				},
+				"config": {
+					"delay": "0",
+					"iterationCount": 1,
+					"fillMode": "kony.anim.FILL_MODE_FORWARDS",
+					"duration": "300"
+				},
+				"start": "Immediately",
+				"animationId": "MOVE_ACTION____dddb79cf20ef4b139f73836968233b44",
+				"displayAnimationId": "MOVE_ACTION____dddb79cf20ef4b139f73836968233b44",
+				"forkedPlatform": "all",
+				"parentId": null,
+				"callbackType": null
+			}
+		]
+	}
+}

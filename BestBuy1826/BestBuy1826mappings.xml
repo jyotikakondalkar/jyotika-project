@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<application id="BestBuy1826" name="BestBuy1826">
+    <container isflex="false" displayname="Form" id="frmCart" type="form"/>
+    <container isflex="false" displayname="Form" id="frmProductDetails" type="form"/>
+    <container isflex="false" displayname="Form" id="frmProductImage" type="form">
+        <component displayname="ListBox" id="ListBoxPage" type="listbox"/>
+    </container>
+    <container isflex="false" displayname="Form" id="frmProducts" type="form"/>
+    <container isflex="false" displayname="Form" id="frmStoreLocator" type="form">
+        <component displayname="TextBox2" id="TextboxLoactionSearch" type="textbox2"/>
+        <component displayname="Map" id="MapStore" type="map">
+            <attributes datatype="string" name="key" platform="general" value="Google map key is not defined in application properties"/>
+        </component>
+    </container>
+    <container isflex="false" displayname="Form" id="hho" type="form"/>
+    <container isflex="false" displayname="Form" id="frmHome" type="form">
+        <component displayname="TextBox2" id="txtSearch" type="textbox2"/>
+        <component displayname="ListBox" id="listFilterby" type="listbox"/>
+    </container>
+    <globalsequences/>
+    <skins/>
+</application>
