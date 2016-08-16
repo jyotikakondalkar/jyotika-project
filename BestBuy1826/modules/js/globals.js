@@ -6,3 +6,4 @@ counter=0;
 gblSubCategories1=[];
 gblSubCategories2=[];
 gblBreadCrumbs = [];
+gblBack = "";
