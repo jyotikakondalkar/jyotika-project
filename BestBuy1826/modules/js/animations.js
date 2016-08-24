@@ -1,8 +1,15 @@
 function showHideSideMenu(frmObj){
 	kony.print("Home positioning:=> "+frmObj.flxMain.left);
 	if(frmObj.flxMain.left.trim() == "0dp" || frmObj.flxMain.left.trim() == "0%" || frmObj.flxMain.left.trim() == "0"){
+		kony.print("in anim if");
 		animSlideHomeMenuRight(frmObj);
+		kony.print("frmObj=="+frmObj);
+		if(frmObj=="frmHome" || frmObj== frmHome){
+			kony.print("frmHome do Nothing Set. ");
+			//frmHome.segProductList.onRowClick = doNothing();
+		}
 	}else{
+		kony.print("in anim else");
 		animSlideHomeMenuLeft(frmObj);
 	}
 	
@@ -90,6 +97,7 @@ function moveActionHomeSideMenuLeft() {}
 
 function searchRotateAnimation() {
 
+frmHome.flxFadeContainer.isVisible = true;
 frmHome.flxFilterContainer.isVisible = true;
 	var searchAnim1 = kony.ui.makeAffineTransform();
 	searchAnim1.rotate(90);
@@ -139,6 +147,7 @@ frmHome.flxFilterContainer.isVisible = true;
 
 function onClickSearchCancel(){
 	frmHome.flxFilterContainer.isVisible = false;
+	frmHome.flxFadeContainer.isVisible = false;
 	frmHome.flxFilterContainer.width = "2%";
 	frmHome.flxFilterContainer.height = "2%";
 }

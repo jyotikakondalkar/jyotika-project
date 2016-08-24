@@ -97,12 +97,17 @@ function onCategoriesSegClick(catId){
 }
 
 function onBackButtonClick(){
+	showLoadingIndicator();
 	var catDetails = [];
 	var subCategories = [];
 	
 	if(gblCategories.length>1){
 		kony.print("In if length > 0");
-		subCategories = gblCategories[gblCategories.length - 2];
+		if(gblBackFrom == "Product"){
+			subCategories = gblCategories[gblCategories.length - 1];
+		}else{
+			subCategories = gblCategories[gblCategories.length - 2];
+		}
 	}
 	kony.print("you are in device back");
 	kony.print("Dataset is: "+JSON.stringify(gblCategories));
@@ -122,6 +127,7 @@ function onBackButtonClick(){
 					});
 	}
 	var breadCrumb = "";
+	if(gblBackFrom != "Product"){
 	for(var i = 0; i < gblBreadCrumbs.length-1; i++){
 		if(gblBreadCrumbs.length==1){
 			breadCrumb = gblBreadCrumbs[0];
@@ -133,11 +139,26 @@ function onBackButtonClick(){
 		}
 		}
 	}
+	}else{
+	for(var i = 0; i < gblBreadCrumbs.length; i++){
+		if(gblBreadCrumbs.length==1){
+			breadCrumb = gblBreadCrumbs[0];
+		}else{
+		if(breadCrumb==""){
+			breadCrumb = breadCrumb+gblBreadCrumbs[i];
+		}else{
+			breadCrumb = breadCrumb + " > " +gblBreadCrumbs[i];
+		}
+		}
+	}
+	}
 	frmHome.lblHomeFlow.text = breadCrumb;
 	frmHome.segProductList.setData(catDetails);
 	if(gblCategories.length>1){
-		gblCategories.pop();
-		gblBreadCrumbs.pop();
+		if(gblBackFrom != "Product"){
+			gblCategories.pop();
+			gblBreadCrumbs.pop();
+		}
 	}else{
 		alert("This is the home page.");
 	}
@@ -154,4 +175,5 @@ function onBackButtonClick(){
 	}
 	kony.print("after pop gblCategories length is: "+gblCategories.length);
 	kony.print("after pop gblBreadCrumbs length is: "+gblBreadCrumbs.length);
+	dismissLoadingIndicator();
 }

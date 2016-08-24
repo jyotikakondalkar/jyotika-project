@@ -1,4 +1,5 @@
-
+function doNothing(){
+}
 // To check network availability
 function checkIsNetworkAvailable() {
 	if (undefined == constants.NETWORK_TYPE_ANY) {
