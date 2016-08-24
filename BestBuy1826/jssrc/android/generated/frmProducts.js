@@ -1,4 +1,13 @@
 //Form JS File
+function frmProducts_btnHamburg_onClick_seq0(eventobject) {
+    showHideSideMenu.call(this, frmProducts);
+};
+
+function frmProducts_btnBack_onClick_seq0(eventobject) {
+    gblBackFrom = "Product";
+    onBackButtonClick.call(this);
+};
+
 function addWidgetsfrmProducts() {
     var imgBstBuy = new kony.ui.Image2({
         "id": "imgBstBuy",
@@ -28,7 +37,8 @@ function addWidgetsfrmProducts() {
         "isVisible": true,
         "text": null,
         "skin": "sknBtnMenu",
-        "focusSkin": "sknMenuFocus"
+        "focusSkin": "sknMenuFocus",
+        "onClick": frmProducts_btnHamburg_onClick_seq0
     }, {
         "padding": [0, 0, 0, 0],
         "contentAlignment": constants.CONTENT_ALIGN_CENTER,
@@ -47,7 +57,8 @@ function addWidgetsfrmProducts() {
         "isVisible": true,
         "text": null,
         "skin": "sknBtnBack",
-        "focusSkin": "sknBackFocus"
+        "focusSkin": "sknBackFocus",
+        "onClick": frmProducts_btnBack_onClick_seq0
     }, {
         "padding": [0, 0, 0, 0],
         "contentAlignment": constants.CONTENT_ALIGN_CENTER,
@@ -170,47 +181,61 @@ function addWidgetsfrmProducts() {
         "widgetDataMap": {
             "flxProdDetails": "flxProdDetails",
             "lblProdName": "lblProdName",
+            "lblSku": "lblSku",
             "lblProdAvg": "lblProdAvg",
             "lblFreeShipping": "lblFreeShipping",
             "imgProd": "imgProd",
-            "lblProdPrice": "lblProdPrice"
+            "lblProdPrice": "lblProdPrice",
+            "lblProductId": "lblProductId"
         },
         "data": [{
             "lblProdName": "Dynex \u2013 24 (FLat Panel Tv with 42 inch and sound system and good quality remote controls)",
+            "lblSku": "",
             "lblProdAvg": "Avg User Rating: 4.4",
             "lblFreeShipping": "!!!Free Shipping !!!",
             "imgProd": "imagedrag.png",
-            "lblProdPrice": "$249.99"
+            "lblProdPrice": "$249.99",
+            "lblProductId": ""
         }, {
             "lblProdName": "Videocon \u2013 24 (FLat Panel Tv with 42 inch and sound system and good quality remote controls)",
+            "lblSku": "",
             "lblProdAvg": "Avg User Rating: 5.0",
             "lblFreeShipping": "!!!Free Shipping !!!",
             "imgProd": "imagedrag.png",
-            "lblProdPrice": "$249.99"
+            "lblProdPrice": "$249.99",
+            "lblProductId": ""
         }, {
             "lblProdName": "Samsung \u2013 24 (FLat Panel Tv with 42 inch and sound system and good quality remote controls)",
+            "lblSku": "",
             "lblProdAvg": "Avg User Rating: 3.2",
             "lblFreeShipping": "!!!Free Shipping !!!",
             "imgProd": "imagedrag.png",
-            "lblProdPrice": "$249.99"
+            "lblProdPrice": "$249.99",
+            "lblProductId": ""
         }, {
             "lblProdName": "Samsung \u2013 24 (FLat Panel Tv with 42 inch and sound system and good quality remote controls)",
+            "lblSku": "",
             "lblProdAvg": "Avg User Rating: 3.2",
             "lblFreeShipping": "!!!Free Shipping !!!",
             "imgProd": "imagedrag.png",
-            "lblProdPrice": "$249.99"
+            "lblProdPrice": "$249.99",
+            "lblProductId": ""
         }, {
             "lblProdName": "Samsung \u2013 24 (FLat Panel Tv with 42 inch and sound system and good quality remote controls)",
+            "lblSku": "",
             "lblProdAvg": "Avg User Rating: 3.2",
             "lblFreeShipping": "!!!Free Shipping !!!",
             "imgProd": "imagedrag.png",
-            "lblProdPrice": "$249.99"
+            "lblProdPrice": "$249.99",
+            "lblProductId": ""
         }, {
             "lblProdName": "Samsung \u2013 24 (FLat Panel Tv with 42 inch and sound system and good quality remote controls)",
+            "lblSku": "",
             "lblProdAvg": "Avg User Rating: 3.2",
             "lblFreeShipping": "!!!Free Shipping !!!",
             "imgProd": "imagedrag.png",
-            "lblProdPrice": "$249.99"
+            "lblProdPrice": "$249.99",
+            "lblProductId": ""
         }],
         "Location": "[9,0]",
         "rowTemplate": segProductListbox,
@@ -315,6 +340,40 @@ function addWidgetsfrmProducts() {
     }, {
         "textCopyable": false
     });
+    var lblSku = new kony.ui.Label({
+        "id": "lblSku",
+        "top": "58dp",
+        "left": "156dp",
+        "width": "100dp",
+        "height": "26dp",
+        "zIndex": 1,
+        "isVisible": false
+    }, {
+        "padding": [0, 0, 0, 0],
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "marginInPixel": false,
+        "paddingInPixel": false,
+        "containerWeight": 0
+    }, {
+        "textCopyable": false
+    });
+    var lblProductId = new kony.ui.Label({
+        "id": "lblProductId",
+        "top": "7dp",
+        "left": "156dp",
+        "width": "100dp",
+        "height": "26dp",
+        "zIndex": 1,
+        "isVisible": false
+    }, {
+        "padding": [0, 0, 0, 0],
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "marginInPixel": false,
+        "paddingInPixel": false,
+        "containerWeight": 0
+    }, {
+        "textCopyable": false
+    });
     var flxProdDetails = new kony.ui.FlexContainer({
         "id": "flxProdDetails",
         "top": "16%",
@@ -332,7 +391,7 @@ function addWidgetsfrmProducts() {
     }, {});;
     flxProdDetails.setDefaultUnit(kony.flex.DP)
     flxProdDetails.add(
-    lblProdName, lblProdPrice, lblProdAvg);
+    lblProdName, lblProdPrice, lblProdAvg, lblSku, lblProductId);
     segProductListbox.add(
     imgProd, lblFreeShipping, flxProdDetails);
     var flxSegContainer = new kony.ui.FlexContainer({

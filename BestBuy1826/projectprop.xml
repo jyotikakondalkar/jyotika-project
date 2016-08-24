@@ -157,7 +157,7 @@
     <attributes name="DELETE_PACKAGES" value="false"/>
     <attributes name="bb10packageid" value=""/>
     <attributes name="ACCESS_WIFI_STATE" value="false"/>
-    <attributes name="mwaddrkey" value="10.125.128.65"/>
+    <attributes name="mwaddrkey" value="10.125.128.66"/>
     <attributes name="SET_WALLPAPER" value="false"/>
     <attributes name="wp8cyclesmallkey" value=""/>
     <attributes name="WP8_ID_CAP_IDENTITY_USER" value="true"/>

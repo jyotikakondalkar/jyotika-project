@@ -80,15 +80,20 @@ function hideBackButton(frmObj) {
     kony.print("in hide Back Button: " + frmObj);
     if (frmObj == "frmHome") {
         kony.print("in if");
-        frmObj.btnBack.setVisibility(false);
-    } else {
+        //frmHome.btnBack.setVisibility(false);
         frmObj.btnBack.setVisibility(true);
+    } else {
+        frmObj.btnBack.setVisibility(false);
     }
 }
 
 function appOnLaunch() {
     gblCategories = [];
     counter = 0;
-    gblSubCategories1 = [];
-    gblSubCategories2 = [];
+    gblBreadCrumbs = [];
+    gblBreadCrumbs = [];
+    gblProducts = [];
+    gblSelectedValue = "";
+    gblCatId = "";
+    gblBackFrom = "";
 }

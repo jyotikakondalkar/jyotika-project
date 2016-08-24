@@ -131,6 +131,7 @@
                <param datatype="string" format="None" formatvalue="" name="onSale" sms-name="" src="product/onSale" target="response"/>
                <param datatype="string" format="None" formatvalue="" name="thumbnailImage" sms-name="" src="product/thumbnailImage" target="response"/>
                <param datatype="string" format="None" formatvalue="" name="freeShipping" sms-name="" src="product/freeShipping" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="customerReviewAverage" sms-name="" src="product/customerReviewAverage" target="response"/>
             </dataset>
             <param datatype="number" format="None" formatvalue="" name="opstatus" sms-name="" src="" target=""/>
             <param datatype="string" format="None" formatvalue="" name="errmsg" sms-name="" src="" target=""/>

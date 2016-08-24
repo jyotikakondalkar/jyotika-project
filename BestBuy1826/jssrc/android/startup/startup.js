@@ -8,15 +8,15 @@ var appConfig = {
     appName: "BestBuy1826",
     appVersion: "1.0.0",
     platformVersion: null,
-    serverIp: "10.125.128.65",
+    serverIp: "10.125.128.66",
     serverPort: "8085",
     secureServerPort: "443",
     isDebug: true,
     middlewareContext: "middleware",
     isMFApp: false,
     eventTypes: [],
-    secureurl: "https://10.125.128.65:443/middleware/MWServlet",
-    url: "http://10.125.128.65:8085/middleware/MWServlet"
+    secureurl: "https://10.125.128.66:443/middleware/MWServlet",
+    url: "http://10.125.128.66:8085/middleware/MWServlet"
 };
 sessionID = "";
 

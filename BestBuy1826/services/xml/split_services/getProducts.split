@@ -85,7 +85,7 @@
         <intemplate></intemplate>
         <ntlmDomain></ntlmDomain>
         <ntlmHost></ntlmHost>
-        <outtemplate>&lt;?xml-stylesheet href="/v1/xsl/xml_pretty_printer.xsl" type="text/xsl"?&gt;&lt;products canonicalUrl="/v1/products(categoryPath.id=abcat0902001)?apiKey=sjzp9njep4syta6sdx827stk" currentPage="1" from="1" partial="false" queryTime="0.004" to="10" total="33" totalPages="4" totalTime="0.249"&gt;
+        <outtemplate>&lt;?xml-stylesheet href="/v1/xsl/xml_pretty_printer.xsl" type="text/xsl"?&gt;&lt;products canonicalUrl="/v1/products(categoryPath.id=abcat0902001)?apiKey=sjzp9njep4syta6sdx827stk" currentPage="1" from="1" partial="false" queryTime="0.015" to="10" total="33" totalPages="4" totalTime="0.109"&gt;
    &lt;product&gt;
       &lt;sku&gt;4660300&lt;/sku&gt;
       &lt;productId&gt;1219791745145&lt;/productId&gt;
@@ -96,14 +96,14 @@
       &lt;new&gt;false&lt;/new&gt;
       &lt;active&gt;true&lt;/active&gt;
       &lt;lowPriceGuarantee&gt;true&lt;/lowPriceGuarantee&gt;
-      &lt;activeUpdateDate&gt;2016-06-09T17:45:42&lt;/activeUpdateDate&gt;
+      &lt;activeUpdateDate&gt;2016-07-05T05:25:41&lt;/activeUpdateDate&gt;
       &lt;regularPrice&gt;549.99&lt;/regularPrice&gt;
       &lt;salePrice&gt;494.99&lt;/salePrice&gt;
       &lt;onSale&gt;true&lt;/onSale&gt;
       &lt;planPrice/&gt;
       &lt;priceWithPlan/&gt;
       &lt;priceRestriction/&gt;
-      &lt;priceUpdateDate&gt;2016-07-06T00:02:54&lt;/priceUpdateDate&gt;
+      &lt;priceUpdateDate&gt;2016-08-21T00:29:35&lt;/priceUpdateDate&gt;
       &lt;digital&gt;false&lt;/digital&gt;
       &lt;preowned&gt;false&lt;/preowned&gt;
       &lt;carrierPlans/&gt;
@@ -116,15 +116,15 @@
       &lt;accessories/&gt;
       &lt;relatedProducts/&gt;
       &lt;techSupportPlans/&gt;
-      &lt;salesRankShortTerm/&gt;
-      &lt;salesRankMediumTerm/&gt;
-      &lt;salesRankLongTerm&gt;304695&lt;/salesRankLongTerm&gt;
-      &lt;bestSellingRank/&gt;
-      &lt;url&gt;https://api.bestbuy.com/click/556fdca074800000/4660300/pdp&lt;/url&gt;
+      &lt;salesRankShortTerm&gt;85535&lt;/salesRankShortTerm&gt;
+      &lt;salesRankMediumTerm&gt;48269&lt;/salesRankMediumTerm&gt;
+      &lt;salesRankLongTerm&gt;86694&lt;/salesRankLongTerm&gt;
+      &lt;bestSellingRank&gt;85564&lt;/bestSellingRank&gt;
+      &lt;url&gt;https://api.bestbuy.com/click/-/4660300/pdp&lt;/url&gt;
       &lt;spin360Url/&gt;
-      &lt;mobileUrl&gt;https://api.bestbuy.com/click/556fdca074800000/4660300/pdp&lt;/mobileUrl&gt;
+      &lt;mobileUrl&gt;https://api.bestbuy.com/click/-/4660300/pdp&lt;/mobileUrl&gt;
       &lt;affiliateUrl/&gt;
-      &lt;addToCartUrl&gt;https://api.bestbuy.com/click/556fdca074800000/4660300/cart&lt;/addToCartUrl&gt;
+      &lt;addToCartUrl&gt;https://api.bestbuy.com/click/-/4660300/cart&lt;/addToCartUrl&gt;
       &lt;affiliateAddToCartUrl/&gt;
       &lt;linkShareAffiliateUrl/&gt;
       &lt;linkShareAffiliateAddToCartUrl/&gt;
@@ -157,11 +157,11 @@
       &lt;freeShippingEligible&gt;false&lt;/freeShippingEligible&gt;
       &lt;inStoreAvailability&gt;false&lt;/inStoreAvailability&gt;
       &lt;inStoreAvailabilityText&gt;Store Pickup: Not Available&lt;/inStoreAvailabilityText&gt;
-      &lt;inStoreAvailabilityUpdateDate&gt;2016-06-09T17:45:42&lt;/inStoreAvailabilityUpdateDate&gt;
-      &lt;itemUpdateDate&gt;2016-07-06T01:30:08&lt;/itemUpdateDate&gt;
+      &lt;inStoreAvailabilityUpdateDate&gt;2016-07-05T05:25:41&lt;/inStoreAvailabilityUpdateDate&gt;
+      &lt;itemUpdateDate&gt;2016-08-23T12:47:10&lt;/itemUpdateDate&gt;
       &lt;onlineAvailability&gt;true&lt;/onlineAvailability&gt;
       &lt;onlineAvailabilityText&gt;Delivery: Most Areas&lt;/onlineAvailabilityText&gt;
-      &lt;onlineAvailabilityUpdateDate&gt;2016-06-09T17:45:42&lt;/onlineAvailabilityUpdateDate&gt;
+      &lt;onlineAvailabilityUpdateDate&gt;2016-07-05T05:25:41&lt;/onlineAvailabilityUpdateDate&gt;
       &lt;releaseDate/&gt;
       &lt;shippingCost/&gt;
       &lt;shipping/&gt;
@@ -241,7 +241,7 @@
       &lt;new&gt;false&lt;/new&gt;
       &lt;active&gt;true&lt;/active&gt;
       &lt;lowPriceGuarantee&gt;true&lt;/lowPriceGuarantee&gt;
-      &lt;activeUpdateDate&gt;2016-06-09T17:22:20&lt;/activeUpdateDate&gt;
+      &lt;activeUpdateDate&gt;2016-07-05T02:46:33&lt;/activeUpdateDate&gt;
       &lt;regularPrice&gt;269.00&lt;/regularPrice&gt;
       &lt;salePrice&gt;269.00&lt;/salePrice&gt;
       &lt;onSale&gt;false&lt;/onSale&gt;
@@ -261,15 +261,15 @@
       &lt;accessories/&gt;
       &lt;relatedProducts/&gt;
       &lt;techSupportPlans/&gt;
-      &lt;salesRankShortTerm&gt;87005&lt;/salesRankShortTerm&gt;
-      &lt;salesRankMediumTerm&gt;48507&lt;/salesRankMediumTerm&gt;
-      &lt;salesRankLongTerm&gt;81593&lt;/salesRankLongTerm&gt;
-      &lt;bestSellingRank&gt;87034&lt;/bestSellingRank&gt;
-      &lt;url&gt;https://api.bestbuy.com/click/556fdca074800000/4841312/pdp&lt;/url&gt;
+      &lt;salesRankShortTerm/&gt;
+      &lt;salesRankMediumTerm/&gt;
+      &lt;salesRankLongTerm&gt;100541&lt;/salesRankLongTerm&gt;
+      &lt;bestSellingRank/&gt;
+      &lt;url&gt;https://api.bestbuy.com/click/-/4841312/pdp&lt;/url&gt;
       &lt;spin360Url/&gt;
-      &lt;mobileUrl&gt;https://api.bestbuy.com/click/556fdca074800000/4841312/pdp&lt;/mobileUrl&gt;
+      &lt;mobileUrl&gt;https://api.bestbuy.com/click/-/4841312/pdp&lt;/mobileUrl&gt;
       &lt;affiliateUrl/&gt;
-      &lt;addToCartUrl&gt;https://api.bestbuy.com/click/556fdca074800000/4841312/cart&lt;/addToCartUrl&gt;
+      &lt;addToCartUrl&gt;https://api.bestbuy.com/click/-/4841312/cart&lt;/addToCartUrl&gt;
       &lt;affiliateAddToCartUrl/&gt;
       &lt;linkShareAffiliateUrl/&gt;
       &lt;linkShareAffiliateAddToCartUrl/&gt;
@@ -302,11 +302,11 @@
       &lt;freeShippingEligible&gt;false&lt;/freeShippingEligible&gt;
       &lt;inStoreAvailability&gt;false&lt;/inStoreAvailability&gt;
       &lt;inStoreAvailabilityText&gt;Store Pickup: Not Available&lt;/inStoreAvailabilityText&gt;
-      &lt;inStoreAvailabilityUpdateDate&gt;2016-06-09T17:22:20&lt;/inStoreAvailabilityUpdateDate&gt;
-      &lt;itemUpdateDate&gt;2016-07-05T09:31:32&lt;/itemUpdateDate&gt;
+      &lt;inStoreAvailabilityUpdateDate&gt;2016-07-05T02:46:33&lt;/inStoreAvailabilityUpdateDate&gt;
+      &lt;itemUpdateDate&gt;2016-08-23T12:52:59&lt;/itemUpdateDate&gt;
       &lt;onlineAvailability&gt;true&lt;/onlineAvailability&gt;
       &lt;onlineAvailabilityText&gt;Delivery: Most Areas&lt;/onlineAvailabilityText&gt;
-      &lt;onlineAvailabilityUpdateDate&gt;2016-06-09T17:22:20&lt;/onlineAvailabilityUpdateDate&gt;
+      &lt;onlineAvailabilityUpdateDate&gt;2016-07-05T02:46:33&lt;/onlineAvailabilityUpdateDate&gt;
       &lt;releaseDate/&gt;
       &lt;shippingCost/&gt;
       &lt;shipping/&gt;
@@ -385,7 +385,7 @@
       &lt;new&gt;false&lt;/new&gt;
       &lt;active&gt;true&lt;/active&gt;
       &lt;lowPriceGuarantee&gt;true&lt;/lowPriceGuarantee&gt;
-      &lt;activeUpdateDate&gt;2016-06-09T14:38:37&lt;/activeUpdateDate&gt;
+      &lt;activeUpdateDate&gt;2016-07-05T03:02:24&lt;/activeUpdateDate&gt;
       &lt;regularPrice&gt;299.00&lt;/regularPrice&gt;
       &lt;salePrice&gt;299.00&lt;/salePrice&gt;
       &lt;onSale&gt;false&lt;/onSale&gt;
@@ -405,15 +405,15 @@
       &lt;accessories/&gt;
       &lt;relatedProducts/&gt;
       &lt;techSupportPlans/&gt;
-      &lt;salesRankShortTerm/&gt;
-      &lt;salesRankMediumTerm/&gt;
-      &lt;salesRankLongTerm&gt;309002&lt;/salesRankLongTerm&gt;
-      &lt;bestSellingRank/&gt;
-      &lt;url&gt;https://api.bestbuy.com/click/556fdca074800000/4841300/pdp&lt;/url&gt;
+      &lt;salesRankShortTerm&gt;86645&lt;/salesRankShortTerm&gt;
+      &lt;salesRankMediumTerm&gt;108715&lt;/salesRankMediumTerm&gt;
+      &lt;salesRankLongTerm&gt;100537&lt;/salesRankLongTerm&gt;
+      &lt;bestSellingRank&gt;86674&lt;/bestSellingRank&gt;
+      &lt;url&gt;https://api.bestbuy.com/click/-/4841300/pdp&lt;/url&gt;
       &lt;spin360Url/&gt;
-      &lt;mobileUrl&gt;https://api.bestbuy.com/click/556fdca074800000/4841300/pdp&lt;/mobileUrl&gt;
+      &lt;mobileUrl&gt;https://api.bestbuy.com/click/-/4841300/pdp&lt;/mobileUrl&gt;
       &lt;affiliateUrl/&gt;
-      &lt;addToCartUrl&gt;https://api.bestbuy.com/click/556fdca074800000/4841300/cart&lt;/addToCartUrl&gt;
+      &lt;addToCartUrl&gt;https://api.bestbuy.com/click/-/4841300/cart&lt;/addToCartUrl&gt;
       &lt;affiliateAddToCartUrl/&gt;
       &lt;linkShareAffiliateUrl/&gt;
       &lt;linkShareAffiliateAddToCartUrl/&gt;
@@ -446,11 +446,11 @@
       &lt;freeShippingEligible&gt;false&lt;/freeShippingEligible&gt;
       &lt;inStoreAvailability&gt;false&lt;/inStoreAvailability&gt;
       &lt;inStoreAvailabilityText&gt;Store Pickup: Not Available&lt;/inStoreAvailabilityText&gt;
-      &lt;inStoreAvailabilityUpdateDate&gt;2016-06-09T14:38:37&lt;/inStoreAvailabilityUpdateDate&gt;
-      &lt;itemUpdateDate&gt;2016-07-05T09:32:49&lt;/itemUpdateDate&gt;
+      &lt;inStoreAvailabilityUpdateDate&gt;2016-07-05T03:02:24&lt;/inStoreAvailabilityUpdateDate&gt;
+      &lt;itemUpdateDate&gt;2016-08-23T12:52:59&lt;/itemUpdateDate&gt;
       &lt;onlineAvailability&gt;true&lt;/onlineAvailability&gt;
       &lt;onlineAvailabilityText&gt;Delivery: Most Areas&lt;/onlineAvailabilityText&gt;
-      &lt;onlineAvailabilityUpdateDate&gt;2016-06-09T14:38:37&lt;/onlineAvailabilityUpdateDate&gt;
+      &lt;onlineAvailabilityUpdateDate&gt;2016-07-05T03:02:24&lt;/onlineAvailabilityUpdateDate&gt;
       &lt;releaseDate/&gt;
       &lt;shippingCost/&gt;
       &lt;shipping/&gt;
@@ -528,14 +528,14 @@
       &lt;new&gt;false&lt;/new&gt;
       &lt;active&gt;true&lt;/active&gt;
       &lt;lowPriceGuarantee&gt;true&lt;/lowPriceGuarantee&gt;
-      &lt;activeUpdateDate&gt;2016-06-09T15:45:33&lt;/activeUpdateDate&gt;
+      &lt;activeUpdateDate&gt;2016-07-05T02:33:11&lt;/activeUpdateDate&gt;
       &lt;regularPrice&gt;449.00&lt;/regularPrice&gt;
       &lt;salePrice&gt;449.00&lt;/salePrice&gt;
       &lt;onSale&gt;true&lt;/onSale&gt;
       &lt;planPrice/&gt;
       &lt;priceWithPlan/&gt;
       &lt;priceRestriction&gt;MAP&lt;/priceRestriction&gt;
-      &lt;priceUpdateDate&gt;2016-07-06T01:30:17&lt;/priceUpdateDate&gt;
+      &lt;priceUpdateDate&gt;2016-08-21T00:23:06&lt;/priceUpdateDate&gt;
       &lt;digital&gt;false&lt;/digital&gt;
       &lt;preowned&gt;false&lt;/preowned&gt;
       &lt;carrierPlans/&gt;
@@ -550,13 +550,13 @@
       &lt;techSupportPlans/&gt;
       &lt;salesRankShortTerm/&gt;
       &lt;salesRankMediumTerm/&gt;
-      &lt;salesRankLongTerm&gt;122568&lt;/salesRankLongTerm&gt;
+      &lt;salesRankLongTerm&gt;127761&lt;/salesRankLongTerm&gt;
       &lt;bestSellingRank/&gt;
-      &lt;url&gt;https://api.bestbuy.com/click/556fdca074800000/4841302/pdp&lt;/url&gt;
+      &lt;url&gt;https://api.bestbuy.com/click/-/4841302/pdp&lt;/url&gt;
       &lt;spin360Url/&gt;
-      &lt;mobileUrl&gt;https://api.bestbuy.com/click/556fdca074800000/4841302/pdp&lt;/mobileUrl&gt;
+      &lt;mobileUrl&gt;https://api.bestbuy.com/click/-/4841302/pdp&lt;/mobileUrl&gt;
       &lt;affiliateUrl/&gt;
-      &lt;addToCartUrl&gt;https://api.bestbuy.com/click/556fdca074800000/4841302/cart&lt;/addToCartUrl&gt;
+      &lt;addToCartUrl&gt;https://api.bestbuy.com/click/-/4841302/cart&lt;/addToCartUrl&gt;
       &lt;affiliateAddToCartUrl/&gt;
       &lt;linkShareAffiliateUrl/&gt;
       &lt;linkShareAffiliateAddToCartUrl/&gt;
@@ -589,11 +589,11 @@
       &lt;freeShippingEligible&gt;false&lt;/freeShippingEligible&gt;
       &lt;inStoreAvailability&gt;false&lt;/inStoreAvailability&gt;
       &lt;inStoreAvailabilityText&gt;Store Pickup: Not Available&lt;/inStoreAvailabilityText&gt;
-      &lt;inStoreAvailabilityUpdateDate&gt;2016-06-09T15:45:33&lt;/inStoreAvailabilityUpdateDate&gt;
-      &lt;itemUpdateDate&gt;2016-07-06T01:30:17&lt;/itemUpdateDate&gt;
+      &lt;inStoreAvailabilityUpdateDate&gt;2016-07-05T02:33:11&lt;/inStoreAvailabilityUpdateDate&gt;
+      &lt;itemUpdateDate&gt;2016-08-23T12:53:36&lt;/itemUpdateDate&gt;
       &lt;onlineAvailability&gt;true&lt;/onlineAvailability&gt;
       &lt;onlineAvailabilityText&gt;Delivery: Most Areas&lt;/onlineAvailabilityText&gt;
-      &lt;onlineAvailabilityUpdateDate&gt;2016-06-09T15:45:33&lt;/onlineAvailabilityUpdateDate&gt;
+      &lt;onlineAvailabilityUpdateDate&gt;2016-07-05T02:33:11&lt;/onlineAvailabilityUpdateDate&gt;
       &lt;releaseDate/&gt;
       &lt;shippingCost/&gt;
       &lt;shipping/&gt;
@@ -670,14 +670,14 @@
       &lt;new&gt;false&lt;/new&gt;
       &lt;active&gt;true&lt;/active&gt;
       &lt;lowPriceGuarantee&gt;true&lt;/lowPriceGuarantee&gt;
-      &lt;activeUpdateDate&gt;2016-06-09T14:14:22&lt;/activeUpdateDate&gt;
+      &lt;activeUpdateDate&gt;2016-07-05T02:38:35&lt;/activeUpdateDate&gt;
       &lt;regularPrice&gt;199.99&lt;/regularPrice&gt;
-      &lt;salePrice&gt;179.99&lt;/salePrice&gt;
-      &lt;onSale&gt;true&lt;/onSale&gt;
+      &lt;salePrice&gt;199.99&lt;/salePrice&gt;
+      &lt;onSale&gt;false&lt;/onSale&gt;
       &lt;planPrice/&gt;
       &lt;priceWithPlan/&gt;
       &lt;priceRestriction/&gt;
-      &lt;priceUpdateDate&gt;2016-07-03T01:28:43&lt;/priceUpdateDate&gt;
+      &lt;priceUpdateDate&gt;2016-07-24T00:01:11&lt;/priceUpdateDate&gt;
       &lt;digital&gt;false&lt;/digital&gt;
       &lt;preowned&gt;false&lt;/preowned&gt;
       &lt;carrierPlans/&gt;
@@ -694,11 +694,11 @@
       &lt;salesRankMediumTerm/&gt;
       &lt;salesRankLongTerm/&gt;
       &lt;bestSellingRank/&gt;
-      &lt;url&gt;https://api.bestbuy.com/click/556fdca074800000/5241425/pdp&lt;/url&gt;
+      &lt;url&gt;https://api.bestbuy.com/click/-/5241425/pdp&lt;/url&gt;
       &lt;spin360Url/&gt;
-      &lt;mobileUrl&gt;https://api.bestbuy.com/click/556fdca074800000/5241425/pdp&lt;/mobileUrl&gt;
+      &lt;mobileUrl&gt;https://api.bestbuy.com/click/-/5241425/pdp&lt;/mobileUrl&gt;
       &lt;affiliateUrl/&gt;
-      &lt;addToCartUrl&gt;https://api.bestbuy.com/click/556fdca074800000/5241425/cart&lt;/addToCartUrl&gt;
+      &lt;addToCartUrl&gt;https://api.bestbuy.com/click/-/5241425/cart&lt;/addToCartUrl&gt;
       &lt;affiliateAddToCartUrl/&gt;
       &lt;linkShareAffiliateUrl/&gt;
       &lt;linkShareAffiliateAddToCartUrl/&gt;
@@ -727,15 +727,15 @@
       &lt;customerReviewAverage/&gt;
       &lt;customerTopRated&gt;false&lt;/customerTopRated&gt;
       &lt;format/&gt;
-      &lt;freeShipping&gt;true&lt;/freeShipping&gt;
-      &lt;freeShippingEligible&gt;true&lt;/freeShippingEligible&gt;
+      &lt;freeShipping&gt;false&lt;/freeShipping&gt;
+      &lt;freeShippingEligible&gt;false&lt;/freeShippingEligible&gt;
       &lt;inStoreAvailability&gt;false&lt;/inStoreAvailability&gt;
       &lt;inStoreAvailabilityText&gt;Store Pickup: Not Available&lt;/inStoreAvailabilityText&gt;
-      &lt;inStoreAvailabilityUpdateDate&gt;2016-06-09T14:14:22&lt;/inStoreAvailabilityUpdateDate&gt;
-      &lt;itemUpdateDate&gt;2016-07-03T01:28:43&lt;/itemUpdateDate&gt;
+      &lt;inStoreAvailabilityUpdateDate&gt;2016-08-03T14:10:29&lt;/inStoreAvailabilityUpdateDate&gt;
+      &lt;itemUpdateDate&gt;2016-08-11T03:17:16&lt;/itemUpdateDate&gt;
       &lt;onlineAvailability&gt;true&lt;/onlineAvailability&gt;
       &lt;onlineAvailabilityText&gt;Shipping: Usually ships in 2 business days&lt;/onlineAvailabilityText&gt;
-      &lt;onlineAvailabilityUpdateDate&gt;2016-06-09T14:14:22&lt;/onlineAvailabilityUpdateDate&gt;
+      &lt;onlineAvailabilityUpdateDate&gt;2016-08-03T14:10:29&lt;/onlineAvailabilityUpdateDate&gt;
       &lt;releaseDate/&gt;
       &lt;shippingCost&gt;0.00&lt;/shippingCost&gt;
       &lt;shipping&gt;
@@ -788,8 +788,8 @@
       &lt;bundledIn/&gt;
       &lt;color&gt;Stainless Steel&lt;/color&gt;
       &lt;depth&gt;23.5"&lt;/depth&gt;
-      &lt;dollarSavings&gt;20.00&lt;/dollarSavings&gt;
-      &lt;percentSavings&gt;10.0&lt;/percentSavings&gt;
+      &lt;dollarSavings&gt;0.00&lt;/dollarSavings&gt;
+      &lt;percentSavings&gt;0.0&lt;/percentSavings&gt;
       &lt;tradeInValue/&gt;
       &lt;height&gt;16.75"&lt;/height&gt;
       &lt;orderable&gt;Available&lt;/orderable&gt;
@@ -818,14 +818,14 @@
       &lt;new&gt;false&lt;/new&gt;
       &lt;active&gt;true&lt;/active&gt;
       &lt;lowPriceGuarantee&gt;true&lt;/lowPriceGuarantee&gt;
-      &lt;activeUpdateDate&gt;2016-06-09T15:29:33&lt;/activeUpdateDate&gt;
+      &lt;activeUpdateDate&gt;2016-07-05T03:12:02&lt;/activeUpdateDate&gt;
       &lt;regularPrice&gt;199.99&lt;/regularPrice&gt;
-      &lt;salePrice&gt;179.99&lt;/salePrice&gt;
-      &lt;onSale&gt;true&lt;/onSale&gt;
+      &lt;salePrice&gt;199.99&lt;/salePrice&gt;
+      &lt;onSale&gt;false&lt;/onSale&gt;
       &lt;planPrice/&gt;
       &lt;priceWithPlan/&gt;
       &lt;priceRestriction/&gt;
-      &lt;priceUpdateDate&gt;2016-07-03T01:30:38&lt;/priceUpdateDate&gt;
+      &lt;priceUpdateDate&gt;2016-08-22T12:30:17&lt;/priceUpdateDate&gt;
       &lt;digital&gt;false&lt;/digital&gt;
       &lt;preowned&gt;false&lt;/preowned&gt;
       &lt;carrierPlans/&gt;
@@ -859,14 +859,14 @@
       &lt;/relatedProducts&gt;
       &lt;techSupportPlans/&gt;
       &lt;salesRankShortTerm/&gt;
-      &lt;salesRankMediumTerm/&gt;
-      &lt;salesRankLongTerm/&gt;
+      &lt;salesRankMediumTerm&gt;104551&lt;/salesRankMediumTerm&gt;
+      &lt;salesRankLongTerm&gt;59341&lt;/salesRankLongTerm&gt;
       &lt;bestSellingRank/&gt;
-      &lt;url&gt;https://api.bestbuy.com/click/556fdca074800000/4226602/pdp&lt;/url&gt;
+      &lt;url&gt;https://api.bestbuy.com/click/-/4226602/pdp&lt;/url&gt;
       &lt;spin360Url/&gt;
-      &lt;mobileUrl&gt;https://api.bestbuy.com/click/556fdca074800000/4226602/pdp&lt;/mobileUrl&gt;
+      &lt;mobileUrl&gt;https://api.bestbuy.com/click/-/4226602/pdp&lt;/mobileUrl&gt;
       &lt;affiliateUrl/&gt;
-      &lt;addToCartUrl&gt;https://api.bestbuy.com/click/556fdca074800000/4226602/cart&lt;/addToCartUrl&gt;
+      &lt;addToCartUrl&gt;https://api.bestbuy.com/click/-/4226602/cart&lt;/addToCartUrl&gt;
       &lt;affiliateAddToCartUrl/&gt;
       &lt;linkShareAffiliateUrl/&gt;
       &lt;linkShareAffiliateAddToCartUrl/&gt;
@@ -895,24 +895,30 @@
       &lt;customerReviewAverage&gt;4.1&lt;/customerReviewAverage&gt;
       &lt;customerTopRated&gt;false&lt;/customerTopRated&gt;
       &lt;format/&gt;
-      &lt;freeShipping&gt;true&lt;/freeShipping&gt;
-      &lt;freeShippingEligible&gt;true&lt;/freeShippingEligible&gt;
+      &lt;freeShipping&gt;false&lt;/freeShipping&gt;
+      &lt;freeShippingEligible&gt;false&lt;/freeShippingEligible&gt;
       &lt;inStoreAvailability&gt;true&lt;/inStoreAvailability&gt;
       &lt;inStoreAvailabilityText&gt;Store Pickup:&lt;/inStoreAvailabilityText&gt;
-      &lt;inStoreAvailabilityUpdateDate&gt;2016-06-09T15:29:33&lt;/inStoreAvailabilityUpdateDate&gt;
-      &lt;itemUpdateDate&gt;2016-07-03T01:30:38&lt;/itemUpdateDate&gt;
-      &lt;onlineAvailability&gt;false&lt;/onlineAvailability&gt;
-      &lt;onlineAvailabilityText&gt;Shipping: Not Available&lt;/onlineAvailabilityText&gt;
-      &lt;onlineAvailabilityUpdateDate&gt;2016-06-09T15:29:33&lt;/onlineAvailabilityUpdateDate&gt;
+      &lt;inStoreAvailabilityUpdateDate&gt;2016-07-05T03:12:02&lt;/inStoreAvailabilityUpdateDate&gt;
+      &lt;itemUpdateDate&gt;2016-08-23T12:21:11&lt;/itemUpdateDate&gt;
+      &lt;onlineAvailability&gt;true&lt;/onlineAvailability&gt;
+      &lt;onlineAvailabilityText&gt;Shipping: Usually ships in 2 business days&lt;/onlineAvailabilityText&gt;
+      &lt;onlineAvailabilityUpdateDate&gt;2016-08-03T20:30:13&lt;/onlineAvailabilityUpdateDate&gt;
       &lt;releaseDate/&gt;
-      &lt;shippingCost/&gt;
+      &lt;shippingCost&gt;0.00&lt;/shippingCost&gt;
       &lt;shipping&gt;
-         &lt;ground/&gt;
+         &lt;ground&gt;0.00&lt;/ground&gt;
          &lt;secondDay/&gt;
          &lt;nextDay/&gt;
          &lt;vendorDelivery/&gt;
       &lt;/shipping&gt;
-      &lt;shippingLevelsOfService/&gt;
+      &lt;shippingLevelsOfService&gt;
+         &lt;shippingLevelOfService&gt;
+            &lt;serviceLevelId&gt;1&lt;/serviceLevelId&gt;
+            &lt;serviceLevelName&gt;Standard&lt;/serviceLevelName&gt;
+            &lt;unitShippingPrice&gt;0.00&lt;/unitShippingPrice&gt;
+         &lt;/shippingLevelOfService&gt;
+      &lt;/shippingLevelsOfService&gt;
       &lt;specialOrder&gt;false&lt;/specialOrder&gt;
       &lt;shortDescription&gt;DANBY 3.8 Cu. Ft. Chest Freezer: Foam-insulated cabinet and lid; lift-out, sliding storage basket; defrost drain; up-front mechanical thermostat&lt;/shortDescription&gt;
       &lt;class&gt;COMPACT REFRIDG&lt;/class&gt;
@@ -942,7 +948,7 @@
       &lt;rightViewImage/&gt;
       &lt;topViewImage/&gt;
       &lt;condition&gt;New&lt;/condition&gt;
-      &lt;inStorePickup&gt;false&lt;/inStorePickup&gt;
+      &lt;inStorePickup&gt;true&lt;/inStorePickup&gt;
       &lt;friendsAndFamilyPickup&gt;false&lt;/friendsAndFamilyPickup&gt;
       &lt;homeDelivery&gt;false&lt;/homeDelivery&gt;
       &lt;quantityLimit&gt;3&lt;/quantityLimit&gt;
@@ -950,11 +956,11 @@
       &lt;bundledIn/&gt;
       &lt;color&gt;White&lt;/color&gt;
       &lt;depth&gt;22.2"&lt;/depth&gt;
-      &lt;dollarSavings&gt;20.00&lt;/dollarSavings&gt;
-      &lt;percentSavings&gt;10.0&lt;/percentSavings&gt;
+      &lt;dollarSavings&gt;0.00&lt;/dollarSavings&gt;
+      &lt;percentSavings&gt;0.0&lt;/percentSavings&gt;
       &lt;tradeInValue/&gt;
       &lt;height&gt;33.07"&lt;/height&gt;
-      &lt;orderable&gt;SoldOut&lt;/orderable&gt;
+      &lt;orderable&gt;Available&lt;/orderable&gt;
       &lt;weight&gt;62.8 pounds&lt;/weight&gt;
       &lt;shippingWeight&gt;76.0&lt;/shippingWeight&gt;
       &lt;width&gt;24.96"&lt;/width&gt;
@@ -990,14 +996,14 @@
       &lt;new&gt;false&lt;/new&gt;
       &lt;active&gt;true&lt;/active&gt;
       &lt;lowPriceGuarantee&gt;true&lt;/lowPriceGuarantee&gt;
-      &lt;activeUpdateDate&gt;2016-06-09T15:05:22&lt;/activeUpdateDate&gt;
+      &lt;activeUpdateDate&gt;2016-07-05T01:31:23&lt;/activeUpdateDate&gt;
       &lt;regularPrice&gt;229.99&lt;/regularPrice&gt;
-      &lt;salePrice&gt;206.99&lt;/salePrice&gt;
-      &lt;onSale&gt;true&lt;/onSale&gt;
+      &lt;salePrice&gt;229.99&lt;/salePrice&gt;
+      &lt;onSale&gt;false&lt;/onSale&gt;
       &lt;planPrice/&gt;
       &lt;priceWithPlan/&gt;
       &lt;priceRestriction/&gt;
-      &lt;priceUpdateDate&gt;2016-07-03T00:01:49&lt;/priceUpdateDate&gt;
+      &lt;priceUpdateDate&gt;2016-08-10T04:12:59&lt;/priceUpdateDate&gt;
       &lt;digital&gt;false&lt;/digital&gt;
       &lt;preowned&gt;false&lt;/preowned&gt;
       &lt;carrierPlans/&gt;
@@ -1031,14 +1037,14 @@
       &lt;/relatedProducts&gt;
       &lt;techSupportPlans/&gt;
       &lt;salesRankShortTerm/&gt;
-      &lt;salesRankMediumTerm/&gt;
-      &lt;salesRankLongTerm&gt;65092&lt;/salesRankLongTerm&gt;
+      &lt;salesRankMediumTerm&gt;104552&lt;/salesRankMediumTerm&gt;
+      &lt;salesRankLongTerm&gt;54708&lt;/salesRankLongTerm&gt;
       &lt;bestSellingRank/&gt;
-      &lt;url&gt;https://api.bestbuy.com/click/556fdca074800000/4226605/pdp&lt;/url&gt;
+      &lt;url&gt;https://api.bestbuy.com/click/-/4226605/pdp&lt;/url&gt;
       &lt;spin360Url/&gt;
-      &lt;mobileUrl&gt;https://api.bestbuy.com/click/556fdca074800000/4226605/pdp&lt;/mobileUrl&gt;
+      &lt;mobileUrl&gt;https://api.bestbuy.com/click/-/4226605/pdp&lt;/mobileUrl&gt;
       &lt;affiliateUrl/&gt;
-      &lt;addToCartUrl&gt;https://api.bestbuy.com/click/556fdca074800000/4226605/cart&lt;/addToCartUrl&gt;
+      &lt;addToCartUrl&gt;https://api.bestbuy.com/click/-/4226605/cart&lt;/addToCartUrl&gt;
       &lt;affiliateAddToCartUrl/&gt;
       &lt;linkShareAffiliateUrl/&gt;
       &lt;linkShareAffiliateAddToCartUrl/&gt;
@@ -1067,28 +1073,28 @@
       &lt;customerReviewAverage&gt;3.8&lt;/customerReviewAverage&gt;
       &lt;customerTopRated&gt;false&lt;/customerTopRated&gt;
       &lt;format/&gt;
-      &lt;freeShipping&gt;true&lt;/freeShipping&gt;
-      &lt;freeShippingEligible&gt;true&lt;/freeShippingEligible&gt;
+      &lt;freeShipping&gt;false&lt;/freeShipping&gt;
+      &lt;freeShippingEligible&gt;false&lt;/freeShippingEligible&gt;
       &lt;inStoreAvailability&gt;true&lt;/inStoreAvailability&gt;
       &lt;inStoreAvailabilityText&gt;Store Pickup:&lt;/inStoreAvailabilityText&gt;
-      &lt;inStoreAvailabilityUpdateDate&gt;2016-06-09T15:05:22&lt;/inStoreAvailabilityUpdateDate&gt;
-      &lt;itemUpdateDate&gt;2016-07-05T09:49:57&lt;/itemUpdateDate&gt;
+      &lt;inStoreAvailabilityUpdateDate&gt;2016-07-05T01:31:23&lt;/inStoreAvailabilityUpdateDate&gt;
+      &lt;itemUpdateDate&gt;2016-08-23T12:49:01&lt;/itemUpdateDate&gt;
       &lt;onlineAvailability&gt;true&lt;/onlineAvailability&gt;
       &lt;onlineAvailabilityText&gt;Shipping: Usually ships in 2 business days&lt;/onlineAvailabilityText&gt;
-      &lt;onlineAvailabilityUpdateDate&gt;2016-06-09T15:05:22&lt;/onlineAvailabilityUpdateDate&gt;
+      &lt;onlineAvailabilityUpdateDate&gt;2016-07-05T01:31:23&lt;/onlineAvailabilityUpdateDate&gt;
       &lt;releaseDate/&gt;
-      &lt;shippingCost&gt;98.07&lt;/shippingCost&gt;
+      &lt;shippingCost&gt;0.00&lt;/shippingCost&gt;
       &lt;shipping&gt;
          &lt;ground/&gt;
-         &lt;secondDay&gt;98.07&lt;/secondDay&gt;
+         &lt;secondDay&gt;0.00&lt;/secondDay&gt;
          &lt;nextDay/&gt;
          &lt;vendorDelivery/&gt;
       &lt;/shipping&gt;
       &lt;shippingLevelsOfService&gt;
          &lt;shippingLevelOfService&gt;
             &lt;serviceLevelId&gt;4&lt;/serviceLevelId&gt;
-            &lt;serviceLevelName&gt;Expedited&lt;/serviceLevelName&gt;
-            &lt;unitShippingPrice&gt;98.07&lt;/unitShippingPrice&gt;
+            &lt;serviceLevelName&gt;Two Day&lt;/serviceLevelName&gt;
+            &lt;unitShippingPrice&gt;0.00&lt;/unitShippingPrice&gt;
          &lt;/shippingLevelOfService&gt;
       &lt;/shippingLevelsOfService&gt;
       &lt;specialOrder&gt;false&lt;/specialOrder&gt;
@@ -1128,8 +1134,8 @@
       &lt;bundledIn/&gt;
       &lt;color&gt;White&lt;/color&gt;
       &lt;depth&gt;22.2"&lt;/depth&gt;
-      &lt;dollarSavings&gt;23.00&lt;/dollarSavings&gt;
-      &lt;percentSavings&gt;10.0&lt;/percentSavings&gt;
+      &lt;dollarSavings&gt;0.00&lt;/dollarSavings&gt;
+      &lt;percentSavings&gt;0.0&lt;/percentSavings&gt;
       &lt;tradeInValue/&gt;
       &lt;height&gt;33.07"&lt;/height&gt;
       &lt;orderable&gt;Available&lt;/orderable&gt;
@@ -1168,14 +1174,14 @@
       &lt;new&gt;false&lt;/new&gt;
       &lt;active&gt;true&lt;/active&gt;
       &lt;lowPriceGuarantee&gt;true&lt;/lowPriceGuarantee&gt;
-      &lt;activeUpdateDate&gt;2016-06-09T15:40:06&lt;/activeUpdateDate&gt;
+      &lt;activeUpdateDate&gt;2016-07-05T04:10:01&lt;/activeUpdateDate&gt;
       &lt;regularPrice&gt;299.99&lt;/regularPrice&gt;
-      &lt;salePrice&gt;269.99&lt;/salePrice&gt;
-      &lt;onSale&gt;true&lt;/onSale&gt;
+      &lt;salePrice&gt;299.99&lt;/salePrice&gt;
+      &lt;onSale&gt;false&lt;/onSale&gt;
       &lt;planPrice/&gt;
       &lt;priceWithPlan/&gt;
       &lt;priceRestriction/&gt;
-      &lt;priceUpdateDate&gt;2016-07-03T01:15:58&lt;/priceUpdateDate&gt;
+      &lt;priceUpdateDate&gt;2016-08-14T00:24:19&lt;/priceUpdateDate&gt;
       &lt;digital&gt;false&lt;/digital&gt;
       &lt;preowned&gt;false&lt;/preowned&gt;
       &lt;carrierPlans/&gt;
@@ -1210,13 +1216,13 @@
       &lt;techSupportPlans/&gt;
       &lt;salesRankShortTerm/&gt;
       &lt;salesRankMediumTerm/&gt;
-      &lt;salesRankLongTerm/&gt;
+      &lt;salesRankLongTerm&gt;51345&lt;/salesRankLongTerm&gt;
       &lt;bestSellingRank/&gt;
-      &lt;url&gt;https://api.bestbuy.com/click/556fdca074800000/4226604/pdp&lt;/url&gt;
+      &lt;url&gt;https://api.bestbuy.com/click/-/4226604/pdp&lt;/url&gt;
       &lt;spin360Url/&gt;
-      &lt;mobileUrl&gt;https://api.bestbuy.com/click/556fdca074800000/4226604/pdp&lt;/mobileUrl&gt;
+      &lt;mobileUrl&gt;https://api.bestbuy.com/click/-/4226604/pdp&lt;/mobileUrl&gt;
       &lt;affiliateUrl/&gt;
-      &lt;addToCartUrl&gt;https://api.bestbuy.com/click/556fdca074800000/4226604/cart&lt;/addToCartUrl&gt;
+      &lt;addToCartUrl&gt;https://api.bestbuy.com/click/-/4226604/cart&lt;/addToCartUrl&gt;
       &lt;affiliateAddToCartUrl/&gt;
       &lt;linkShareAffiliateUrl/&gt;
       &lt;linkShareAffiliateAddToCartUrl/&gt;
@@ -1241,23 +1247,23 @@
          &lt;/category&gt;
       &lt;/categoryPath&gt;
       &lt;lists/&gt;
-      &lt;customerReviewCount&gt;1&lt;/customerReviewCount&gt;
+      &lt;customerReviewCount&gt;2&lt;/customerReviewCount&gt;
       &lt;customerReviewAverage&gt;5.0&lt;/customerReviewAverage&gt;
       &lt;customerTopRated&gt;false&lt;/customerTopRated&gt;
       &lt;format/&gt;
-      &lt;freeShipping&gt;true&lt;/freeShipping&gt;
-      &lt;freeShippingEligible&gt;true&lt;/freeShippingEligible&gt;
+      &lt;freeShipping&gt;false&lt;/freeShipping&gt;
+      &lt;freeShippingEligible&gt;false&lt;/freeShippingEligible&gt;
       &lt;inStoreAvailability&gt;false&lt;/inStoreAvailability&gt;
       &lt;inStoreAvailabilityText&gt;Store Pickup: Not Available&lt;/inStoreAvailabilityText&gt;
-      &lt;inStoreAvailabilityUpdateDate&gt;2016-06-09T15:40:06&lt;/inStoreAvailabilityUpdateDate&gt;
-      &lt;itemUpdateDate&gt;2016-07-03T01:15:58&lt;/itemUpdateDate&gt;
+      &lt;inStoreAvailabilityUpdateDate&gt;2016-07-05T04:10:01&lt;/inStoreAvailabilityUpdateDate&gt;
+      &lt;itemUpdateDate&gt;2016-08-23T12:50:36&lt;/itemUpdateDate&gt;
       &lt;onlineAvailability&gt;true&lt;/onlineAvailability&gt;
       &lt;onlineAvailabilityText&gt;Shipping: Usually ships in 2 business days&lt;/onlineAvailabilityText&gt;
-      &lt;onlineAvailabilityUpdateDate&gt;2016-06-20T17:45:10&lt;/onlineAvailabilityUpdateDate&gt;
+      &lt;onlineAvailabilityUpdateDate&gt;2016-07-05T04:10:01&lt;/onlineAvailabilityUpdateDate&gt;
       &lt;releaseDate/&gt;
-      &lt;shippingCost&gt;0.00&lt;/shippingCost&gt;
+      &lt;shippingCost&gt;89.99&lt;/shippingCost&gt;
       &lt;shipping&gt;
-         &lt;ground&gt;0.00&lt;/ground&gt;
+         &lt;ground&gt;89.99&lt;/ground&gt;
          &lt;secondDay/&gt;
          &lt;nextDay/&gt;
          &lt;vendorDelivery/&gt;
@@ -1266,7 +1272,7 @@
          &lt;shippingLevelOfService&gt;
             &lt;serviceLevelId&gt;9&lt;/serviceLevelId&gt;
             &lt;serviceLevelName&gt;Standard&lt;/serviceLevelName&gt;
-            &lt;unitShippingPrice&gt;0.00&lt;/unitShippingPrice&gt;
+            &lt;unitShippingPrice&gt;89.99&lt;/unitShippingPrice&gt;
          &lt;/shippingLevelOfService&gt;
       &lt;/shippingLevelsOfService&gt;
       &lt;specialOrder&gt;true&lt;/specialOrder&gt;
@@ -1306,8 +1312,8 @@
       &lt;bundledIn/&gt;
       &lt;color&gt;White&lt;/color&gt;
       &lt;depth&gt;22.2"&lt;/depth&gt;
-      &lt;dollarSavings&gt;30.00&lt;/dollarSavings&gt;
-      &lt;percentSavings&gt;10.0&lt;/percentSavings&gt;
+      &lt;dollarSavings&gt;0.00&lt;/dollarSavings&gt;
+      &lt;percentSavings&gt;0.0&lt;/percentSavings&gt;
       &lt;tradeInValue/&gt;
       &lt;height&gt;33.07"&lt;/height&gt;
       &lt;orderable&gt;SpecialOrder&lt;/orderable&gt;
@@ -1346,14 +1352,14 @@
       &lt;new&gt;false&lt;/new&gt;
       &lt;active&gt;true&lt;/active&gt;
       &lt;lowPriceGuarantee&gt;true&lt;/lowPriceGuarantee&gt;
-      &lt;activeUpdateDate&gt;2016-06-09T17:02:29&lt;/activeUpdateDate&gt;
+      &lt;activeUpdateDate&gt;2016-07-05T06:33:17&lt;/activeUpdateDate&gt;
       &lt;regularPrice&gt;329.99&lt;/regularPrice&gt;
-      &lt;salePrice&gt;296.99&lt;/salePrice&gt;
-      &lt;onSale&gt;true&lt;/onSale&gt;
+      &lt;salePrice&gt;329.99&lt;/salePrice&gt;
+      &lt;onSale&gt;false&lt;/onSale&gt;
       &lt;planPrice/&gt;
       &lt;priceWithPlan/&gt;
       &lt;priceRestriction/&gt;
-      &lt;priceUpdateDate&gt;2016-07-03T01:29:35&lt;/priceUpdateDate&gt;
+      &lt;priceUpdateDate&gt;2016-08-10T04:53:31&lt;/priceUpdateDate&gt;
       &lt;digital&gt;false&lt;/digital&gt;
       &lt;preowned&gt;false&lt;/preowned&gt;
       &lt;carrierPlans/&gt;
@@ -1386,15 +1392,15 @@
          &lt;sku&gt;8389389&lt;/sku&gt;
       &lt;/relatedProducts&gt;
       &lt;techSupportPlans/&gt;
-      &lt;salesRankShortTerm&gt;31899&lt;/salesRankShortTerm&gt;
-      &lt;salesRankMediumTerm&gt;47539&lt;/salesRankMediumTerm&gt;
-      &lt;salesRankLongTerm&gt;119938&lt;/salesRankLongTerm&gt;
-      &lt;bestSellingRank&gt;31923&lt;/bestSellingRank&gt;
-      &lt;url&gt;https://api.bestbuy.com/click/556fdca074800000/4226600/pdp&lt;/url&gt;
+      &lt;salesRankShortTerm/&gt;
+      &lt;salesRankMediumTerm/&gt;
+      &lt;salesRankLongTerm/&gt;
+      &lt;bestSellingRank/&gt;
+      &lt;url&gt;https://api.bestbuy.com/click/-/4226600/pdp&lt;/url&gt;
       &lt;spin360Url/&gt;
-      &lt;mobileUrl&gt;https://api.bestbuy.com/click/556fdca074800000/4226600/pdp&lt;/mobileUrl&gt;
+      &lt;mobileUrl&gt;https://api.bestbuy.com/click/-/4226600/pdp&lt;/mobileUrl&gt;
       &lt;affiliateUrl/&gt;
-      &lt;addToCartUrl&gt;https://api.bestbuy.com/click/556fdca074800000/4226600/cart&lt;/addToCartUrl&gt;
+      &lt;addToCartUrl&gt;https://api.bestbuy.com/click/-/4226600/cart&lt;/addToCartUrl&gt;
       &lt;affiliateAddToCartUrl/&gt;
       &lt;linkShareAffiliateUrl/&gt;
       &lt;linkShareAffiliateAddToCartUrl/&gt;
@@ -1423,19 +1429,19 @@
       &lt;customerReviewAverage/&gt;
       &lt;customerTopRated&gt;false&lt;/customerTopRated&gt;
       &lt;format/&gt;
-      &lt;freeShipping&gt;true&lt;/freeShipping&gt;
-      &lt;freeShippingEligible&gt;true&lt;/freeShippingEligible&gt;
+      &lt;freeShipping&gt;false&lt;/freeShipping&gt;
+      &lt;freeShippingEligible&gt;false&lt;/freeShippingEligible&gt;
       &lt;inStoreAvailability&gt;false&lt;/inStoreAvailability&gt;
       &lt;inStoreAvailabilityText&gt;Store Pickup: Not Available&lt;/inStoreAvailabilityText&gt;
-      &lt;inStoreAvailabilityUpdateDate&gt;2016-06-09T17:02:29&lt;/inStoreAvailabilityUpdateDate&gt;
-      &lt;itemUpdateDate&gt;2016-07-05T09:37:04&lt;/itemUpdateDate&gt;
+      &lt;inStoreAvailabilityUpdateDate&gt;2016-07-05T06:33:17&lt;/inStoreAvailabilityUpdateDate&gt;
+      &lt;itemUpdateDate&gt;2016-08-10T04:53:31&lt;/itemUpdateDate&gt;
       &lt;onlineAvailability&gt;true&lt;/onlineAvailability&gt;
       &lt;onlineAvailabilityText&gt;Shipping: Usually ships in 2 business days&lt;/onlineAvailabilityText&gt;
-      &lt;onlineAvailabilityUpdateDate&gt;2016-06-09T17:02:29&lt;/onlineAvailabilityUpdateDate&gt;
+      &lt;onlineAvailabilityUpdateDate&gt;2016-07-05T06:33:17&lt;/onlineAvailabilityUpdateDate&gt;
       &lt;releaseDate/&gt;
-      &lt;shippingCost&gt;0.00&lt;/shippingCost&gt;
+      &lt;shippingCost&gt;89.99&lt;/shippingCost&gt;
       &lt;shipping&gt;
-         &lt;ground&gt;0.00&lt;/ground&gt;
+         &lt;ground&gt;89.99&lt;/ground&gt;
          &lt;secondDay/&gt;
          &lt;nextDay/&gt;
          &lt;vendorDelivery/&gt;
@@ -1444,7 +1450,7 @@
          &lt;shippingLevelOfService&gt;
             &lt;serviceLevelId&gt;9&lt;/serviceLevelId&gt;
             &lt;serviceLevelName&gt;Standard&lt;/serviceLevelName&gt;
-            &lt;unitShippingPrice&gt;0.00&lt;/unitShippingPrice&gt;
+            &lt;unitShippingPrice&gt;89.99&lt;/unitShippingPrice&gt;
          &lt;/shippingLevelOfService&gt;
       &lt;/shippingLevelsOfService&gt;
       &lt;specialOrder&gt;true&lt;/specialOrder&gt;
@@ -1484,8 +1490,8 @@
       &lt;bundledIn/&gt;
       &lt;color&gt;White&lt;/color&gt;
       &lt;depth&gt;25.35"&lt;/depth&gt;
-      &lt;dollarSavings&gt;33.00&lt;/dollarSavings&gt;
-      &lt;percentSavings&gt;10.0&lt;/percentSavings&gt;
+      &lt;dollarSavings&gt;0.00&lt;/dollarSavings&gt;
+      &lt;percentSavings&gt;0.0&lt;/percentSavings&gt;
       &lt;tradeInValue/&gt;
       &lt;height&gt;33.07"&lt;/height&gt;
       &lt;orderable&gt;SpecialOrder&lt;/orderable&gt;
@@ -1524,14 +1530,14 @@
       &lt;new&gt;false&lt;/new&gt;
       &lt;active&gt;true&lt;/active&gt;
       &lt;lowPriceGuarantee&gt;true&lt;/lowPriceGuarantee&gt;
-      &lt;activeUpdateDate&gt;2016-06-09T14:22:52&lt;/activeUpdateDate&gt;
+      &lt;activeUpdateDate&gt;2016-07-05T02:44:34&lt;/activeUpdateDate&gt;
       &lt;regularPrice&gt;349.99&lt;/regularPrice&gt;
-      &lt;salePrice&gt;314.99&lt;/salePrice&gt;
-      &lt;onSale&gt;true&lt;/onSale&gt;
+      &lt;salePrice&gt;349.99&lt;/salePrice&gt;
+      &lt;onSale&gt;false&lt;/onSale&gt;
       &lt;planPrice/&gt;
       &lt;priceWithPlan/&gt;
       &lt;priceRestriction/&gt;
-      &lt;priceUpdateDate&gt;2016-07-03T01:17:34&lt;/priceUpdateDate&gt;
+      &lt;priceUpdateDate&gt;2016-08-10T04:36:36&lt;/priceUpdateDate&gt;
       &lt;digital&gt;false&lt;/digital&gt;
       &lt;preowned&gt;false&lt;/preowned&gt;
       &lt;carrierPlans/&gt;
@@ -1564,15 +1570,15 @@
          &lt;sku&gt;8869252&lt;/sku&gt;
       &lt;/relatedProducts&gt;
       &lt;techSupportPlans/&gt;
-      &lt;salesRankShortTerm&gt;83756&lt;/salesRankShortTerm&gt;
-      &lt;salesRankMediumTerm&gt;104450&lt;/salesRankMediumTerm&gt;
-      &lt;salesRankLongTerm&gt;294772&lt;/salesRankLongTerm&gt;
-      &lt;bestSellingRank&gt;83785&lt;/bestSellingRank&gt;
-      &lt;url&gt;https://api.bestbuy.com/click/556fdca074800000/4226606/pdp&lt;/url&gt;
+      &lt;salesRankShortTerm/&gt;
+      &lt;salesRankMediumTerm/&gt;
+      &lt;salesRankLongTerm&gt;99380&lt;/salesRankLongTerm&gt;
+      &lt;bestSellingRank/&gt;
+      &lt;url&gt;https://api.bestbuy.com/click/-/4226606/pdp&lt;/url&gt;
       &lt;spin360Url/&gt;
-      &lt;mobileUrl&gt;https://api.bestbuy.com/click/556fdca074800000/4226606/pdp&lt;/mobileUrl&gt;
+      &lt;mobileUrl&gt;https://api.bestbuy.com/click/-/4226606/pdp&lt;/mobileUrl&gt;
       &lt;affiliateUrl/&gt;
-      &lt;addToCartUrl&gt;https://api.bestbuy.com/click/556fdca074800000/4226606/cart&lt;/addToCartUrl&gt;
+      &lt;addToCartUrl&gt;https://api.bestbuy.com/click/-/4226606/cart&lt;/addToCartUrl&gt;
       &lt;affiliateAddToCartUrl/&gt;
       &lt;linkShareAffiliateUrl/&gt;
       &lt;linkShareAffiliateAddToCartUrl/&gt;
@@ -1601,19 +1607,19 @@
       &lt;customerReviewAverage&gt;3.0&lt;/customerReviewAverage&gt;
       &lt;customerTopRated&gt;false&lt;/customerTopRated&gt;
       &lt;format/&gt;
-      &lt;freeShipping&gt;true&lt;/freeShipping&gt;
-      &lt;freeShippingEligible&gt;true&lt;/freeShippingEligible&gt;
+      &lt;freeShipping&gt;false&lt;/freeShipping&gt;
+      &lt;freeShippingEligible&gt;false&lt;/freeShippingEligible&gt;
       &lt;inStoreAvailability&gt;false&lt;/inStoreAvailability&gt;
       &lt;inStoreAvailabilityText&gt;Store Pickup: Not Available&lt;/inStoreAvailabilityText&gt;
-      &lt;inStoreAvailabilityUpdateDate&gt;2016-06-09T14:22:52&lt;/inStoreAvailabilityUpdateDate&gt;
-      &lt;itemUpdateDate&gt;2016-07-05T09:36:40&lt;/itemUpdateDate&gt;
+      &lt;inStoreAvailabilityUpdateDate&gt;2016-07-05T02:44:34&lt;/inStoreAvailabilityUpdateDate&gt;
+      &lt;itemUpdateDate&gt;2016-08-23T12:20:27&lt;/itemUpdateDate&gt;
       &lt;onlineAvailability&gt;true&lt;/onlineAvailability&gt;
       &lt;onlineAvailabilityText&gt;Shipping: Usually ships in 2 business days&lt;/onlineAvailabilityText&gt;
-      &lt;onlineAvailabilityUpdateDate&gt;2016-06-09T14:22:52&lt;/onlineAvailabilityUpdateDate&gt;
+      &lt;onlineAvailabilityUpdateDate&gt;2016-07-05T02:44:34&lt;/onlineAvailabilityUpdateDate&gt;
       &lt;releaseDate/&gt;
-      &lt;shippingCost&gt;0.00&lt;/shippingCost&gt;
+      &lt;shippingCost&gt;89.99&lt;/shippingCost&gt;
       &lt;shipping&gt;
-         &lt;ground&gt;0.00&lt;/ground&gt;
+         &lt;ground&gt;89.99&lt;/ground&gt;
          &lt;secondDay/&gt;
          &lt;nextDay/&gt;
          &lt;vendorDelivery/&gt;
@@ -1622,7 +1628,7 @@
          &lt;shippingLevelOfService&gt;
             &lt;serviceLevelId&gt;9&lt;/serviceLevelId&gt;
             &lt;serviceLevelName&gt;Standard&lt;/serviceLevelName&gt;
-            &lt;unitShippingPrice&gt;0.00&lt;/unitShippingPrice&gt;
+            &lt;unitShippingPrice&gt;89.99&lt;/unitShippingPrice&gt;
          &lt;/shippingLevelOfService&gt;
       &lt;/shippingLevelsOfService&gt;
       &lt;specialOrder&gt;true&lt;/specialOrder&gt;
@@ -1662,8 +1668,8 @@
       &lt;bundledIn/&gt;
       &lt;color&gt;White&lt;/color&gt;
       &lt;depth&gt;27.01"&lt;/depth&gt;
-      &lt;dollarSavings&gt;35.00&lt;/dollarSavings&gt;
-      &lt;percentSavings&gt;10.0&lt;/percentSavings&gt;
+      &lt;dollarSavings&gt;0.00&lt;/dollarSavings&gt;
+      &lt;percentSavings&gt;0.0&lt;/percentSavings&gt;
       &lt;tradeInValue/&gt;
       &lt;height&gt;33.07"&lt;/height&gt;
       &lt;orderable&gt;SpecialOrder&lt;/orderable&gt;
@@ -1696,9 +1702,9 @@
 </outtemplate>
         <outTemplateHeader>Server: thin 1.6.1 codename Death Proof
 Connection: keep-alive
-X-Mashery-Responder: prod-j-worker-us-east-1e-114.mashery.com
-Content-Length: 62605
-Date: Wed, 06 Jul 2016 09:00:36 GMT
+X-Mashery-Responder: prod-j-worker-us-east-1d-107.mashery.com
+Content-Length: 62459
+Date: Wed, 24 Aug 2016 05:47:05 GMT
 Content-Type: text/xml; charset=UTF-8
 </outTemplateHeader>
         <outparam>
@@ -2003,6 +2009,28 @@ Content-Type: text/xml; charset=UTF-8
             <recordid></recordid>
             <smsname></smsname>
             <source>product/freeShipping</source>
+            <srcformatvalue></srcformatvalue>
+            <target>response</target>
+            <targetdatatype></targetdatatype>
+            <testvalue></testvalue>
+            <value>productsDataSet</value>
+        </outparam>
+        <outparam>
+            <category></category>
+            <datatype>string</datatype>
+            <defaultvalue></defaultvalue>
+            <description></description>
+            <encode>true</encode>
+            <format>None</format>
+            <formatvalue></formatvalue>
+            <id>customerReviewAverage</id>
+            <invalue></invalue>
+            <name></name>
+            <order></order>
+            <passNull>false</passNull>
+            <recordid></recordid>
+            <smsname></smsname>
+            <source>product/customerReviewAverage</source>
             <srcformatvalue></srcformatvalue>
             <target>response</target>
             <targetdatatype></targetdatatype>

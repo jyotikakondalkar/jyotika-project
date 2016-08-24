@@ -1,25 +1,48 @@
 //Form JS File
 function frmHome_frmHome_init_seq0(eventobject) {
+    kony.print("frm Home init called=> ");
     counter = 1;
+    gblBreadCrumbs = [];
+    gblSelectedValue = "Home";
     getCategories.call(this, firstLevelCatId);
 };
 
 function frmHome_frmHome_preshow_seq0(eventobject) {
-    hideBackButton.call(this, frmHome);
+    /* 
+hideBackButton.call(this,frmHome);
+
+ */
 };
 
 function frmHome_flxSideHome_onTouchStart_seq0(eventobject, x, y) {
     counter = 1;
+    gblCategories = [];
+    gblBreadCrumbs = [];
     getCategories.call(this, firstLevelCatId);
     animSlideHomeMenuLeft.call(this, frmHome);
 };
 
 function frmHome_segProductList_onRowClick_seq0(eventobject, sectionNumber, rowNumber) {
+    gblSelectedValue = frmHome.segProductList.selectedItems[0]["lblProdName"];
+    kony.print("gblSelectedValue=> " + gblSelectedValue);
+    kony.print("init b=> " + gblBreadCrumbs);
     onCategoriesSegClick.call(this, frmHome.segProductList.selectedItems[0]["lblProdId"]);
 };
 
 function frmHome_btnHamburg_onClick_seq0(eventobject) {
     showHideSideMenu.call(this, frmHome);
+};
+
+function frmHome_btnBack_onClick_seq0(eventobject) {
+    onBackButtonClick.call(this);
+};
+
+function frmHome_btnSarch_onClick_seq0(eventobject) {
+    searchRotateAnimation.call(this);
+};
+
+function frmHome_btnCancel_onClick_seq0(eventobject) {
+    onClickSearchCancel.call(this);
 };
 
 function addWidgetsfrmHome() {
@@ -306,10 +329,11 @@ function addWidgetsfrmHome() {
         "width": "10%",
         "height": "60%",
         "zIndex": 1,
-        "isVisible": true,
+        "isVisible": false,
         "text": null,
         "skin": "sknBtnBack",
-        "focusSkin": "sknHomeBackFocus"
+        "focusSkin": "sknHomeBackFocus",
+        "onClick": frmHome_btnBack_onClick_seq0
     }, {
         "padding": [0, 0, 0, 0],
         "contentAlignment": constants.CONTENT_ALIGN_CENTER,
@@ -329,7 +353,8 @@ function addWidgetsfrmHome() {
         "isVisible": true,
         "text": null,
         "skin": "sknBtnSearch",
-        "focusSkin": "sknHomeSrchFocus"
+        "focusSkin": "sknHomeSrchFocus",
+        "onClick": frmHome_btnSarch_onClick_seq0
     }, {
         "padding": [0, 0, 0, 0],
         "contentAlignment": constants.CONTENT_ALIGN_CENTER,
@@ -399,16 +424,6 @@ function addWidgetsfrmHome() {
             "lblProdName": "lblProdName",
             "lblProdId": "lblProdId"
         },
-        "data": [{
-            "lblProdName": "Product Name 1 Product Name 1 Product Name 1 Product Name 1 Product Name 1 Product Name 1",
-            "lblProdId": "1"
-        }, {
-            "lblProdName": "Product Name 1",
-            "lblProdId": "2"
-        }, {
-            "lblProdName": "Product Name 1",
-            "lblProdId": "3"
-        }],
         "Location": "[9,7]",
         "rowTemplate": segProductListbox,
         "rowSkin": "seg2Normal",
@@ -516,7 +531,8 @@ function addWidgetsfrmHome() {
         "isVisible": true,
         "text": "Cancel",
         "skin": "sknSearchBtn",
-        "focusSkin": "CopyslButtonGlossRed0469369ca6aee4d"
+        "focusSkin": "CopyslButtonGlossRed0469369ca6aee4d",
+        "onClick": frmHome_btnCancel_onClick_seq0
     }, {
         "padding": [0, 0, 0, 0],
         "contentAlignment": constants.CONTENT_ALIGN_CENTER,
@@ -582,14 +598,14 @@ function addWidgetsfrmHome() {
         "id": "flxFilterContainer",
         "top": "0%",
         "left": "0dp",
-        "width": "100%",
-        "height": "35%",
+        "width": "2%",
+        "height": "2.0%",
         "centerX": "50%",
         "centerY": "50%",
         "zIndex": 1,
         "isVisible": false,
         "clipBounds": true,
-        "Location": "[0,147]",
+        "Location": "[221,221]",
         "skin": "sknSearchContain",
         "layoutType": kony.flex.FREE_FORM
     }, {

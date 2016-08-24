@@ -639,7 +639,7 @@
         <preShow_root>
             <evtSequence>
                 <actionList xsi:type="eventFunctionAction">
-                    <enabled>true</enabled>
+                    <enabled>false</enabled>
                     <name></name>
                     <type>6</type>
                     <functionName>None</functionName>
@@ -716,8 +716,10 @@
                     <exprMap>
                         <entry>
                             <key>js</key>
-                            <value>counter=1;
-gblBreadCrumbs.push("Home");</value>
+                            <value>kony.print("frm Home init called=&gt; ");
+counter=1;
+gblBreadCrumbs=[];
+gblSelectedValue="Home";</value>
                         </entry>
                     </exprMap>
                 </actionList>
@@ -3718,7 +3720,9 @@ gblBreadCrumbs.push("Home");</value>
                             <exprMap>
                                 <entry>
                                     <key>js</key>
-                                    <value>counter=1;</value>
+                                    <value>counter=1;
+gblCategories = [];
+gblBreadCrumbs=[];</value>
                                 </entry>
                             </exprMap>
                         </actionList>
@@ -3821,7 +3825,7 @@ gblBreadCrumbs.push("Home");</value>
                                             <datatype>string</datatype>
                                             <paramName>frmObj</paramName>
                                             <valType>0</valType>
-                                            <value>frmHome</value>
+                                            <value></value>
                                             <valueMap>
                                                 <entry>
                                                     <key>js</key>
@@ -13900,7 +13904,7 @@ gblBreadCrumbs.push("Home");</value>
                     <skinId>sknBtnBack</skinId>
                     <focusSkinId>sknHomeBackFocus</focusSkinId>
                     <localeId>None</localeId>
-                    <visible>true</visible>
+                    <visible>false</visible>
                     <rendererData>
                         <desktop_kiosk_channel>true</desktop_kiosk_channel>
                         <desktop_web_channel>true</desktop_web_channel>
@@ -14486,6 +14490,50 @@ gblBreadCrumbs.push("Home");</value>
                     </overridePerferred>
                     <contentAlign>4</contentAlign>
                     <parent_contentalignment>middle-center</parent_contentalignment>
+                    <event_onClick>
+                        <evtSequence>
+                            <actionList xsi:type="eventExpressionAction">
+                                <enabled>true</enabled>
+                                <name></name>
+                                <type>5</type>
+                                <expr></expr>
+                                <exprMap>
+                                    <entry>
+                                        <key>js</key>
+                                        <value>gblBackFrom="";</value>
+                                    </entry>
+                                </exprMap>
+                            </actionList>
+                            <actionList xsi:type="eventFunctionAction">
+                                <enabled>true</enabled>
+                                <name></name>
+                                <type>6</type>
+                                <functionName>None</functionName>
+                                <functionNameMap>
+                                    <entry>
+                                        <key>lua</key>
+                                        <value>None</value>
+                                    </entry>
+                                    <entry>
+                                        <key>js</key>
+                                        <value>onBackButtonClick</value>
+                                    </entry>
+                                </functionNameMap>
+                                <paramDataMap>
+                                    <entry>
+                                        <key>js</key>
+                                        <value/>
+                                    </entry>
+                                    <entry>
+                                        <key>lua</key>
+                                        <value/>
+                                    </entry>
+                                </paramDataMap>
+                            </actionList>
+                            <enabled>true</enabled>
+                            <seqname></seqname>
+                        </evtSequence>
+                    </event_onClick>
                     <parallel_exec>false</parallel_exec>
                     <iphone_glow_effect>false</iphone_glow_effect>
                     <iphone_3d_look>true</iphone_3d_look>
@@ -15342,6 +15390,30 @@ gblBreadCrumbs.push("Home");</value>
                     </overridePerferred>
                     <contentAlign>4</contentAlign>
                     <parent_contentalignment>middle-center</parent_contentalignment>
+                    <event_onClick>
+                        <evtSequence>
+                            <actionList xsi:type="eventFunctionAction">
+                                <enabled>true</enabled>
+                                <name></name>
+                                <type>6</type>
+                                <functionName>None</functionName>
+                                <functionNameMap>
+                                    <entry>
+                                        <key>js</key>
+                                        <value>searchRotateAnimation</value>
+                                    </entry>
+                                </functionNameMap>
+                                <paramDataMap>
+                                    <entry>
+                                        <key>js</key>
+                                        <value/>
+                                    </entry>
+                                </paramDataMap>
+                            </actionList>
+                            <enabled>true</enabled>
+                            <seqname></seqname>
+                        </evtSequence>
+                    </event_onClick>
                     <parallel_exec>false</parallel_exec>
                     <iphone_glow_effect>false</iphone_glow_effect>
                     <iphone_3d_look>true</iphone_3d_look>
@@ -19573,7 +19645,7 @@ gblBreadCrumbs.push("Home");</value>
                             <data xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema">None</data>
                         </newSegData>
                         <tablerowData/>
-                        <dummydata>false</dummydata>
+                        <dummydata>true</dummydata>
                         <updatedToNewSegmentData>true</updatedToNewSegmentData>
                         <updatedToNewTableRowData>true</updatedToNewTableRowData>
                         <updatedToNewImageData>true</updatedToNewImageData>
@@ -19642,6 +19714,20 @@ gblBreadCrumbs.push("Home");</value>
                     <layout_alignment>0</layout_alignment>
                     <onRowSelect>
                         <evtSequence>
+                            <actionList xsi:type="eventExpressionAction">
+                                <enabled>true</enabled>
+                                <name></name>
+                                <type>5</type>
+                                <expr></expr>
+                                <exprMap>
+                                    <entry>
+                                        <key>js</key>
+                                        <value>gblSelectedValue = frmHome.segProductList.selectedItems[0]["lblProdName"];
+kony.print("gblSelectedValue=&gt; "+gblSelectedValue);
+kony.print("init b=&gt; "+gblBreadCrumbs);</value>
+                                    </entry>
+                                </exprMap>
+                            </actionList>
                             <actionList xsi:type="eventFunctionAction">
                                 <enabled>true</enabled>
                                 <name></name>
@@ -19665,7 +19751,7 @@ gblBreadCrumbs.push("Home");</value>
                                                 <datatype>string</datatype>
                                                 <paramName>catId</paramName>
                                                 <valType>0</valType>
-                                                <value>frmHome.segProductList.selectedItems[0]["lblProdId"]</value>
+                                                <value></value>
                                                 <valueMap>
                                                     <entry>
                                                         <key>js</key>
@@ -20545,8 +20631,8 @@ gblBreadCrumbs.push("Home");</value>
                         <maxWidth></maxWidth>
                         <minHeight></minHeight>
                         <minWidth></minWidth>
-                        <preferredHeight>31</preferredHeight>
-                        <preferredWidth>270</preferredWidth>
+                        <preferredHeight>1</preferredHeight>
+                        <preferredWidth>5</preferredWidth>
                         <propertyVsUnit>
                             <entry>
                                 <key>Top</key>
@@ -20630,19 +20716,19 @@ gblBreadCrumbs.push("Home");</value>
                         <rowWidth>100</rowWidth>
                         <top>2</top>
                         <width>60</width>
-                        <xlocation>9</xlocation>
-                        <ylocation>3</ylocation>
+                        <xlocation>0</xlocation>
+                        <ylocation>0</ylocation>
                         <zOrder>1</zOrder>
                     </flexConstraints>
                     <widgetID>e06209371221407a9ac9e041f2c41f42</widgetID>
                     <createdGAVersion>6.5.0</createdGAVersion>
                     <location>
-                        <x>9</x>
-                        <y>3</y>
+                        <x>0</x>
+                        <y>0</y>
                     </location>
                     <size>
-                        <width>270</width>
-                        <height>31</height>
+                        <width>5</width>
+                        <height>1</height>
                     </size>
                     <sizePercent>
                         <width>100</width>
@@ -21511,8 +21597,8 @@ gblBreadCrumbs.push("Home");</value>
                         <maxWidth></maxWidth>
                         <minHeight></minHeight>
                         <minWidth></minWidth>
-                        <preferredHeight>31</preferredHeight>
-                        <preferredWidth>99</preferredWidth>
+                        <preferredHeight>1</preferredHeight>
+                        <preferredWidth>1</preferredWidth>
                         <propertyVsUnit>
                             <entry>
                                 <key>Top</key>
@@ -21596,19 +21682,19 @@ gblBreadCrumbs.push("Home");</value>
                         <rowWidth>100</rowWidth>
                         <top>2</top>
                         <width>22</width>
-                        <xlocation>342</xlocation>
-                        <ylocation>3</ylocation>
+                        <xlocation>6</xlocation>
+                        <ylocation>0</ylocation>
                         <zOrder>1</zOrder>
                     </flexConstraints>
                     <widgetID>3cb12c7b55b745b49b373e29ac37e0d4</widgetID>
                     <createdGAVersion>6.5.0</createdGAVersion>
                     <location>
-                        <x>342</x>
-                        <y>3</y>
+                        <x>6</x>
+                        <y>0</y>
                     </location>
                     <size>
-                        <width>99</width>
-                        <height>31</height>
+                        <width>1</width>
+                        <height>1</height>
                     </size>
                     <sizePercent>
                         <width>100</width>
@@ -22203,6 +22289,30 @@ gblBreadCrumbs.push("Home");</value>
                     </overridePerferred>
                     <contentAlign>4</contentAlign>
                     <parent_contentalignment>middle-center</parent_contentalignment>
+                    <event_onClick>
+                        <evtSequence>
+                            <actionList xsi:type="eventFunctionAction">
+                                <enabled>true</enabled>
+                                <name></name>
+                                <type>6</type>
+                                <functionName>None</functionName>
+                                <functionNameMap>
+                                    <entry>
+                                        <key>js</key>
+                                        <value>onClickSearchCancel</value>
+                                    </entry>
+                                </functionNameMap>
+                                <paramDataMap>
+                                    <entry>
+                                        <key>js</key>
+                                        <value/>
+                                    </entry>
+                                </paramDataMap>
+                            </actionList>
+                            <enabled>true</enabled>
+                            <seqname></seqname>
+                        </evtSequence>
+                    </event_onClick>
                     <parallel_exec>false</parallel_exec>
                     <iphone_glow_effect>false</iphone_glow_effect>
                     <iphone_3d_look>true</iphone_3d_look>
@@ -22368,7 +22478,7 @@ gblBreadCrumbs.push("Home");</value>
                         <minHeight></minHeight>
                         <minWidth></minWidth>
                         <preferredHeight>26</preferredHeight>
-                        <preferredWidth>225</preferredWidth>
+                        <preferredWidth>4</preferredWidth>
                         <propertyVsUnit>
                             <entry>
                                 <key>Top</key>
@@ -22452,18 +22562,18 @@ gblBreadCrumbs.push("Home");</value>
                         <rowWidth>100</rowWidth>
                         <top>30</top>
                         <width>50</width>
-                        <xlocation>9</xlocation>
-                        <ylocation>47</ylocation>
+                        <xlocation>0</xlocation>
+                        <ylocation>2</ylocation>
                         <zOrder>1</zOrder>
                     </flexConstraints>
                     <widgetID>3ff1726e69e04e5cbed181a58ae1ea18</widgetID>
                     <createdGAVersion>6.5.0</createdGAVersion>
                     <location>
-                        <x>9</x>
-                        <y>47</y>
+                        <x>0</x>
+                        <y>2</y>
                     </location>
                     <size>
-                        <width>225</width>
+                        <width>4</width>
                         <height>26</height>
                     </size>
                     <sizePercent>
@@ -23193,8 +23303,8 @@ gblBreadCrumbs.push("Home");</value>
                         <maxWidth></maxWidth>
                         <minHeight></minHeight>
                         <minWidth></minWidth>
-                        <preferredHeight>31</preferredHeight>
-                        <preferredWidth>432</preferredWidth>
+                        <preferredHeight>1</preferredHeight>
+                        <preferredWidth>8</preferredWidth>
                         <propertyVsUnit>
                             <entry>
                                 <key>Top</key>
@@ -23278,19 +23388,19 @@ gblBreadCrumbs.push("Home");</value>
                         <rowWidth>100</rowWidth>
                         <top>45</top>
                         <width>96</width>
-                        <xlocation>9</xlocation>
-                        <ylocation>70</ylocation>
+                        <xlocation>0</xlocation>
+                        <ylocation>4</ylocation>
                         <zOrder>1</zOrder>
                     </flexConstraints>
                     <widgetID>572b2e51ea48449e88cac327e8c80bd9</widgetID>
                     <createdGAVersion>6.5.0</createdGAVersion>
                     <location>
-                        <x>9</x>
-                        <y>70</y>
+                        <x>0</x>
+                        <y>4</y>
                     </location>
                     <size>
-                        <width>432</width>
-                        <height>31</height>
+                        <width>8</width>
+                        <height>1</height>
                     </size>
                     <sizePercent>
                         <width>100</width>
@@ -24223,14 +24333,14 @@ gblBreadCrumbs.push("Home");</value>
                     <contentOffsetY></contentOffsetY>
                     <contentSizeHeight></contentSizeHeight>
                     <contentSizeWidth></contentSizeWidth>
-                    <height>35</height>
+                    <height>2.0</height>
                     <left>0</left>
                     <maxHeight></maxHeight>
                     <maxWidth></maxWidth>
                     <minHeight></minHeight>
                     <minWidth></minWidth>
-                    <preferredHeight>157</preferredHeight>
-                    <preferredWidth>450</preferredWidth>
+                    <preferredHeight>9</preferredHeight>
+                    <preferredWidth>9</preferredWidth>
                     <propertyVsUnit>
                         <entry>
                             <key>Top</key>
@@ -24313,9 +24423,9 @@ gblBreadCrumbs.push("Home");</value>
                     <rowHeight>40</rowHeight>
                     <rowWidth>100</rowWidth>
                     <top>0</top>
-                    <width>100</width>
-                    <xlocation>0</xlocation>
-                    <ylocation>147</ylocation>
+                    <width>2</width>
+                    <xlocation>221</xlocation>
+                    <ylocation>221</ylocation>
                     <zOrder>1</zOrder>
                 </flexConstraints>
                 <focusSkinId>Skin Defaults</focusSkinId>
@@ -24339,8 +24449,8 @@ gblBreadCrumbs.push("Home");</value>
                 <layoutType>2</layoutType>
                 <localeId>None</localeId>
                 <location>
-                    <x>0</x>
-                    <y>147</y>
+                    <x>221</x>
+                    <y>221</y>
                 </location>
                 <margins>
                     <android>
@@ -24926,8 +25036,8 @@ gblBreadCrumbs.push("Home");</value>
                     <wrapper_iphone>true</wrapper_iphone>
                 </rendererData>
                 <size>
-                    <width>450</width>
-                    <height>157</height>
+                    <width>9</width>
+                    <height>9</height>
                 </size>
                 <sizePercent>
                     <width>0</width>
