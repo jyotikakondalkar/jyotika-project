@@ -39,7 +39,7 @@
       </service>
       <service cachable="false" cacheduration="" id="getProductDetails" passwordencrypted="true" smscode="" smsenabled="false" type="plainxmlserviceConnector">
          <service-config>
-            <config-param name="endpointUrl" value="http://api.remix.bestbuy.com/v1/products(sku=4360373)?apiKey={YourAPIKey}"/>
+            <config-param name="endpointUrl" value="http://api.remix.bestbuy.com/v1/products(sku=$sku)?apiKey=sjzp9njep4syta6sdx827stk"/>
             <config-param name="postprocessorname" value=""/>
             <config-param name="preprocessorname" value=""/>
             <config-param name="urlprovider" value=""/>
@@ -57,8 +57,16 @@
             <config-param name="server.auth.host" value=""/>
             <config-param name="server.auth.ntlm.domain" value=""/>
          </service-config>
-         <service-input/>
+         <service-input>
+            <param datatype="string" encode="true" name="sku" sms-name="" src="request" value=""/>
+            <param datatype="string" encode="true" name="apiKey" sms-name="" src="request" value=""/>
+         </service-input>
          <service-output>
+            <dataset id="productData" src="//products">
+               <param datatype="string" format="None" formatvalue="" name="sku" sms-name="" src="product/sku" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="name" sms-name="" src="product/name" target="response"/>
+            </dataset>
+            <param datatype="string" format="None" formatvalue="" name="productId" sms-name="" src="" target=""/>
             <param datatype="number" format="None" formatvalue="" name="opstatus" sms-name="" src="" target=""/>
             <param datatype="string" format="None" formatvalue="" name="errmsg" sms-name="" src="" target=""/>
             <param datatype="number" format="None" formatvalue="" name="httpStatusCode" sms-name="" src="" target=""/>
@@ -66,7 +74,7 @@
       </service>
       <service cachable="false" cacheduration="" id="getProductReview" passwordencrypted="true" smscode="" smsenabled="false" type="plainxmlserviceConnector">
          <service-config>
-            <config-param name="endpointUrl" value="http://api.remix.bestbuy.com/v1/reviews(sku=1000671)?apiKey={YourAPIKey}"/>
+            <config-param name="endpointUrl" value="http://api.remix.bestbuy.com/v1/reviews(sku=$sku)?apiKey=$apiKey"/>
             <config-param name="postprocessorname" value=""/>
             <config-param name="preprocessorname" value=""/>
             <config-param name="urlprovider" value=""/>
@@ -76,7 +84,7 @@
             <config-param name="proxyname" value=""/>
             <config-param name="proxyport" value=""/>
             <config-param name="proxyusername" value=""/>
-            <config-param name="http.method" value=""/>
+            <config-param name="http.method" value="GET"/>
             <config-param name="isembedxmlpresent" value="false"/>
             <config-param name="ignorehttpproxy" value="false"/>
             <config-param name="responseEncoding" value="UTF-8"/>
@@ -84,8 +92,24 @@
             <config-param name="server.auth.host" value=""/>
             <config-param name="server.auth.ntlm.domain" value=""/>
          </service-config>
-         <service-input/>
+         <service-input>
+            <param datatype="string" encode="true" name="sku" sms-name="" src="request" value=""/>
+            <param datatype="string" encode="true" name="apiKey" sms-name="" src="request" value=""/>
+         </service-input>
          <service-output>
+            <dataset id="reviewsDataSet" src="//reviews">
+               <param datatype="string" format="None" formatvalue="" name="id" sms-name="" src="review/id" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="sku" sms-name="" src="review/sku" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="reviewer" sms-name="" src="review/reviewer" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="aboutMe" sms-name="" src="review/aboutMe" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="rating" sms-name="" src="review/rating" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="title" sms-name="" src="review/title" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="comment" sms-name="" src="review/comment" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="submissionTime" sms-name="" src="review/submissionTime" target="response"/>
+            </dataset>
+            <param datatype="string" format="None" formatvalue="" name="totalPages" sms-name="" src="@totalPages" target="response"/>
+            <param datatype="string" format="None" formatvalue="" name="total" sms-name="" src="@total" target="response"/>
+            <param datatype="string" format="None" formatvalue="" name="currentPage" sms-name="" src="@currentPage" target="response"/>
             <param datatype="number" format="None" formatvalue="" name="opstatus" sms-name="" src="" target=""/>
             <param datatype="string" format="None" formatvalue="" name="errmsg" sms-name="" src="" target=""/>
             <param datatype="number" format="None" formatvalue="" name="httpStatusCode" sms-name="" src="" target=""/>
@@ -186,7 +210,7 @@
       </service>
       <service cachable="false" cacheduration="" id="getStoreLocation" passwordencrypted="true" smscode="" smsenabled="false" type="plainxmlserviceConnector">
          <service-config>
-            <config-param name="endpointUrl" value="http://api.remix.bestbuy.com/v1/stores(city=$city)?apiKey=apiKey"/>
+            <config-param name="endpointUrl" value="http://api.remix.bestbuy.com/v1/stores(city=$city)?apiKey=$apiKey"/>
             <config-param name="postprocessorname" value=""/>
             <config-param name="preprocessorname" value=""/>
             <config-param name="urlprovider" value=""/>
@@ -196,7 +220,7 @@
             <config-param name="proxyname" value=""/>
             <config-param name="proxyport" value=""/>
             <config-param name="proxyusername" value=""/>
-            <config-param name="http.method" value=""/>
+            <config-param name="http.method" value="GET"/>
             <config-param name="isembedxmlpresent" value="false"/>
             <config-param name="ignorehttpproxy" value="false"/>
             <config-param name="responseEncoding" value="UTF-8"/>
@@ -204,8 +228,32 @@
             <config-param name="server.auth.host" value=""/>
             <config-param name="server.auth.ntlm.domain" value=""/>
          </service-config>
-         <service-input/>
+         <service-input>
+            <param datatype="string" encode="true" name="city" sms-name="" src="request" value=""/>
+            <param datatype="string" encode="true" name="apiKey" sms-name="" src="request" value=""/>
+         </service-input>
          <service-output>
+            <param datatype="string" format="None" formatvalue="" name="storesDataSet" sms-name="" src="//stores" target="response"/>
+            <param datatype="string" format="None" formatvalue="" name="storeId" sms-name="" src="store/storeId" target=""/>
+            <param datatype="string" format="None" formatvalue="" name="storeType" sms-name="" src="store/storeType" target=""/>
+            <param datatype="string" format="None" formatvalue="" name="tradeIn" sms-name="" src="store/tradeIn" target=""/>
+            <param datatype="string" format="None" formatvalue="" name="name" sms-name="" src="store/name" target=""/>
+            <param datatype="string" format="None" formatvalue="" name="longName" sms-name="" src="store/longName" target=""/>
+            <param datatype="string" format="None" formatvalue="" name="address" sms-name="" src="store/address" target=""/>
+            <param datatype="string" format="None" formatvalue="" name="city" sms-name="" src="store/city" target=""/>
+            <param datatype="string" format="None" formatvalue="" name="region" sms-name="" src="store/region" target=""/>
+            <param datatype="string" format="None" formatvalue="" name="fullPostalCode" sms-name="" src="store/fullPostalCode" target=""/>
+            <param datatype="string" format="None" formatvalue="" name="country" sms-name="" src="store/country" target=""/>
+            <param datatype="string" format="None" formatvalue="" name="lat" sms-name="" src="store/lat" target=""/>
+            <param datatype="string" format="None" formatvalue="" name="lng" sms-name="" src="store/lng" target=""/>
+            <param datatype="string" format="None" formatvalue="" name="hours" sms-name="" src="store/hours" target=""/>
+            <param datatype="string" format="None" formatvalue="" name="hoursAmPm" sms-name="" src="store/hoursAmPm" target=""/>
+            <param datatype="string" format="None" formatvalue="" name="gmtOffset" sms-name="" src="store/gmtOffset" target=""/>
+            <param datatype="string" format="None" formatvalue="" name="phone" sms-name="" src="store/" target=""/>
+            <param datatype="string" format="None" formatvalue="" name="postalCode" sms-name="" src="store/" target=""/>
+            <param datatype="string" format="None" formatvalue="" name="currentPage" sms-name="" src="@currentPage" target=""/>
+            <param datatype="string" format="None" formatvalue="" name="total" sms-name="" src="@total" target=""/>
+            <param datatype="string" format="None" formatvalue="" name="totalPages" sms-name="" src="@totalPages" target=""/>
             <param datatype="number" format="None" formatvalue="" name="opstatus" sms-name="" src="" target=""/>
             <param datatype="string" format="None" formatvalue="" name="errmsg" sms-name="" src="" target=""/>
             <param datatype="number" format="None" formatvalue="" name="httpStatusCode" sms-name="" src="" target=""/>

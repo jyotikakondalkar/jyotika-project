@@ -19721,7 +19721,7 @@ kony.print("init b=&gt; "+gblBreadCrumbs);</value>
                                 </exprMap>
                             </actionList>
                             <actionList xsi:type="eventFunctionAction">
-                                <enabled>true</enabled>
+                                <enabled>false</enabled>
                                 <name></name>
                                 <type>6</type>
                                 <functionName>None</functionName>
@@ -22998,7 +22998,7 @@ kony.print("init b=&gt; "+gblBreadCrumbs);</value>
                         </xhtmlNormal>
                         <xhtmlNormal_override>false</xhtmlNormal_override>
                     </paddings>
-                    <SText>Search</SText>
+                    <SText></SText>
                     <overridePerferred>
                         <width>true</width>
                         <height>false</height>
@@ -23009,12 +23009,69 @@ kony.print("init b=&gt; "+gblBreadCrumbs);</value>
                     <secure_text_entry>false</secure_text_entry>
                     <onClick>
                         <evtSequence>
+                            <actionList xsi:type="eventFunctionAction">
+                                <enabled>true</enabled>
+                                <name></name>
+                                <type>6</type>
+                                <functionName>None</functionName>
+                                <functionNameMap>
+                                    <entry>
+                                        <key>js</key>
+                                        <value>getSearchProducts</value>
+                                    </entry>
+                                </functionNameMap>
+                                <paramData>
+                                    <datatype>string</datatype>
+                                    <paramName>searchTxt1</paramName>
+                                    <valType>0</valType>
+                                    <value>frmHome.txtSearch.text</value>
+                                    <valueMap>
+                                        <entry>
+                                            <key>js</key>
+                                            <value>frmHome.txtSearch.text</value>
+                                        </entry>
+                                    </valueMap>
+                                </paramData>
+                                <paramData>
+                                    <datatype>string</datatype>
+                                    <paramName>searchText2</paramName>
+                                    <valType>0</valType>
+                                    <value></value>
+                                    <valueMap/>
+                                </paramData>
+                                <paramDataMap>
+                                    <entry>
+                                        <key>js</key>
+                                        <value>
+                                            <paramList>
+                                                <datatype>string</datatype>
+                                                <paramName>searchTxt1</paramName>
+                                                <valType>0</valType>
+                                                <value>frmHome.txtSearch.text</value>
+                                                <valueMap>
+                                                    <entry>
+                                                        <key>js</key>
+                                                        <value>frmHome.txtSearch.text</value>
+                                                    </entry>
+                                                </valueMap>
+                                            </paramList>
+                                            <paramList>
+                                                <datatype>string</datatype>
+                                                <paramName>searchText2</paramName>
+                                                <valType>0</valType>
+                                                <value></value>
+                                                <valueMap/>
+                                            </paramList>
+                                        </value>
+                                    </entry>
+                                </paramDataMap>
+                            </actionList>
                             <enabled>true</enabled>
                             <seqname></seqname>
                         </evtSequence>
                     </onClick>
                     <autoCapitalize>TEXTBOX_AUTO_CAPITALIZE_NONE</autoCapitalize>
-                    <placeholder></placeholder>
+                    <placeholder>Search</placeholder>
                     <placeholder_I18N></placeholder_I18N>
                     <keyboard_type>0</keyboard_type>
                     <overrideProperties>KTextBox2.ipad_containerHeightMode</overrideProperties>

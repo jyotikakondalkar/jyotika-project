@@ -11,16 +11,774 @@
         <encryptPwd>true</encryptPwd>
         <escapeXML>false</escapeXML>
         <group>Services</group>
-        <httpmethod></httpmethod>
+        <httpmethod>GET</httpmethod>
         <id>getStoreLocation</id>
         <identityProvider></identityProvider>
         <identityProviderName></identityProviderName>
         <ignoreProxy>false</ignoreProxy>
+        <inparam>
+            <category></category>
+            <datatype>string</datatype>
+            <defaultvalue></defaultvalue>
+            <description></description>
+            <encode>true</encode>
+            <format>None</format>
+            <formatvalue></formatvalue>
+            <id>city</id>
+            <invalue></invalue>
+            <name></name>
+            <order></order>
+            <passNull>false</passNull>
+            <recordid></recordid>
+            <smsname></smsname>
+            <source>request</source>
+            <srcformatvalue></srcformatvalue>
+            <target></target>
+            <targetdatatype></targetdatatype>
+            <testvalue>dallas</testvalue>
+            <value></value>
+        </inparam>
+        <inparam>
+            <category></category>
+            <datatype>string</datatype>
+            <defaultvalue></defaultvalue>
+            <description></description>
+            <encode>true</encode>
+            <format>None</format>
+            <formatvalue></formatvalue>
+            <id>apiKey</id>
+            <invalue></invalue>
+            <name></name>
+            <order></order>
+            <passNull>false</passNull>
+            <recordid></recordid>
+            <smsname></smsname>
+            <source>request</source>
+            <srcformatvalue></srcformatvalue>
+            <target></target>
+            <targetdatatype></targetdatatype>
+            <testvalue>sjzp9njep4syta6sdx827stk</testvalue>
+            <value></value>
+        </inparam>
         <intemplate></intemplate>
         <ntlmDomain></ntlmDomain>
         <ntlmHost></ntlmHost>
-        <outtemplate></outtemplate>
-        <outTemplateHeader></outTemplateHeader>
+        <outtemplate>&lt;?xml-stylesheet href="/v1/xsl/xml_pretty_printer.xsl" type="text/xsl"?&gt;&lt;stores canonicalUrl="/v1/stores(city=&amp;quot;dallas&amp;quot;)?apiKey=sjzp9njep4syta6sdx827stk" currentPage="1" from="1" partial="false" queryTime="0.003" to="10" total="12" totalPages="2" totalTime="0.015"&gt;
+   &lt;store&gt;
+      &lt;storeId&gt;58&lt;/storeId&gt;
+      &lt;storeType&gt;BigBox&lt;/storeType&gt;
+      &lt;tradeIn&gt;Trade-In - No-receipt&lt;/tradeIn&gt;
+      &lt;name&gt;Park Lane&lt;/name&gt;
+      &lt;longName&gt;Best Buy - Park Lane&lt;/longName&gt;
+      &lt;address&gt;9378 N Central Expy&lt;/address&gt;
+      &lt;address2/&gt;
+      &lt;city&gt;Dallas&lt;/city&gt;
+      &lt;region&gt;TX&lt;/region&gt;
+      &lt;fullPostalCode&gt;75231&lt;/fullPostalCode&gt;
+      &lt;country&gt;US&lt;/country&gt;
+      &lt;lat&gt;32.876068&lt;/lat&gt;
+      &lt;lng&gt;-96.768257&lt;/lng&gt;
+      &lt;hours&gt;Mon: 10-7; Tue: 10-9; Wed: 10-9; Thurs: 10-9; Fri: 10-10; Sat: 10-10; Sun: 11-8&lt;/hours&gt;
+      &lt;hoursAmPm&gt;Mon: 10am-7pm; Tue: 10am-9pm; Wed: 10am-9pm; Thurs: 10am-9pm; Fri: 10am-10pm; Sat: 10am-10pm; Sun: 11am-8pm&lt;/hoursAmPm&gt;
+      &lt;gmtOffset&gt;-5&lt;/gmtOffset&gt;
+      &lt;services&gt;
+         &lt;service&gt;Geek Squad Services&lt;/service&gt;
+         &lt;service&gt;Best Buy Mobile&lt;/service&gt;
+         &lt;service&gt;Best Buy For Business&lt;/service&gt;
+         &lt;service&gt;Apple Shop&lt;/service&gt;
+         &lt;service&gt;Magnolia Design Center &lt;/service&gt;
+         &lt;service&gt;Pacific Kitchen &amp;amp; Home&lt;/service&gt;
+         &lt;service&gt;Camera Experience Shop &lt;/service&gt;
+         &lt;service&gt;Windows Store&lt;/service&gt;
+         &lt;service&gt;Samsung Experience&lt;/service&gt;
+         &lt;service&gt;LG Experience &lt;/service&gt;
+         &lt;service&gt;Sony Experience &lt;/service&gt;
+         &lt;service&gt;Electronics Recycling&lt;/service&gt;
+         &lt;service&gt;Car &amp;amp; GPS Installation Services&lt;/service&gt;
+      &lt;/services&gt;
+      &lt;phone&gt;214-696-2089&lt;/phone&gt;
+      &lt;postalCode&gt;75231&lt;/postalCode&gt;
+   &lt;/store&gt;
+   &lt;store&gt;
+      &lt;storeId&gt;8052&lt;/storeId&gt;
+      &lt;storeType&gt;Express&lt;/storeType&gt;
+      &lt;tradeIn&gt;No Trade-Ins accepted&lt;/tradeIn&gt;
+      &lt;name&gt;DAL - Dallas Love Field&lt;/name&gt;
+      &lt;longName&gt;DAL - Dallas Love Field North Concourse next to Fair Park Texas&lt;/longName&gt;
+      &lt;address&gt;8008 Cedar Springs Rd&lt;/address&gt;
+      &lt;address2/&gt;
+      &lt;city&gt;Dallas&lt;/city&gt;
+      &lt;region&gt;TX&lt;/region&gt;
+      &lt;fullPostalCode&gt;75235&lt;/fullPostalCode&gt;
+      &lt;country&gt;US&lt;/country&gt;
+      &lt;lat&gt;32.844212&lt;/lat&gt;
+      &lt;lng&gt;-96.849343&lt;/lng&gt;
+      &lt;hours&gt;Mon: 0-11:59; Tue: 0-11:59; Wed: 0-11:59; Thurs: 0-11:59; Fri: 0-11:59; Sat: 0-11:59; Sun: 0-11:59&lt;/hours&gt;
+      &lt;hoursAmPm&gt;Mon: 0am-11:59pm; Tue: 0am-11:59pm; Wed: 0am-11:59pm; Thurs: 0am-11:59pm; Fri: 0am-11:59pm; Sat: 0am-11:59pm; Sun: 0am-11:59pm&lt;/hoursAmPm&gt;
+      &lt;gmtOffset/&gt;
+      &lt;services/&gt;
+      &lt;phone&gt;877-415-3487&lt;/phone&gt;
+      &lt;postalCode&gt;75235&lt;/postalCode&gt;
+      &lt;location&gt;North Concourse next to Fair Park Texas&lt;/location&gt;
+   &lt;/store&gt;
+   &lt;store&gt;
+      &lt;storeId&gt;1664&lt;/storeId&gt;
+      &lt;storeType&gt;Mobile&lt;/storeType&gt;
+      &lt;tradeIn&gt;Trade-In - No-receipt&lt;/tradeIn&gt;
+      &lt;name&gt;Galleria Dallas&lt;/name&gt;
+      &lt;longName&gt;Best Buy Mobile - Galleria Dallas&lt;/longName&gt;
+      &lt;address&gt;13350 Dallas Parkway&lt;/address&gt;
+      &lt;address2&gt;#3475&lt;/address2&gt;
+      &lt;city&gt;Dallas&lt;/city&gt;
+      &lt;region&gt;TX&lt;/region&gt;
+      &lt;fullPostalCode&gt;75240&lt;/fullPostalCode&gt;
+      &lt;country&gt;US&lt;/country&gt;
+      &lt;lat&gt;32.931615&lt;/lat&gt;
+      &lt;lng&gt;-96.821136&lt;/lng&gt;
+      &lt;hours&gt;Mon: 10-9; Tue: 10-9; Wed: 10-9; Thurs: 10-9; Fri: 10-9; Sat: 10-9; Sun: 12-6&lt;/hours&gt;
+      &lt;hoursAmPm&gt;Mon: 10am-9pm; Tue: 10am-9pm; Wed: 10am-9pm; Thurs: 10am-9pm; Fri: 10am-9pm; Sat: 10am-9pm; Sun: 12pm-6pm&lt;/hoursAmPm&gt;
+      &lt;gmtOffset&gt;0&lt;/gmtOffset&gt;
+      &lt;services&gt;
+         &lt;service&gt;Best Buy Mobile Specialty Store&lt;/service&gt;
+         &lt;service&gt;Electronics Recycling&lt;/service&gt;
+         &lt;service&gt;Samsung Experience Shop&lt;/service&gt;
+      &lt;/services&gt;
+      &lt;phone&gt;972-239-0576&lt;/phone&gt;
+      &lt;postalCode&gt;75240&lt;/postalCode&gt;
+   &lt;/store&gt;
+   &lt;store&gt;
+      &lt;storeId&gt;2504&lt;/storeId&gt;
+      &lt;storeType&gt;BigBox&lt;/storeType&gt;
+      &lt;tradeIn&gt;Trade-In - No-receipt&lt;/tradeIn&gt;
+      &lt;name&gt;Prestonwood&lt;/name&gt;
+      &lt;longName&gt;Best Buy - Prestonwood&lt;/longName&gt;
+      &lt;address&gt;5301 Beltline Road&lt;/address&gt;
+      &lt;address2&gt;Suite 110&lt;/address2&gt;
+      &lt;city&gt;Dallas&lt;/city&gt;
+      &lt;region&gt;TX&lt;/region&gt;
+      &lt;fullPostalCode&gt;75254&lt;/fullPostalCode&gt;
+      &lt;country&gt;US&lt;/country&gt;
+      &lt;lat&gt;32.954121&lt;/lat&gt;
+      &lt;lng&gt;-96.815371&lt;/lng&gt;
+      &lt;hours&gt;Mon: 10-7; Tue: 10-9; Wed: 10-9; Thurs: 10-9; Fri: 10-10; Sat: 10-10; Sun: 11-8&lt;/hours&gt;
+      &lt;hoursAmPm&gt;Mon: 10am-7pm; Tue: 10am-9pm; Wed: 10am-9pm; Thurs: 10am-9pm; Fri: 10am-10pm; Sat: 10am-10pm; Sun: 11am-8pm&lt;/hoursAmPm&gt;
+      &lt;gmtOffset&gt;-5&lt;/gmtOffset&gt;
+      &lt;services&gt;
+         &lt;service&gt;Geek Squad Services&lt;/service&gt;
+         &lt;service&gt;Best Buy Mobile&lt;/service&gt;
+         &lt;service&gt;Best Buy For Business&lt;/service&gt;
+         &lt;service&gt;Electronics Recycling&lt;/service&gt;
+         &lt;service&gt;Hablamos Español&lt;/service&gt;
+         &lt;service&gt;Samsung Experience&lt;/service&gt;
+         &lt;service&gt;Car &amp;amp; GPS Installation Services&lt;/service&gt;
+         &lt;service&gt;Magnolia Home Theater&lt;/service&gt;
+      &lt;/services&gt;
+      &lt;phone&gt;972-419-1289&lt;/phone&gt;
+      &lt;postalCode&gt;75254&lt;/postalCode&gt;
+   &lt;/store&gt;
+   &lt;store&gt;
+      &lt;storeId&gt;8003&lt;/storeId&gt;
+      &lt;storeType&gt;Express&lt;/storeType&gt;
+      &lt;tradeIn&gt;No Trade-Ins accepted&lt;/tradeIn&gt;
+      &lt;name&gt;DFW - Dallas/Fort Worth International Airport&lt;/name&gt;
+      &lt;longName&gt;DFW - Dallas/Fort Worth International Airport Terminal E Satellite Gate E26&lt;/longName&gt;
+      &lt;address&gt;3200 East Airfield Drive&lt;/address&gt;
+      &lt;address2/&gt;
+      &lt;city&gt;Dallas&lt;/city&gt;
+      &lt;region&gt;TX&lt;/region&gt;
+      &lt;fullPostalCode&gt;75261&lt;/fullPostalCode&gt;
+      &lt;country&gt;US&lt;/country&gt;
+      &lt;lat&gt;32.897449&lt;/lat&gt;
+      &lt;lng&gt;-97.040653&lt;/lng&gt;
+      &lt;hours&gt;Mon: 0-11:59; Tue: 0-11:59; Wed: 0-11:59; Thurs: 0-11:59; Fri: 0-11:59; Sat: 0-11:59; Sun: 0-11:59&lt;/hours&gt;
+      &lt;hoursAmPm&gt;Mon: 0am-11:59pm; Tue: 0am-11:59pm; Wed: 0am-11:59pm; Thurs: 0am-11:59pm; Fri: 0am-11:59pm; Sat: 0am-11:59pm; Sun: 0am-11:59pm&lt;/hoursAmPm&gt;
+      &lt;gmtOffset/&gt;
+      &lt;services/&gt;
+      &lt;phone&gt;877-415-3487&lt;/phone&gt;
+      &lt;postalCode&gt;75261&lt;/postalCode&gt;
+      &lt;location&gt;Terminal E Satellite Gate E26&lt;/location&gt;
+   &lt;/store&gt;
+   &lt;store&gt;
+      &lt;storeId&gt;8004&lt;/storeId&gt;
+      &lt;storeType&gt;Express&lt;/storeType&gt;
+      &lt;tradeIn&gt;No Trade-Ins accepted&lt;/tradeIn&gt;
+      &lt;name&gt;DFW - Dallas/Fort Worth International Airport&lt;/name&gt;
+      &lt;longName&gt;DFW - Dallas/Fort Worth International Airport Terminal B Gate B12&lt;/longName&gt;
+      &lt;address&gt;3200 East Airfield Drive&lt;/address&gt;
+      &lt;address2/&gt;
+      &lt;city&gt;Dallas&lt;/city&gt;
+      &lt;region&gt;TX&lt;/region&gt;
+      &lt;fullPostalCode&gt;75261&lt;/fullPostalCode&gt;
+      &lt;country&gt;US&lt;/country&gt;
+      &lt;lat&gt;32.897449&lt;/lat&gt;
+      &lt;lng&gt;-97.040653&lt;/lng&gt;
+      &lt;hours&gt;Mon: 0-11:59; Tue: 0-11:59; Wed: 0-11:59; Thurs: 0-11:59; Fri: 0-11:59; Sat: 0-11:59; Sun: 0-11:59&lt;/hours&gt;
+      &lt;hoursAmPm&gt;Mon: 0am-11:59pm; Tue: 0am-11:59pm; Wed: 0am-11:59pm; Thurs: 0am-11:59pm; Fri: 0am-11:59pm; Sat: 0am-11:59pm; Sun: 0am-11:59pm&lt;/hoursAmPm&gt;
+      &lt;gmtOffset/&gt;
+      &lt;services/&gt;
+      &lt;phone&gt;877-415-3487&lt;/phone&gt;
+      &lt;postalCode&gt;75261&lt;/postalCode&gt;
+      &lt;location&gt;Terminal B Gate B12&lt;/location&gt;
+   &lt;/store&gt;
+   &lt;store&gt;
+      &lt;storeId&gt;8014&lt;/storeId&gt;
+      &lt;storeType&gt;Express&lt;/storeType&gt;
+      &lt;tradeIn&gt;No Trade-Ins accepted&lt;/tradeIn&gt;
+      &lt;name&gt;DFW - Dallas/Fort Worth International Airport&lt;/name&gt;
+      &lt;longName&gt;DFW - Dallas/Fort Worth International Airport Terminal B Gate B45/B49&lt;/longName&gt;
+      &lt;address&gt;3200 East Airfield Drive&lt;/address&gt;
+      &lt;address2/&gt;
+      &lt;city&gt;Dallas&lt;/city&gt;
+      &lt;region&gt;TX&lt;/region&gt;
+      &lt;fullPostalCode&gt;75261&lt;/fullPostalCode&gt;
+      &lt;country&gt;US&lt;/country&gt;
+      &lt;lat&gt;32.897449&lt;/lat&gt;
+      &lt;lng&gt;-97.040653&lt;/lng&gt;
+      &lt;hours&gt;Mon: 0-11:59; Tue: 0-11:59; Wed: 0-11:59; Thurs: 0-11:59; Fri: 0-11:59; Sat: 0-11:59; Sun: 0-11:59&lt;/hours&gt;
+      &lt;hoursAmPm&gt;Mon: 0am-11:59pm; Tue: 0am-11:59pm; Wed: 0am-11:59pm; Thurs: 0am-11:59pm; Fri: 0am-11:59pm; Sat: 0am-11:59pm; Sun: 0am-11:59pm&lt;/hoursAmPm&gt;
+      &lt;gmtOffset/&gt;
+      &lt;services/&gt;
+      &lt;phone&gt;877-415-3487&lt;/phone&gt;
+      &lt;postalCode&gt;75261&lt;/postalCode&gt;
+      &lt;location&gt;Terminal B Gate B45/B49&lt;/location&gt;
+   &lt;/store&gt;
+   &lt;store&gt;
+      &lt;storeId&gt;8019&lt;/storeId&gt;
+      &lt;storeType&gt;Express&lt;/storeType&gt;
+      &lt;tradeIn&gt;No Trade-Ins accepted&lt;/tradeIn&gt;
+      &lt;name&gt;DFW - Dallas/Fort Worth International Airport&lt;/name&gt;
+      &lt;longName&gt;DFW - Dallas/Fort Worth International Airport Terminal C Gate C31&lt;/longName&gt;
+      &lt;address&gt;3200 East Airfield Drive&lt;/address&gt;
+      &lt;address2/&gt;
+      &lt;city&gt;Dallas&lt;/city&gt;
+      &lt;region&gt;TX&lt;/region&gt;
+      &lt;fullPostalCode&gt;75261&lt;/fullPostalCode&gt;
+      &lt;country&gt;US&lt;/country&gt;
+      &lt;lat&gt;32.897449&lt;/lat&gt;
+      &lt;lng&gt;-97.040653&lt;/lng&gt;
+      &lt;hours&gt;Mon: 0-11:59; Tue: 0-11:59; Wed: 0-11:59; Thurs: 0-11:59; Fri: 0-11:59; Sat: 0-11:59; Sun: 0-11:59&lt;/hours&gt;
+      &lt;hoursAmPm&gt;Mon: 0am-11:59pm; Tue: 0am-11:59pm; Wed: 0am-11:59pm; Thurs: 0am-11:59pm; Fri: 0am-11:59pm; Sat: 0am-11:59pm; Sun: 0am-11:59pm&lt;/hoursAmPm&gt;
+      &lt;gmtOffset/&gt;
+      &lt;services/&gt;
+      &lt;phone&gt;877-415-3487&lt;/phone&gt;
+      &lt;postalCode&gt;75261&lt;/postalCode&gt;
+      &lt;location&gt;Terminal C Gate C31&lt;/location&gt;
+   &lt;/store&gt;
+   &lt;store&gt;
+      &lt;storeId&gt;8023&lt;/storeId&gt;
+      &lt;storeType&gt;Express&lt;/storeType&gt;
+      &lt;tradeIn&gt;No Trade-Ins accepted&lt;/tradeIn&gt;
+      &lt;name&gt;DFW - Dallas/Fort Worth International Airport&lt;/name&gt;
+      &lt;longName&gt;DFW - Dallas/Fort Worth International Airport Terminal D Gate D24A&lt;/longName&gt;
+      &lt;address&gt;3200 East Airfield Drive&lt;/address&gt;
+      &lt;address2/&gt;
+      &lt;city&gt;Dallas&lt;/city&gt;
+      &lt;region&gt;TX&lt;/region&gt;
+      &lt;fullPostalCode&gt;75261&lt;/fullPostalCode&gt;
+      &lt;country&gt;US&lt;/country&gt;
+      &lt;lat&gt;32.897449&lt;/lat&gt;
+      &lt;lng&gt;-97.040653&lt;/lng&gt;
+      &lt;hours&gt;Mon: 0-11:59; Tue: 0-11:59; Wed: 0-11:59; Thurs: 0-11:59; Fri: 0-11:59; Sat: 0-11:59; Sun: 0-11:59&lt;/hours&gt;
+      &lt;hoursAmPm&gt;Mon: 0am-11:59pm; Tue: 0am-11:59pm; Wed: 0am-11:59pm; Thurs: 0am-11:59pm; Fri: 0am-11:59pm; Sat: 0am-11:59pm; Sun: 0am-11:59pm&lt;/hoursAmPm&gt;
+      &lt;gmtOffset/&gt;
+      &lt;services/&gt;
+      &lt;phone&gt;877-415-3487&lt;/phone&gt;
+      &lt;postalCode&gt;75261&lt;/postalCode&gt;
+      &lt;location&gt;Terminal D Gate D24A&lt;/location&gt;
+   &lt;/store&gt;
+   &lt;store&gt;
+      &lt;storeId&gt;8060&lt;/storeId&gt;
+      &lt;storeType&gt;Express&lt;/storeType&gt;
+      &lt;tradeIn&gt;No Trade-Ins accepted&lt;/tradeIn&gt;
+      &lt;name&gt;DFW - Dallas/Fort Worth International Airport&lt;/name&gt;
+      &lt;longName&gt;DFW - Dallas/Fort Worth International Airport Terminal A Gate A34&lt;/longName&gt;
+      &lt;address&gt;3200 East Airfield Drive&lt;/address&gt;
+      &lt;address2/&gt;
+      &lt;city&gt;Dallas&lt;/city&gt;
+      &lt;region&gt;TX&lt;/region&gt;
+      &lt;fullPostalCode&gt;75261&lt;/fullPostalCode&gt;
+      &lt;country&gt;US&lt;/country&gt;
+      &lt;lat&gt;32.897449&lt;/lat&gt;
+      &lt;lng&gt;-97.040653&lt;/lng&gt;
+      &lt;hours&gt;Mon: 0-11:59; Tue: 0-11:59; Wed: 0-11:59; Thurs: 0-11:59; Fri: 0-11:59; Sat: 0-11:59; Sun: 0-11:59&lt;/hours&gt;
+      &lt;hoursAmPm&gt;Mon: 0am-11:59pm; Tue: 0am-11:59pm; Wed: 0am-11:59pm; Thurs: 0am-11:59pm; Fri: 0am-11:59pm; Sat: 0am-11:59pm; Sun: 0am-11:59pm&lt;/hoursAmPm&gt;
+      &lt;gmtOffset/&gt;
+      &lt;services/&gt;
+      &lt;phone&gt;877-415-3487&lt;/phone&gt;
+      &lt;postalCode&gt;75261&lt;/postalCode&gt;
+      &lt;location&gt;Terminal A Gate A34&lt;/location&gt;
+   &lt;/store&gt;
+&lt;/stores&gt;
+</outtemplate>
+        <outTemplateHeader>Server: thin 1.6.1 codename Death Proof
+Connection: keep-alive
+X-Mashery-Responder: prod-j-worker-us-east-1e-117.mashery.com
+Content-Length: 10412
+Date: Thu, 07 Jul 2016 12:39:13 GMT
+Content-Type: text/xml; charset=UTF-8
+</outTemplateHeader>
+        <outparam>
+            <category></category>
+            <datatype>string</datatype>
+            <defaultvalue></defaultvalue>
+            <description></description>
+            <encode>true</encode>
+            <format>None</format>
+            <formatvalue></formatvalue>
+            <id>storesDataSet</id>
+            <invalue></invalue>
+            <name></name>
+            <order></order>
+            <passNull>false</passNull>
+            <recordid></recordid>
+            <smsname></smsname>
+            <source>//stores</source>
+            <srcformatvalue></srcformatvalue>
+            <target>response</target>
+            <targetdatatype></targetdatatype>
+            <testvalue></testvalue>
+            <value></value>
+        </outparam>
+        <outparam>
+            <category></category>
+            <datatype>string</datatype>
+            <defaultvalue></defaultvalue>
+            <description></description>
+            <encode>true</encode>
+            <format>None</format>
+            <formatvalue></formatvalue>
+            <id>storeId</id>
+            <invalue></invalue>
+            <name></name>
+            <order></order>
+            <passNull>false</passNull>
+            <recordid></recordid>
+            <smsname></smsname>
+            <source>store/storeId</source>
+            <srcformatvalue></srcformatvalue>
+            <target></target>
+            <targetdatatype></targetdatatype>
+            <testvalue></testvalue>
+            <value></value>
+        </outparam>
+        <outparam>
+            <category></category>
+            <datatype>string</datatype>
+            <defaultvalue></defaultvalue>
+            <description></description>
+            <encode>true</encode>
+            <format>None</format>
+            <formatvalue></formatvalue>
+            <id>storeType</id>
+            <invalue></invalue>
+            <name></name>
+            <order></order>
+            <passNull>false</passNull>
+            <recordid></recordid>
+            <smsname></smsname>
+            <source>store/storeType</source>
+            <srcformatvalue></srcformatvalue>
+            <target></target>
+            <targetdatatype></targetdatatype>
+            <testvalue></testvalue>
+            <value></value>
+        </outparam>
+        <outparam>
+            <category></category>
+            <datatype>string</datatype>
+            <defaultvalue></defaultvalue>
+            <description></description>
+            <encode>true</encode>
+            <format>None</format>
+            <formatvalue></formatvalue>
+            <id>tradeIn</id>
+            <invalue></invalue>
+            <name></name>
+            <order></order>
+            <passNull>false</passNull>
+            <recordid></recordid>
+            <smsname></smsname>
+            <source>store/tradeIn</source>
+            <srcformatvalue></srcformatvalue>
+            <target></target>
+            <targetdatatype></targetdatatype>
+            <testvalue></testvalue>
+            <value></value>
+        </outparam>
+        <outparam>
+            <category></category>
+            <datatype>string</datatype>
+            <defaultvalue></defaultvalue>
+            <description></description>
+            <encode>true</encode>
+            <format>None</format>
+            <formatvalue></formatvalue>
+            <id>name</id>
+            <invalue></invalue>
+            <name></name>
+            <order></order>
+            <passNull>false</passNull>
+            <recordid></recordid>
+            <smsname></smsname>
+            <source>store/name</source>
+            <srcformatvalue></srcformatvalue>
+            <target></target>
+            <targetdatatype></targetdatatype>
+            <testvalue></testvalue>
+            <value></value>
+        </outparam>
+        <outparam>
+            <category></category>
+            <datatype>string</datatype>
+            <defaultvalue></defaultvalue>
+            <description></description>
+            <encode>true</encode>
+            <format>None</format>
+            <formatvalue></formatvalue>
+            <id>longName</id>
+            <invalue></invalue>
+            <name></name>
+            <order></order>
+            <passNull>false</passNull>
+            <recordid></recordid>
+            <smsname></smsname>
+            <source>store/longName</source>
+            <srcformatvalue></srcformatvalue>
+            <target></target>
+            <targetdatatype></targetdatatype>
+            <testvalue></testvalue>
+            <value></value>
+        </outparam>
+        <outparam>
+            <category></category>
+            <datatype>string</datatype>
+            <defaultvalue></defaultvalue>
+            <description></description>
+            <encode>true</encode>
+            <format>None</format>
+            <formatvalue></formatvalue>
+            <id>address</id>
+            <invalue></invalue>
+            <name></name>
+            <order></order>
+            <passNull>false</passNull>
+            <recordid></recordid>
+            <smsname></smsname>
+            <source>store/address</source>
+            <srcformatvalue></srcformatvalue>
+            <target></target>
+            <targetdatatype></targetdatatype>
+            <testvalue></testvalue>
+            <value></value>
+        </outparam>
+        <outparam>
+            <category></category>
+            <datatype>string</datatype>
+            <defaultvalue></defaultvalue>
+            <description></description>
+            <encode>true</encode>
+            <format>None</format>
+            <formatvalue></formatvalue>
+            <id>city</id>
+            <invalue></invalue>
+            <name></name>
+            <order></order>
+            <passNull>false</passNull>
+            <recordid></recordid>
+            <smsname></smsname>
+            <source>store/city</source>
+            <srcformatvalue></srcformatvalue>
+            <target></target>
+            <targetdatatype></targetdatatype>
+            <testvalue></testvalue>
+            <value></value>
+        </outparam>
+        <outparam>
+            <category></category>
+            <datatype>string</datatype>
+            <defaultvalue></defaultvalue>
+            <description></description>
+            <encode>true</encode>
+            <format>None</format>
+            <formatvalue></formatvalue>
+            <id>region</id>
+            <invalue></invalue>
+            <name></name>
+            <order></order>
+            <passNull>false</passNull>
+            <recordid></recordid>
+            <smsname></smsname>
+            <source>store/region</source>
+            <srcformatvalue></srcformatvalue>
+            <target></target>
+            <targetdatatype></targetdatatype>
+            <testvalue></testvalue>
+            <value></value>
+        </outparam>
+        <outparam>
+            <category></category>
+            <datatype>string</datatype>
+            <defaultvalue></defaultvalue>
+            <description></description>
+            <encode>true</encode>
+            <format>None</format>
+            <formatvalue></formatvalue>
+            <id>fullPostalCode</id>
+            <invalue></invalue>
+            <name></name>
+            <order></order>
+            <passNull>false</passNull>
+            <recordid></recordid>
+            <smsname></smsname>
+            <source>store/fullPostalCode</source>
+            <srcformatvalue></srcformatvalue>
+            <target></target>
+            <targetdatatype></targetdatatype>
+            <testvalue></testvalue>
+            <value></value>
+        </outparam>
+        <outparam>
+            <category></category>
+            <datatype>string</datatype>
+            <defaultvalue></defaultvalue>
+            <description></description>
+            <encode>true</encode>
+            <format>None</format>
+            <formatvalue></formatvalue>
+            <id>country</id>
+            <invalue></invalue>
+            <name></name>
+            <order></order>
+            <passNull>false</passNull>
+            <recordid></recordid>
+            <smsname></smsname>
+            <source>store/country</source>
+            <srcformatvalue></srcformatvalue>
+            <target></target>
+            <targetdatatype></targetdatatype>
+            <testvalue></testvalue>
+            <value></value>
+        </outparam>
+        <outparam>
+            <category></category>
+            <datatype>string</datatype>
+            <defaultvalue></defaultvalue>
+            <description></description>
+            <encode>true</encode>
+            <format>None</format>
+            <formatvalue></formatvalue>
+            <id>lat</id>
+            <invalue></invalue>
+            <name></name>
+            <order></order>
+            <passNull>false</passNull>
+            <recordid></recordid>
+            <smsname></smsname>
+            <source>store/lat</source>
+            <srcformatvalue></srcformatvalue>
+            <target></target>
+            <targetdatatype></targetdatatype>
+            <testvalue></testvalue>
+            <value></value>
+        </outparam>
+        <outparam>
+            <category></category>
+            <datatype>string</datatype>
+            <defaultvalue></defaultvalue>
+            <description></description>
+            <encode>true</encode>
+            <format>None</format>
+            <formatvalue></formatvalue>
+            <id>lng</id>
+            <invalue></invalue>
+            <name></name>
+            <order></order>
+            <passNull>false</passNull>
+            <recordid></recordid>
+            <smsname></smsname>
+            <source>store/lng</source>
+            <srcformatvalue></srcformatvalue>
+            <target></target>
+            <targetdatatype></targetdatatype>
+            <testvalue></testvalue>
+            <value></value>
+        </outparam>
+        <outparam>
+            <category></category>
+            <datatype>string</datatype>
+            <defaultvalue></defaultvalue>
+            <description></description>
+            <encode>true</encode>
+            <format>None</format>
+            <formatvalue></formatvalue>
+            <id>hours</id>
+            <invalue></invalue>
+            <name></name>
+            <order></order>
+            <passNull>false</passNull>
+            <recordid></recordid>
+            <smsname></smsname>
+            <source>store/hours</source>
+            <srcformatvalue></srcformatvalue>
+            <target></target>
+            <targetdatatype></targetdatatype>
+            <testvalue></testvalue>
+            <value></value>
+        </outparam>
+        <outparam>
+            <category></category>
+            <datatype>string</datatype>
+            <defaultvalue></defaultvalue>
+            <description></description>
+            <encode>true</encode>
+            <format>None</format>
+            <formatvalue></formatvalue>
+            <id>hoursAmPm</id>
+            <invalue></invalue>
+            <name></name>
+            <order></order>
+            <passNull>false</passNull>
+            <recordid></recordid>
+            <smsname></smsname>
+            <source>store/hoursAmPm</source>
+            <srcformatvalue></srcformatvalue>
+            <target></target>
+            <targetdatatype></targetdatatype>
+            <testvalue></testvalue>
+            <value></value>
+        </outparam>
+        <outparam>
+            <category></category>
+            <datatype>string</datatype>
+            <defaultvalue></defaultvalue>
+            <description></description>
+            <encode>true</encode>
+            <format>None</format>
+            <formatvalue></formatvalue>
+            <id>gmtOffset</id>
+            <invalue></invalue>
+            <name></name>
+            <order></order>
+            <passNull>false</passNull>
+            <recordid></recordid>
+            <smsname></smsname>
+            <source>store/gmtOffset</source>
+            <srcformatvalue></srcformatvalue>
+            <target></target>
+            <targetdatatype></targetdatatype>
+            <testvalue></testvalue>
+            <value></value>
+        </outparam>
+        <outparam>
+            <category></category>
+            <datatype>string</datatype>
+            <defaultvalue></defaultvalue>
+            <description></description>
+            <encode>true</encode>
+            <format>None</format>
+            <formatvalue></formatvalue>
+            <id>phone</id>
+            <invalue></invalue>
+            <name></name>
+            <order></order>
+            <passNull>false</passNull>
+            <recordid></recordid>
+            <smsname></smsname>
+            <source>store/</source>
+            <srcformatvalue></srcformatvalue>
+            <target></target>
+            <targetdatatype></targetdatatype>
+            <testvalue></testvalue>
+            <value></value>
+        </outparam>
+        <outparam>
+            <category></category>
+            <datatype>string</datatype>
+            <defaultvalue></defaultvalue>
+            <description></description>
+            <encode>true</encode>
+            <format>None</format>
+            <formatvalue></formatvalue>
+            <id>postalCode</id>
+            <invalue></invalue>
+            <name></name>
+            <order></order>
+            <passNull>false</passNull>
+            <recordid></recordid>
+            <smsname></smsname>
+            <source>store/</source>
+            <srcformatvalue></srcformatvalue>
+            <target></target>
+            <targetdatatype></targetdatatype>
+            <testvalue></testvalue>
+            <value></value>
+        </outparam>
+        <outparam>
+            <category></category>
+            <datatype>string</datatype>
+            <defaultvalue></defaultvalue>
+            <description></description>
+            <encode>true</encode>
+            <format>None</format>
+            <formatvalue></formatvalue>
+            <id>currentPage</id>
+            <invalue></invalue>
+            <name></name>
+            <order></order>
+            <passNull>false</passNull>
+            <recordid></recordid>
+            <smsname></smsname>
+            <source>@currentPage</source>
+            <srcformatvalue></srcformatvalue>
+            <target></target>
+            <targetdatatype></targetdatatype>
+            <testvalue></testvalue>
+            <value></value>
+        </outparam>
+        <outparam>
+            <category></category>
+            <datatype>string</datatype>
+            <defaultvalue></defaultvalue>
+            <description></description>
+            <encode>true</encode>
+            <format>None</format>
+            <formatvalue></formatvalue>
+            <id>total</id>
+            <invalue></invalue>
+            <name></name>
+            <order></order>
+            <passNull>false</passNull>
+            <recordid></recordid>
+            <smsname></smsname>
+            <source>@total</source>
+            <srcformatvalue></srcformatvalue>
+            <target></target>
+            <targetdatatype></targetdatatype>
+            <testvalue></testvalue>
+            <value></value>
+        </outparam>
+        <outparam>
+            <category></category>
+            <datatype>string</datatype>
+            <defaultvalue></defaultvalue>
+            <description></description>
+            <encode>true</encode>
+            <format>None</format>
+            <formatvalue></formatvalue>
+            <id>totalPages</id>
+            <invalue></invalue>
+            <name></name>
+            <order></order>
+            <passNull>false</passNull>
+            <recordid></recordid>
+            <smsname></smsname>
+            <source>@totalPages</source>
+            <srcformatvalue></srcformatvalue>
+            <target></target>
+            <targetdatatype></targetdatatype>
+            <testvalue></testvalue>
+            <value></value>
+        </outparam>
         <password></password>
         <postclassname></postclassname>
         <preclassname></preclassname>
@@ -32,7 +790,7 @@
         <smscode></smscode>
         <smsenabled>false</smsenabled>
         <timeout></timeout>
-        <url>http://api.remix.bestbuy.com/v1/stores(city=$city)?apiKey=apiKey</url>
+        <url>http://api.remix.bestbuy.com/v1/stores(city=$city)?apiKey=$apiKey</url>
         <urlprovider></urlprovider>
         <userid></userid>
     </plainxmlservice>
