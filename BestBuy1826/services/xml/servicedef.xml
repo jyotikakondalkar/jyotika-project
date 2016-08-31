@@ -49,7 +49,7 @@
             <config-param name="proxyname" value=""/>
             <config-param name="proxyport" value=""/>
             <config-param name="proxyusername" value=""/>
-            <config-param name="http.method" value=""/>
+            <config-param name="http.method" value="GET"/>
             <config-param name="isembedxmlpresent" value="false"/>
             <config-param name="ignorehttpproxy" value="false"/>
             <config-param name="responseEncoding" value="UTF-8"/>
@@ -65,8 +65,22 @@
             <dataset id="productData" src="//products">
                <param datatype="string" format="None" formatvalue="" name="sku" sms-name="" src="product/sku" target="response"/>
                <param datatype="string" format="None" formatvalue="" name="name" sms-name="" src="product/name" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="productId" sms-name="" src="product/productId" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="newTag" sms-name="" src="product/new" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="regularPrice" sms-name="" src="product/regularPrice" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="salePrice" sms-name="" src="product/salePrice" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="onSale" sms-name="" src="product/onSale" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="customerReviewCount" sms-name="" src="product/customerReviewCount" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="customerReviewAverage" sms-name="" src="product/customerReviewAverage" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="freeShipping" sms-name="" src="product/freeShipping" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="shippingCost" sms-name="" src="product/shippingCost" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="image" sms-name="" src="product/image" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="largeFrontImage" sms-name="" src="product/largeFrontImage" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="mediumImage" sms-name="" src="product/mediumImage" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="thumbnailImage" sms-name="" src="product/thumbnailImage" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="largeImage" sms-name="" src="product/largeImage" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="shortDescription" sms-name="" src="product/shortDescription" target="response"/>
             </dataset>
-            <param datatype="string" format="None" formatvalue="" name="productId" sms-name="" src="" target=""/>
             <param datatype="number" format="None" formatvalue="" name="opstatus" sms-name="" src="" target=""/>
             <param datatype="string" format="None" formatvalue="" name="errmsg" sms-name="" src="" target=""/>
             <param datatype="number" format="None" formatvalue="" name="httpStatusCode" sms-name="" src="" target=""/>

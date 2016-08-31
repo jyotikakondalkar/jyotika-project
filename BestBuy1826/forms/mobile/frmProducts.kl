@@ -14486,6 +14486,70 @@
                     <layout_alignment>0</layout_alignment>
                     <onRowSelect>
                         <evtSequence>
+                            <actionList xsi:type="eventFunctionAction">
+                                <enabled>true</enabled>
+                                <name></name>
+                                <type>6</type>
+                                <functionName>None</functionName>
+                                <functionNameMap>
+                                    <entry>
+                                        <key>lua</key>
+                                        <value>None</value>
+                                    </entry>
+                                    <entry>
+                                        <key>js</key>
+                                        <value>getProductDetails</value>
+                                    </entry>
+                                </functionNameMap>
+                                <paramData>
+                                    <datatype>string</datatype>
+                                    <paramName>catId</paramName>
+                                    <valType>0</valType>
+                                    <value></value>
+                                    <valueMap>
+                                        <entry>
+                                            <key>js</key>
+                                            <value>frmProducts.segProductList.selectedItems[0]["sku"];</value>
+                                        </entry>
+                                    </valueMap>
+                                </paramData>
+                                <paramDataMap>
+                                    <entry>
+                                        <key>js</key>
+                                        <value>
+                                            <paramList>
+                                                <datatype>string</datatype>
+                                                <paramName>sku</paramName>
+                                                <valType>0</valType>
+                                                <value>frmProducts.segProductList.selectedItems[0]["lblSku"]</value>
+                                                <valueMap>
+                                                    <entry>
+                                                        <key>js</key>
+                                                        <value>frmProducts.segProductList.selectedItems[0]["lblSku"]</value>
+                                                    </entry>
+                                                </valueMap>
+                                            </paramList>
+                                        </value>
+                                    </entry>
+                                    <entry>
+                                        <key>lua</key>
+                                        <value>
+                                            <paramList>
+                                                <datatype>string</datatype>
+                                                <paramName>catId</paramName>
+                                                <valType>0</valType>
+                                                <value></value>
+                                                <valueMap>
+                                                    <entry>
+                                                        <key>js</key>
+                                                        <value>frmProducts.segProductList.selectedItems[0]["sku"];</value>
+                                                    </entry>
+                                                </valueMap>
+                                            </paramList>
+                                        </value>
+                                    </entry>
+                                </paramDataMap>
+                            </actionList>
                             <enabled>true</enabled>
                             <seqname></seqname>
                         </evtSequence>
