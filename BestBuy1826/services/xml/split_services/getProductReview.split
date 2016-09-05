@@ -166,7 +166,7 @@ Content-Type: text/xml; charset=UTF-8
             <passNull>false</passNull>
             <recordid></recordid>
             <smsname></smsname>
-            <source>review/reviewer</source>
+            <source>review/reviewer/name</source>
             <srcformatvalue></srcformatvalue>
             <target>response</target>
             <targetdatatype></targetdatatype>

@@ -80,6 +80,16 @@
                <param datatype="string" format="None" formatvalue="" name="thumbnailImage" sms-name="" src="product/thumbnailImage" target="response"/>
                <param datatype="string" format="None" formatvalue="" name="largeImage" sms-name="" src="product/largeImage" target="response"/>
                <param datatype="string" format="None" formatvalue="" name="shortDescription" sms-name="" src="product/shortDescription" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="longDescription" sms-name="" src="product/longDescription" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="topViewImage" sms-name="" src="product/longDescription" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="rightViewImage" sms-name="" src="product/longDescription" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="remoteControlImage" sms-name="" src="product/longDescription" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="accessoriesImage" sms-name="" src="product/longDescription" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="leftViewImage" sms-name="" src="product/longDescription" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="energyGuideImage" sms-name="" src="product/longDescription" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="backViewImage" sms-name="" src="product/longDescription" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="angleImage" sms-name="" src="product/longDescription" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="alternateViewsImage" sms-name="" src="product/longDescription" target="response"/>
             </dataset>
             <param datatype="number" format="None" formatvalue="" name="opstatus" sms-name="" src="" target=""/>
             <param datatype="string" format="None" formatvalue="" name="errmsg" sms-name="" src="" target=""/>
@@ -114,7 +124,7 @@
             <dataset id="reviewsDataSet" src="//reviews">
                <param datatype="string" format="None" formatvalue="" name="id" sms-name="" src="review/id" target="response"/>
                <param datatype="string" format="None" formatvalue="" name="sku" sms-name="" src="review/sku" target="response"/>
-               <param datatype="string" format="None" formatvalue="" name="reviewer" sms-name="" src="review/reviewer" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="reviewer" sms-name="" src="review/reviewer/name" target="response"/>
                <param datatype="string" format="None" formatvalue="" name="aboutMe" sms-name="" src="review/aboutMe" target="response"/>
                <param datatype="string" format="None" formatvalue="" name="rating" sms-name="" src="review/rating" target="response"/>
                <param datatype="string" format="None" formatvalue="" name="title" sms-name="" src="review/title" target="response"/>
@@ -153,52 +163,6 @@
             <param datatype="string" encode="true" name="catId" sms-name="" src="request" value=""/>
             <param datatype="string" encode="true" name="apiKey" sms-name="" src="request" value=""/>
             <param datatype="string" encode="true" name="page" sms-name="" src="request" value=""/>
-         </service-input>
-         <service-output>
-            <dataset id="productsDataSet" src="//products">
-               <param datatype="string" format="None" formatvalue="" name="sku" sms-name="" src="product/sku" target="response"/>
-               <param datatype="string" format="None" formatvalue="" name="productId" sms-name="" src="product/productId" target="response"/>
-               <param datatype="string" format="None" formatvalue="" name="name" sms-name="" src="product/name" target="response"/>
-               <param datatype="string" format="None" formatvalue="" name="type" sms-name="" src="product/type" target="response"/>
-               <param datatype="string" format="None" formatvalue="" name="startDate" sms-name="" src="product/startDate" target="response"/>
-               <param datatype="string" format="None" formatvalue="" name="new" sms-name="" src="product/new" target="response"/>
-               <param datatype="string" format="None" formatvalue="" name="active" sms-name="" src="product/active" target="response"/>
-               <param datatype="string" format="None" formatvalue="" name="lowPriceGuarantee" sms-name="" src="product/lowPriceGuarantee" target="response"/>
-               <param datatype="string" format="None" formatvalue="" name="regularPrice" sms-name="" src="product/regularPrice" target="response"/>
-               <param datatype="string" format="None" formatvalue="" name="salePrice" sms-name="" src="product/salePrice" target="response"/>
-               <param datatype="string" format="None" formatvalue="" name="onSale" sms-name="" src="product/onSale" target="response"/>
-               <param datatype="string" format="None" formatvalue="" name="thumbnailImage" sms-name="" src="product/thumbnailImage" target="response"/>
-               <param datatype="string" format="None" formatvalue="" name="freeShipping" sms-name="" src="product/freeShipping" target="response"/>
-               <param datatype="string" format="None" formatvalue="" name="customerReviewAverage" sms-name="" src="product/customerReviewAverage" target="response"/>
-            </dataset>
-            <param datatype="number" format="None" formatvalue="" name="opstatus" sms-name="" src="" target=""/>
-            <param datatype="string" format="None" formatvalue="" name="errmsg" sms-name="" src="" target=""/>
-            <param datatype="number" format="None" formatvalue="" name="httpStatusCode" sms-name="" src="" target=""/>
-         </service-output>
-      </service>
-      <service cachable="false" cacheduration="" id="getSearchedProducts" passwordencrypted="true" smscode="" smsenabled="false" type="plainxmlserviceConnector">
-         <service-config>
-            <config-param name="endpointUrl" value="http://api.remix.bestbuy.com/v1/products(search=$search)?apiKey=$apiKey&amp;page=1"/>
-            <config-param name="postprocessorname" value=""/>
-            <config-param name="preprocessorname" value=""/>
-            <config-param name="urlprovider" value=""/>
-            <config-param name="dataprovider" value=""/>
-            <config-param name="sockettimeout" value=""/>
-            <config-param name="includecookies" value=""/>
-            <config-param name="proxyname" value=""/>
-            <config-param name="proxyport" value=""/>
-            <config-param name="proxyusername" value=""/>
-            <config-param name="http.method" value="GET"/>
-            <config-param name="isembedxmlpresent" value="false"/>
-            <config-param name="ignorehttpproxy" value="false"/>
-            <config-param name="responseEncoding" value="UTF-8"/>
-            <config-param name="server.auth.mode" value="basic"/>
-            <config-param name="server.auth.host" value=""/>
-            <config-param name="server.auth.ntlm.domain" value=""/>
-         </service-config>
-         <service-input>
-            <param datatype="string" encode="true" name="search" sms-name="" src="request" value=""/>
-            <param datatype="string" encode="true" name="apiKey" sms-name="" src="request" value=""/>
          </service-input>
          <service-output>
             <dataset id="productsDataSet" src="//products">

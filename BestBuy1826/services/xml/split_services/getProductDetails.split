@@ -35,7 +35,7 @@
             <srcformatvalue></srcformatvalue>
             <target></target>
             <targetdatatype></targetdatatype>
-            <testvalue>9999255200050008</testvalue>
+            <testvalue>9149735</testvalue>
             <value></value>
         </inparam>
         <inparam>
@@ -63,25 +63,26 @@
         <intemplate></intemplate>
         <ntlmDomain></ntlmDomain>
         <ntlmHost></ntlmHost>
-        <outtemplate>&lt;?xml-stylesheet href="/v1/xsl/xml_pretty_printer.xsl" type="text/xsl"?&gt;&lt;products canonicalUrl="/v1/products(sku=9999255200050008)?apiKey=sjzp9njep4syta6sdx827stk" currentPage="1" from="1" partial="false" queryTime="0.018" to="1" total="1" totalPages="1" totalTime="0.029"&gt;
+        <outtemplate>&lt;?xml-stylesheet href="/v1/xsl/xml_pretty_printer.xsl" type="text/xsl"?&gt;&lt;products canonicalUrl="/v1/products(sku=9149735)?apiKey=sjzp9njep4syta6sdx827stk" currentPage="1" from="1" partial="false" queryTime="0.010" to="1" total="1" totalPages="1" totalTime="0.021"&gt;
    &lt;product&gt;
-      &lt;sku&gt;9999255200050008&lt;/sku&gt;
-      &lt;productId&gt;253700050008&lt;/productId&gt;
-      &lt;name&gt;For TVs 50" and Smaller: Geek Squad TV Connect with Soundbar Mounting Service&lt;/name&gt;
+      &lt;sku&gt;9149735&lt;/sku&gt;
+      &lt;productId&gt;2313105&lt;/productId&gt;
+      &lt;name&gt;100 Hits: Karaoke [CD]&lt;/name&gt;
       &lt;source&gt;bestbuy&lt;/source&gt;
-      &lt;type&gt;Bundle&lt;/type&gt;
-      &lt;startDate&gt;2015-10-25&lt;/startDate&gt;
+      &lt;type&gt;Music&lt;/type&gt;
+      &lt;startDate&gt;2008-03-10&lt;/startDate&gt;
       &lt;new&gt;false&lt;/new&gt;
       &lt;active&gt;true&lt;/active&gt;
-      &lt;lowPriceGuarantee&gt;false&lt;/lowPriceGuarantee&gt;
-      &lt;activeUpdateDate&gt;2016-07-05T00:31:12&lt;/activeUpdateDate&gt;
-      &lt;regularPrice&gt;149.98&lt;/regularPrice&gt;
-      &lt;salePrice&gt;149.98&lt;/salePrice&gt;
+      &lt;lowPriceGuarantee&gt;true&lt;/lowPriceGuarantee&gt;
+      &lt;activeUpdateDate&gt;2016-08-01T16:54:38&lt;/activeUpdateDate&gt;
+      &lt;regularPrice&gt;12.99&lt;/regularPrice&gt;
+      &lt;salePrice&gt;12.99&lt;/salePrice&gt;
+      &lt;clearance/&gt;
       &lt;onSale&gt;false&lt;/onSale&gt;
       &lt;planPrice/&gt;
       &lt;priceWithPlan/&gt;
       &lt;priceRestriction/&gt;
-      &lt;priceUpdateDate/&gt;
+      &lt;priceUpdateDate&gt;2016-05-06T00:01:26&lt;/priceUpdateDate&gt;
       &lt;digital&gt;false&lt;/digital&gt;
       &lt;preowned&gt;false&lt;/preowned&gt;
       &lt;outletCenter/&gt;
@@ -90,17 +91,17 @@
       &lt;relatedProducts/&gt;
       &lt;salesRankShortTerm/&gt;
       &lt;salesRankMediumTerm/&gt;
-      &lt;salesRankLongTerm/&gt;
+      &lt;salesRankLongTerm&gt;90562&lt;/salesRankLongTerm&gt;
       &lt;bestSellingRank/&gt;
-      &lt;url&gt;https://api.bestbuy.com/click/-/9999255200050008/pdp&lt;/url&gt;
+      &lt;url&gt;https://api.bestbuy.com/click/-/9149735/pdp&lt;/url&gt;
       &lt;spin360Url/&gt;
-      &lt;mobileUrl&gt;https://api.bestbuy.com/click/-/9999255200050008/pdp&lt;/mobileUrl&gt;
+      &lt;mobileUrl&gt;https://api.bestbuy.com/click/-/9149735/pdp&lt;/mobileUrl&gt;
       &lt;affiliateUrl/&gt;
-      &lt;addToCartUrl&gt;https://api.bestbuy.com/click/-/9999255200050008/cart&lt;/addToCartUrl&gt;
+      &lt;addToCartUrl&gt;https://api.bestbuy.com/click/-/9149735/cart&lt;/addToCartUrl&gt;
       &lt;affiliateAddToCartUrl/&gt;
       &lt;linkShareAffiliateUrl/&gt;
       &lt;linkShareAffiliateAddToCartUrl/&gt;
-      &lt;upc/&gt;
+      &lt;upc&gt;654378702228&lt;/upc&gt;
       &lt;productTemplate/&gt;
       &lt;categoryPath&gt;
          &lt;category&gt;
@@ -108,50 +109,68 @@
             &lt;name&gt;Best Buy&lt;/name&gt;
          &lt;/category&gt;
          &lt;category&gt;
-            &lt;id&gt;pcmcat138100050018&lt;/id&gt;
-            &lt;name&gt;Geek Squad&lt;/name&gt;
+            &lt;id&gt;abcat0600000&lt;/id&gt;
+            &lt;name&gt;Movies &amp;amp; Music&lt;/name&gt;
          &lt;/category&gt;
          &lt;category&gt;
-            &lt;id&gt;pcmcat138100050024&lt;/id&gt;
-            &lt;name&gt;TV &amp;amp; Home Theater Services&lt;/name&gt;
-         &lt;/category&gt;
-         &lt;category&gt;
-            &lt;id&gt;pcmcat138100050028&lt;/id&gt;
-            &lt;name&gt;TV Mounting Services&lt;/name&gt;
+            &lt;id&gt;cat02001&lt;/id&gt;
+            &lt;name&gt;Music (CDs &amp;amp; Vinyl)&lt;/name&gt;
          &lt;/category&gt;
       &lt;/categoryPath&gt;
       &lt;lists/&gt;
-      &lt;customerReviewCount/&gt;
-      &lt;customerReviewAverage/&gt;
+      &lt;customerReviewCount&gt;1&lt;/customerReviewCount&gt;
+      &lt;customerReviewAverage&gt;5.0&lt;/customerReviewAverage&gt;
       &lt;customerTopRated&gt;false&lt;/customerTopRated&gt;
-      &lt;format/&gt;
-      &lt;freeShipping&gt;false&lt;/freeShipping&gt;
-      &lt;freeShippingEligible&gt;false&lt;/freeShippingEligible&gt;
-      &lt;inStoreAvailability&gt;false&lt;/inStoreAvailability&gt;
-      &lt;inStoreAvailabilityText/&gt;
-      &lt;inStoreAvailabilityUpdateDate&gt;2016-07-05T00:31:12&lt;/inStoreAvailabilityUpdateDate&gt;
-      &lt;itemUpdateDate&gt;2016-08-22T09:35:14&lt;/itemUpdateDate&gt;
-      &lt;onlineAvailability&gt;false&lt;/onlineAvailability&gt;
-      &lt;onlineAvailabilityText&gt;Backordered: Expected to ship within 1-2 weeks.&lt;/onlineAvailabilityText&gt;
-      &lt;onlineAvailabilityUpdateDate&gt;2016-07-05T00:31:12&lt;/onlineAvailabilityUpdateDate&gt;
-      &lt;releaseDate/&gt;
-      &lt;shippingCost/&gt;
-      &lt;shipping/&gt;
-      &lt;shippingLevelsOfService/&gt;
+      &lt;format&gt;CD&lt;/format&gt;
+      &lt;freeShipping&gt;true&lt;/freeShipping&gt;
+      &lt;freeShippingEligible&gt;true&lt;/freeShippingEligible&gt;
+      &lt;inStoreAvailability&gt;true&lt;/inStoreAvailability&gt;
+      &lt;inStoreAvailabilityText&gt;Store Pickup:&lt;/inStoreAvailabilityText&gt;
+      &lt;inStoreAvailabilityUpdateDate&gt;2016-08-01T16:54:38&lt;/inStoreAvailabilityUpdateDate&gt;
+      &lt;itemUpdateDate&gt;2016-09-01T12:13:52&lt;/itemUpdateDate&gt;
+      &lt;onlineAvailability&gt;true&lt;/onlineAvailability&gt;
+      &lt;onlineAvailabilityText&gt;Shipping: Usually leaves our warehouse in 1 business day&lt;/onlineAvailabilityText&gt;
+      &lt;onlineAvailabilityUpdateDate&gt;2016-08-01T16:54:38&lt;/onlineAvailabilityUpdateDate&gt;
+      &lt;releaseDate&gt;2008-10-06&lt;/releaseDate&gt;
+      &lt;shippingCost&gt;0.00&lt;/shippingCost&gt;
+      &lt;shipping&gt;
+         &lt;ground&gt;0.00&lt;/ground&gt;
+         &lt;secondDay&gt;8.99&lt;/secondDay&gt;
+         &lt;nextDay&gt;13.99&lt;/nextDay&gt;
+         &lt;vendorDelivery/&gt;
+      &lt;/shipping&gt;
+      &lt;shippingLevelsOfService&gt;
+         &lt;shippingLevelOfService&gt;
+            &lt;serviceLevelId&gt;1&lt;/serviceLevelId&gt;
+            &lt;serviceLevelName&gt;Standard&lt;/serviceLevelName&gt;
+            &lt;unitShippingPrice&gt;0.00&lt;/unitShippingPrice&gt;
+         &lt;/shippingLevelOfService&gt;
+         &lt;shippingLevelOfService&gt;
+            &lt;serviceLevelId&gt;3&lt;/serviceLevelId&gt;
+            &lt;serviceLevelName&gt;Two Day&lt;/serviceLevelName&gt;
+            &lt;unitShippingPrice&gt;8.99&lt;/unitShippingPrice&gt;
+         &lt;/shippingLevelOfService&gt;
+         &lt;shippingLevelOfService&gt;
+            &lt;serviceLevelId&gt;5&lt;/serviceLevelId&gt;
+            &lt;serviceLevelName&gt;One Day&lt;/serviceLevelName&gt;
+            &lt;unitShippingPrice&gt;13.99&lt;/unitShippingPrice&gt;
+         &lt;/shippingLevelOfService&gt;
+      &lt;/shippingLevelsOfService&gt;
       &lt;specialOrder&gt;false&lt;/specialOrder&gt;
       &lt;shortDescription/&gt;
-      &lt;class/&gt;
-      &lt;classId/&gt;
-      &lt;subclass/&gt;
-      &lt;subclassId/&gt;
-      &lt;department/&gt;
-      &lt;departmentId/&gt;
+      &lt;class&gt;COMPACT DISC&lt;/class&gt;
+      &lt;classId&gt;77&lt;/classId&gt;
+      &lt;subclass&gt;ROCK VARIOUS ARTIST&lt;/subclass&gt;
+      &lt;subclassId&gt;1043&lt;/subclassId&gt;
+      &lt;department&gt;VIDEO/COMPACT DISC&lt;/department&gt;
+      &lt;departmentId&gt;8&lt;/departmentId&gt;
       &lt;productFamilies/&gt;
-      &lt;image&gt;http://img.bbystatic.com/BestBuy_US/images/products/9999/pcmprd253700050008_sc.jpg&lt;/image&gt;
-      &lt;largeFrontImage/&gt;
-      &lt;mediumImage&gt;http://img.bbystatic.com/BestBuy_US/images/products/9999/pcmprd253700050008fp.gif&lt;/mediumImage&gt;
-      &lt;thumbnailImage&gt;http://img.bbystatic.com/BestBuy_US/images/products/9999/pcmprd253700050008_s.gif&lt;/thumbnailImage&gt;
-      &lt;largeImage&gt;http://img.bbystatic.com/BestBuy_US/images/products/9999/pcmprd253700050008_sa.jpg&lt;/largeImage&gt;
+      &lt;manufacturer&gt;Dmg Tv&lt;/manufacturer&gt;
+      &lt;image&gt;http://img.bbystatic.com/BestBuy_US/images/products/9149/9149735_sa.jpg&lt;/image&gt;
+      &lt;largeFrontImage&gt;http://img.bbystatic.com/BestBuy_US/images/products/9149/9149735_sa.jpg&lt;/largeFrontImage&gt;
+      &lt;mediumImage&gt;http://img.bbystatic.com/BestBuy_US/images/products/9149/9149735fp.gif&lt;/mediumImage&gt;
+      &lt;thumbnailImage&gt;http://img.bbystatic.com/BestBuy_US/images/products/9149/9149735_s.gif&lt;/thumbnailImage&gt;
+      &lt;largeImage&gt;http://img.bbystatic.com/BestBuy_US/images/products/9149/9149735_sb.jpg&lt;/largeImage&gt;
       &lt;alternateViewsImage/&gt;
       &lt;angleImage/&gt;
       &lt;backViewImage/&gt;
@@ -161,15 +180,26 @@
       &lt;remoteControlImage/&gt;
       &lt;rightViewImage/&gt;
       &lt;topViewImage/&gt;
+      &lt;albumTitle&gt;100 Hits: Karaoke&lt;/albumTitle&gt;
+      &lt;artistName&gt;Karaoke&lt;/artistName&gt;
+      &lt;artistId/&gt;
+      &lt;originalReleaseDate&gt;2008-10-06&lt;/originalReleaseDate&gt;
+      &lt;parentalAdvisory&gt;false&lt;/parentalAdvisory&gt;
+      &lt;mediaCount/&gt;
+      &lt;monoStereo/&gt;
+      &lt;studioLive/&gt;
+      &lt;inStorePickup&gt;true&lt;/inStorePickup&gt;
+      &lt;friendsAndFamilyPickup&gt;false&lt;/friendsAndFamilyPickup&gt;
+      &lt;homeDelivery&gt;false&lt;/homeDelivery&gt;
+      &lt;quantityLimit&gt;3&lt;/quantityLimit&gt;
       &lt;fulfilledBy&gt;BestBuy.com&lt;/fulfilledBy&gt;
-      &lt;members&gt;
-         &lt;sku&gt;3552354&lt;/sku&gt;
-         &lt;sku&gt;5001119&lt;/sku&gt;
-      &lt;/members&gt;
       &lt;bundledIn/&gt;
+      &lt;albumLabel&gt;Dmg Tv&lt;/albumLabel&gt;
+      &lt;genre&gt;Music (CDs &amp;amp; Vinyl)&lt;/genre&gt;
       &lt;dollarSavings&gt;0.00&lt;/dollarSavings&gt;
       &lt;percentSavings&gt;0.0&lt;/percentSavings&gt;
-      &lt;longDescription&gt;This Geek Squad&amp;amp;#174; package includes: Connecting TV and video componentsConfigure two smart TV or smart Blu-ray player apps for media streamingProgramming remote controlsMounting soundbar to a standard-frame wallAttaching supplied, in-wall rated cables from your audio source to soundbarConnecting audio components to a soundbar or surround-sound speaker system&lt;/longDescription&gt;
+      &lt;orderable&gt;Available&lt;/orderable&gt;
+      &lt;shippingWeight&gt;0.25&lt;/shippingWeight&gt;
       &lt;marketplace&gt;false&lt;/marketplace&gt;
       &lt;listingId/&gt;
       &lt;sellerId/&gt;
@@ -177,12 +207,12 @@
    &lt;/product&gt;
 &lt;/products&gt;
 </outtemplate>
-        <outTemplateHeader>Server: thin 1.6.1 codename Death Proof
-Connection: keep-alive
+        <outTemplateHeader>Date: Fri, 02 Sep 2016 12:35:34 GMT
+Content-Length: 5546
 X-Mashery-Responder: prod-j-worker-us-east-1d-104.mashery.com
-Content-Length: 4445
-Date: Thu, 25 Aug 2016 06:44:32 GMT
+Connection: keep-alive
 Content-Type: text/xml; charset=UTF-8
+Server: thin 1.6.1 codename Death Proof
 </outTemplateHeader>
         <outparam>
             <category></category>
@@ -574,6 +604,226 @@ Content-Type: text/xml; charset=UTF-8
             <recordid></recordid>
             <smsname></smsname>
             <source>product/shortDescription</source>
+            <srcformatvalue></srcformatvalue>
+            <target>response</target>
+            <targetdatatype></targetdatatype>
+            <testvalue></testvalue>
+            <value>productData</value>
+        </outparam>
+        <outparam>
+            <category></category>
+            <datatype>string</datatype>
+            <defaultvalue></defaultvalue>
+            <description></description>
+            <encode>true</encode>
+            <format>None</format>
+            <formatvalue></formatvalue>
+            <id>longDescription</id>
+            <invalue></invalue>
+            <name></name>
+            <order></order>
+            <passNull>false</passNull>
+            <recordid></recordid>
+            <smsname></smsname>
+            <source>product/longDescription</source>
+            <srcformatvalue></srcformatvalue>
+            <target>response</target>
+            <targetdatatype></targetdatatype>
+            <testvalue></testvalue>
+            <value>productData</value>
+        </outparam>
+        <outparam>
+            <category></category>
+            <datatype>string</datatype>
+            <defaultvalue></defaultvalue>
+            <description></description>
+            <encode>true</encode>
+            <format>None</format>
+            <formatvalue></formatvalue>
+            <id>topViewImage</id>
+            <invalue></invalue>
+            <name></name>
+            <order></order>
+            <passNull>false</passNull>
+            <recordid></recordid>
+            <smsname></smsname>
+            <source>product/longDescription</source>
+            <srcformatvalue></srcformatvalue>
+            <target>response</target>
+            <targetdatatype></targetdatatype>
+            <testvalue></testvalue>
+            <value>productData</value>
+        </outparam>
+        <outparam>
+            <category></category>
+            <datatype>string</datatype>
+            <defaultvalue></defaultvalue>
+            <description></description>
+            <encode>true</encode>
+            <format>None</format>
+            <formatvalue></formatvalue>
+            <id>rightViewImage</id>
+            <invalue></invalue>
+            <name></name>
+            <order></order>
+            <passNull>false</passNull>
+            <recordid></recordid>
+            <smsname></smsname>
+            <source>product/longDescription</source>
+            <srcformatvalue></srcformatvalue>
+            <target>response</target>
+            <targetdatatype></targetdatatype>
+            <testvalue></testvalue>
+            <value>productData</value>
+        </outparam>
+        <outparam>
+            <category></category>
+            <datatype>string</datatype>
+            <defaultvalue></defaultvalue>
+            <description></description>
+            <encode>true</encode>
+            <format>None</format>
+            <formatvalue></formatvalue>
+            <id>remoteControlImage</id>
+            <invalue></invalue>
+            <name></name>
+            <order></order>
+            <passNull>false</passNull>
+            <recordid></recordid>
+            <smsname></smsname>
+            <source>product/longDescription</source>
+            <srcformatvalue></srcformatvalue>
+            <target>response</target>
+            <targetdatatype></targetdatatype>
+            <testvalue></testvalue>
+            <value>productData</value>
+        </outparam>
+        <outparam>
+            <category></category>
+            <datatype>string</datatype>
+            <defaultvalue></defaultvalue>
+            <description></description>
+            <encode>true</encode>
+            <format>None</format>
+            <formatvalue></formatvalue>
+            <id>accessoriesImage</id>
+            <invalue></invalue>
+            <name></name>
+            <order></order>
+            <passNull>false</passNull>
+            <recordid></recordid>
+            <smsname></smsname>
+            <source>product/longDescription</source>
+            <srcformatvalue></srcformatvalue>
+            <target>response</target>
+            <targetdatatype></targetdatatype>
+            <testvalue></testvalue>
+            <value>productData</value>
+        </outparam>
+        <outparam>
+            <category></category>
+            <datatype>string</datatype>
+            <defaultvalue></defaultvalue>
+            <description></description>
+            <encode>true</encode>
+            <format>None</format>
+            <formatvalue></formatvalue>
+            <id>leftViewImage</id>
+            <invalue></invalue>
+            <name></name>
+            <order></order>
+            <passNull>false</passNull>
+            <recordid></recordid>
+            <smsname></smsname>
+            <source>product/longDescription</source>
+            <srcformatvalue></srcformatvalue>
+            <target>response</target>
+            <targetdatatype></targetdatatype>
+            <testvalue></testvalue>
+            <value>productData</value>
+        </outparam>
+        <outparam>
+            <category></category>
+            <datatype>string</datatype>
+            <defaultvalue></defaultvalue>
+            <description></description>
+            <encode>true</encode>
+            <format>None</format>
+            <formatvalue></formatvalue>
+            <id>energyGuideImage</id>
+            <invalue></invalue>
+            <name></name>
+            <order></order>
+            <passNull>false</passNull>
+            <recordid></recordid>
+            <smsname></smsname>
+            <source>product/longDescription</source>
+            <srcformatvalue></srcformatvalue>
+            <target>response</target>
+            <targetdatatype></targetdatatype>
+            <testvalue></testvalue>
+            <value>productData</value>
+        </outparam>
+        <outparam>
+            <category></category>
+            <datatype>string</datatype>
+            <defaultvalue></defaultvalue>
+            <description></description>
+            <encode>true</encode>
+            <format>None</format>
+            <formatvalue></formatvalue>
+            <id>backViewImage</id>
+            <invalue></invalue>
+            <name></name>
+            <order></order>
+            <passNull>false</passNull>
+            <recordid></recordid>
+            <smsname></smsname>
+            <source>product/longDescription</source>
+            <srcformatvalue></srcformatvalue>
+            <target>response</target>
+            <targetdatatype></targetdatatype>
+            <testvalue></testvalue>
+            <value>productData</value>
+        </outparam>
+        <outparam>
+            <category></category>
+            <datatype>string</datatype>
+            <defaultvalue></defaultvalue>
+            <description></description>
+            <encode>true</encode>
+            <format>None</format>
+            <formatvalue></formatvalue>
+            <id>angleImage</id>
+            <invalue></invalue>
+            <name></name>
+            <order></order>
+            <passNull>false</passNull>
+            <recordid></recordid>
+            <smsname></smsname>
+            <source>product/longDescription</source>
+            <srcformatvalue></srcformatvalue>
+            <target>response</target>
+            <targetdatatype></targetdatatype>
+            <testvalue></testvalue>
+            <value>productData</value>
+        </outparam>
+        <outparam>
+            <category></category>
+            <datatype>string</datatype>
+            <defaultvalue></defaultvalue>
+            <description></description>
+            <encode>true</encode>
+            <format>None</format>
+            <formatvalue></formatvalue>
+            <id>alternateViewsImage</id>
+            <invalue></invalue>
+            <name></name>
+            <order></order>
+            <passNull>false</passNull>
+            <recordid></recordid>
+            <smsname></smsname>
+            <source>product/longDescription</source>
             <srcformatvalue></srcformatvalue>
             <target>response</target>
             <targetdatatype></targetdatatype>

@@ -112,4 +112,5 @@ function appOnLaunch(){
 	gblSelectedValue = "";
 	gblCatId = "";
 	gblBackFrom = "";
+	gblSku = "";
 }

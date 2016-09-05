@@ -903,7 +903,7 @@
             <skinID>Skin Defaults</skinID>
             <visible>true</visible>
         </androidTitleBarData>
-        <android_softkeyMode>SoftInput adjust resize</android_softkeyMode>
+        <android_softkeyMode>SoftInput adjust pan</android_softkeyMode>
         <android_transition_out_effect>0</android_transition_out_effect>
         <android_showActionBar>true</android_showActionBar>
         <android_showActionBarIcon>true</android_showActionBarIcon>
@@ -13307,12 +13307,12 @@
                                 <functionName>None</functionName>
                                 <functionNameMap>
                                     <entry>
-                                        <key>lua</key>
-                                        <value>None</value>
-                                    </entry>
-                                    <entry>
                                         <key>js</key>
                                         <value>showHideSideMenu</value>
+                                    </entry>
+                                    <entry>
+                                        <key>lua</key>
+                                        <value>None</value>
                                     </entry>
                                 </functionNameMap>
                                 <paramDataMap>
@@ -14199,6 +14199,30 @@
                     </overridePerferred>
                     <contentAlign>4</contentAlign>
                     <parent_contentalignment>middle-center</parent_contentalignment>
+                    <event_onClick>
+                        <evtSequence>
+                            <actionList xsi:type="eventFunctionAction">
+                                <enabled>true</enabled>
+                                <name></name>
+                                <type>6</type>
+                                <functionName>None</functionName>
+                                <functionNameMap>
+                                    <entry>
+                                        <key>js</key>
+                                        <value>onProdDetailsBack</value>
+                                    </entry>
+                                </functionNameMap>
+                                <paramDataMap>
+                                    <entry>
+                                        <key>js</key>
+                                        <value/>
+                                    </entry>
+                                </paramDataMap>
+                            </actionList>
+                            <enabled>true</enabled>
+                            <seqname></seqname>
+                        </evtSequence>
+                    </event_onClick>
                     <parallel_exec>false</parallel_exec>
                     <iphone_glow_effect>false</iphone_glow_effect>
                     <iphone_3d_look>true</iphone_3d_look>
@@ -16918,16 +16942,16 @@
                         <right></right>
                         <rowHeight>40</rowHeight>
                         <rowWidth>100</rowWidth>
-                        <top>5</top>
+                        <top>2.0</top>
                         <width>40</width>
                         <xlocation>9</xlocation>
-                        <ylocation>10</ylocation>
+                        <ylocation>4</ylocation>
                         <zOrder>1</zOrder>
                     </flexConstraints>
                     <widgetID>5789c608f819412195e8707dfac18531</widgetID>
                     <location>
                         <x>9</x>
-                        <y>10</y>
+                        <y>4</y>
                     </location>
                     <createdGAVersion>6.5.0</createdGAVersion>
                     <size>
@@ -21928,17 +21952,17 @@
                         <right></right>
                         <rowHeight>40</rowHeight>
                         <rowWidth>100</rowWidth>
-                        <top>46</top>
+                        <top>44.0</top>
                         <width>40</width>
                         <xlocation>9</xlocation>
-                        <ylocation>92</ylocation>
+                        <ylocation>88</ylocation>
                         <zOrder>1</zOrder>
                     </flexConstraints>
                     <widgetID>cde366a5a7d641bca329cb882858b81e</widgetID>
                     <createdGAVersion>6.5.0</createdGAVersion>
                     <location>
                         <x>9</x>
-                        <y>92</y>
+                        <y>88</y>
                     </location>
                     <size>
                         <width>180</width>
@@ -22537,6 +22561,30 @@
                     </overridePerferred>
                     <contentAlign>4</contentAlign>
                     <parent_contentalignment>middle-center</parent_contentalignment>
+                    <event_onClick>
+                        <evtSequence>
+                            <actionList xsi:type="eventFunctionAction">
+                                <enabled>true</enabled>
+                                <name></name>
+                                <type>6</type>
+                                <functionName>None</functionName>
+                                <functionNameMap>
+                                    <entry>
+                                        <key>js</key>
+                                        <value>onClickOnMoreBtn</value>
+                                    </entry>
+                                </functionNameMap>
+                                <paramDataMap>
+                                    <entry>
+                                        <key>js</key>
+                                        <value/>
+                                    </entry>
+                                </paramDataMap>
+                            </actionList>
+                            <enabled>true</enabled>
+                            <seqname></seqname>
+                        </evtSequence>
+                    </event_onClick>
                     <parallel_exec>false</parallel_exec>
                     <iphone_glow_effect>false</iphone_glow_effect>
                     <iphone_3d_look>true</iphone_3d_look>
@@ -23522,7 +23570,7 @@
                             <contentOffsetY></contentOffsetY>
                             <contentSizeHeight></contentSizeHeight>
                             <contentSizeWidth></contentSizeWidth>
-                            <height>25</height>
+                            <height>22.0</height>
                             <left>15</left>
                             <maxHeight></maxHeight>
                             <maxWidth></maxWidth>
@@ -23625,7 +23673,7 @@
                         </location>
                         <size>
                             <width>308</width>
-                            <height>16</height>
+                            <height>14</height>
                         </size>
                         <sizePercent>
                             <width>100</width>
@@ -25219,7 +25267,7 @@
                     <contentOffsetY></contentOffsetY>
                     <contentSizeHeight></contentSizeHeight>
                     <contentSizeWidth></contentSizeWidth>
-                    <height>45</height>
+                    <height>45.0</height>
                     <left>0.00</left>
                     <maxHeight></maxHeight>
                     <maxWidth></maxWidth>
@@ -28606,10 +28654,10 @@
                     <right></right>
                     <rowHeight>40</rowHeight>
                     <rowWidth>100</rowWidth>
-                    <top>55</top>
+                    <top>57.0</top>
                     <width>100</width>
                     <xlocation>0</xlocation>
-                    <ylocation>247</ylocation>
+                    <ylocation>256</ylocation>
                     <zOrder>1</zOrder>
                 </flexConstraints>
                 <focusSkinId>Skin Defaults</focusSkinId>
@@ -28634,7 +28682,7 @@
                 <localeId>None</localeId>
                 <location>
                     <x>0</x>
-                    <y>247</y>
+                    <y>256</y>
                 </location>
                 <margins>
                     <android>
@@ -32664,7 +32712,7 @@
                             <maxWidth></maxWidth>
                             <minHeight></minHeight>
                             <minWidth></minWidth>
-                            <preferredHeight>141</preferredHeight>
+                            <preferredHeight>133</preferredHeight>
                             <preferredWidth>432</preferredWidth>
                             <propertyVsUnit>
                                 <entry>
@@ -33362,7 +33410,7 @@
                         </rendererData>
                         <size>
                             <width>432</width>
-                            <height>141</height>
+                            <height>133</height>
                         </size>
                         <sizePercent>
                             <width>0</width>
@@ -33453,7 +33501,7 @@
                         <maxWidth></maxWidth>
                         <minHeight></minHeight>
                         <minWidth></minWidth>
-                        <preferredHeight>141</preferredHeight>
+                        <preferredHeight>133</preferredHeight>
                         <preferredWidth>432</preferredWidth>
                         <propertyVsUnit>
                             <entry>
@@ -33539,7 +33587,7 @@
                         <top>2</top>
                         <width>96</width>
                         <xlocation>9</xlocation>
-                        <ylocation>3</ylocation>
+                        <ylocation>2</ylocation>
                         <zOrder>1</zOrder>
                     </flexConstraints>
                     <focusSkinId>Skin Defaults</focusSkinId>
@@ -33564,7 +33612,7 @@
                     <localeId>None</localeId>
                     <location>
                         <x>9</x>
-                        <y>3</y>
+                        <y>2</y>
                     </location>
                     <margins>
                         <android>
@@ -34151,7 +34199,7 @@
                     </rendererData>
                     <size>
                         <width>432</width>
-                        <height>141</height>
+                        <height>133</height>
                     </size>
                     <sizePercent>
                         <width>0</width>
@@ -34400,13 +34448,13 @@
                     <contentOffsetY></contentOffsetY>
                     <contentSizeHeight></contentSizeHeight>
                     <contentSizeWidth></contentSizeWidth>
-                    <height>35</height>
+                    <height>33.0</height>
                     <left>0</left>
                     <maxHeight></maxHeight>
                     <maxWidth></maxWidth>
                     <minHeight></minHeight>
                     <minWidth></minWidth>
-                    <preferredHeight>157</preferredHeight>
+                    <preferredHeight>148</preferredHeight>
                     <preferredWidth>450</preferredWidth>
                     <propertyVsUnit>
                         <entry>
@@ -34489,10 +34537,10 @@
                     <right></right>
                     <rowHeight>40</rowHeight>
                     <rowWidth>100</rowWidth>
-                    <top>102</top>
+                    <top>66.0</top>
                     <width>100</width>
                     <xlocation>0</xlocation>
-                    <ylocation>459</ylocation>
+                    <ylocation>297</ylocation>
                     <zOrder>1</zOrder>
                 </flexConstraints>
                 <focusSkinId>Skin Defaults</focusSkinId>
@@ -34517,7 +34565,7 @@
                 <localeId>None</localeId>
                 <location>
                     <x>0</x>
-                    <y>459</y>
+                    <y>297</y>
                 </location>
                 <margins>
                     <android>
@@ -35104,7 +35152,7 @@
                 </rendererData>
                 <size>
                     <width>450</width>
-                    <height>157</height>
+                    <height>148</height>
                 </size>
                 <sizePercent>
                     <width>0</width>

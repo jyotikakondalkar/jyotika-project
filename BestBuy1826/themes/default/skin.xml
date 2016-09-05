@@ -125,20 +125,20 @@
        <att name="Child_leftBorderRadius" value="10" type="int"/>
        <att name="Child_rightBorderRadius" value="10" type="int"/>
        <att name="Child_bottomBorderRadius" value="10" type="int"/>
-        <att name="FontNameMap" value="SPA Android Tablet,Arial" type="map"/>
-        <att name="FontNameMap" value="Android Rich Client Tablet,Arial" type="map"/>
-        <att name="FontNameMap" value="SPA iPhone,Arial" type="map"/>
-        <att name="FontNameMap" value="Windows8,Arial" type="map"/>
-        <att name="FontNameMap" value="SPA Android,Arial" type="map"/>
-        <att name="FontNameMap" value="SPA Blackberry,Arial" type="map"/>
-        <att name="FontNameMap" value="SPA Windows Tablet,Arial" type="map"/>
-        <att name="FontNameMap" value="Android,Arial" type="map"/>
-        <att name="FontNameMap" value="IPhone,Arial" type="map"/>
-        <att name="FontNameMap" value="SPA WinPhone8,Arial" type="map"/>
-        <att name="FontNameMap" value="SPA iPad,Arial" type="map"/>
-        <att name="FontNameMap" value="Desktop_web,Arial" type="map"/>
         <att name="FontNameMap" value="iPad,Arial" type="map"/>
+        <att name="FontNameMap" value="Desktop_web,Arial" type="map"/>
+        <att name="FontNameMap" value="IPhone,Arial" type="map"/>
+        <att name="FontNameMap" value="SPA Windows Tablet,Arial" type="map"/>
+        <att name="FontNameMap" value="Android Rich Client Tablet,Arial" type="map"/>
+        <att name="FontNameMap" value="SPA WinPhone8,Arial" type="map"/>
+        <att name="FontNameMap" value="SPA iPhone,Arial" type="map"/>
+        <att name="FontNameMap" value="SPA Android,Arial" type="map"/>
+        <att name="FontNameMap" value="Android,Arial" type="map"/>
+        <att name="FontNameMap" value="SPA Android Tablet,Arial" type="map"/>
+        <att name="FontNameMap" value="Windows8,Arial" type="map"/>
         <att name="FontNameMap" value="WinPhone8,Arial" type="map"/>
+        <att name="FontNameMap" value="SPA Blackberry,Arial" type="map"/>
+        <att name="FontNameMap" value="SPA iPad,Arial" type="map"/>
         <att name="ApplicablePlatforms" value="11111111111111111111111111111111" type="String"/>
         <att name="UseNative" value="false" type="Boolean"/>
         <att name="Font_color_override" value="true" type="Boolean"/>
@@ -287,7 +287,6 @@
     </skin>
     <skin>
         <att name="Name" value="CopyslButtonGlossBlue0bafb5635443e4b" type="String"/>
-        <att name="Kuid" value="s4d77f843a8e4c93879ba318885395d9" type="String"/>
         <att name="WidgetType" value="Button" type="String"/>
         <att name="Bg_type" value="0" type="int"/>
         <att name="Background_color" value="86,169,221" type="RGB"/>
@@ -347,8 +346,8 @@
         <att name="Bg_spaandroid_tablet_image" value="" type="String"/>
         <att name="Bg_spawindows_tablet_image" value="" type="String"/>
         <att name="Font_weight" value="normal" type="String"/>
-        <att name="Font_style" value="normal" type="String"/>
-        <att name="Font_size" value="148" type="String"/>
+        <att name="Font_style" value="none" type="String"/>
+        <att name="Font_size" value="100" type="String"/>
         <att name="Font_color" value="255,255,255" type="RGB"/>
         <att name="Font_color_alpha" value="0" type="String"/>
         <att name="Rightfont_weight" value="normal" type="String"/>
@@ -357,7 +356,7 @@
         <att name="Rightfont_name" value="None" type="String"/>
         <att name="BorderType" value="0" type="int"/>
         <att name="BorderRadius" value="0" type="Integer"/>
-        <att name="Border_color" value="255,255,255" type="RGB"/>
+        <att name="Border_color" value="0,0,0" type="RGB"/>
         <att name="Border_width" value="0" type="Integer"/>
         <att name="Border_style" value="0" type="int"/>
         <att name="Bg_img_style" value="0" type="int"/>
@@ -5999,7 +5998,6 @@
     </skin>
     <skin>
         <att name="Name" value="sknMore" type="String"/>
-        <att name="Kuid" value="s783c2f6668741aa9f637f9b4669204c" type="String"/>
         <att name="WidgetType" value="Button" type="String"/>
         <att name="Bg_type" value="0" type="int"/>
         <att name="Background_color" value="86,169,221" type="RGB"/>
@@ -6059,8 +6057,8 @@
         <att name="Bg_spaandroid_tablet_image" value="" type="String"/>
         <att name="Bg_spawindows_tablet_image" value="" type="String"/>
         <att name="Font_weight" value="normal" type="String"/>
-        <att name="Font_style" value="normal" type="String"/>
-        <att name="Font_size" value="148" type="String"/>
+        <att name="Font_style" value="none" type="String"/>
+        <att name="Font_size" value="100" type="String"/>
         <att name="Font_color" value="255,255,255" type="RGB"/>
         <att name="Font_color_alpha" value="0" type="String"/>
         <att name="Rightfont_weight" value="normal" type="String"/>
@@ -6069,7 +6067,7 @@
         <att name="Rightfont_name" value="None" type="String"/>
         <att name="BorderType" value="0" type="int"/>
         <att name="BorderRadius" value="0" type="Integer"/>
-        <att name="Border_color" value="255,255,255" type="RGB"/>
+        <att name="Border_color" value="0,0,0" type="RGB"/>
         <att name="Border_width" value="0" type="Integer"/>
         <att name="Border_style" value="0" type="int"/>
         <att name="Bg_img_style" value="0" type="int"/>

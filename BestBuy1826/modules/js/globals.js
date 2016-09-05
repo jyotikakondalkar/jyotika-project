@@ -9,3 +9,5 @@ gblSelectedValue = "";
 gblProducts = [];
 gblCatId = "";
 gblBackFrom = "";
+gblSku = "";
+gblProdImages = [];
