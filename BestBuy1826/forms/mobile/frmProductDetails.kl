@@ -27529,6 +27529,55 @@
                     </overridePerferred>
                     <contentAlign>4</contentAlign>
                     <parent_contentalignment>middle-center</parent_contentalignment>
+                    <event_onClick>
+                        <evtSequence>
+                            <actionList xsi:type="eventFunctionAction">
+                                <enabled>true</enabled>
+                                <name></name>
+                                <type>6</type>
+                                <functionName>None</functionName>
+                                <functionNameMap>
+                                    <entry>
+                                        <key>js</key>
+                                        <value>moveFlexDownUp</value>
+                                    </entry>
+                                </functionNameMap>
+                                <paramData>
+                                    <datatype>string</datatype>
+                                    <paramName>eventobject</paramName>
+                                    <valType>0</valType>
+                                    <value>eventobject</value>
+                                    <valueMap>
+                                        <entry>
+                                            <key>js</key>
+                                            <value>eventobject</value>
+                                        </entry>
+                                    </valueMap>
+                                </paramData>
+                                <paramDataMap>
+                                    <entry>
+                                        <key>js</key>
+                                        <value>
+                                            <paramList>
+                                                <datatype>string</datatype>
+                                                <paramName>eventobject</paramName>
+                                                <valType>0</valType>
+                                                <value>eventobject</value>
+                                                <valueMap>
+                                                    <entry>
+                                                        <key>js</key>
+                                                        <value>eventobject</value>
+                                                    </entry>
+                                                </valueMap>
+                                            </paramList>
+                                        </value>
+                                    </entry>
+                                </paramDataMap>
+                            </actionList>
+                            <enabled>true</enabled>
+                            <seqname></seqname>
+                        </evtSequence>
+                    </event_onClick>
                     <parallel_exec>false</parallel_exec>
                     <iphone_glow_effect>false</iphone_glow_effect>
                     <iphone_3d_look>true</iphone_3d_look>
@@ -34537,10 +34586,10 @@
                     <right></right>
                     <rowHeight>40</rowHeight>
                     <rowWidth>100</rowWidth>
-                    <top>66.0</top>
+                    <top>110.0</top>
                     <width>100</width>
                     <xlocation>0</xlocation>
-                    <ylocation>297</ylocation>
+                    <ylocation>495</ylocation>
                     <zOrder>1</zOrder>
                 </flexConstraints>
                 <focusSkinId>Skin Defaults</focusSkinId>
@@ -34565,7 +34614,7 @@
                 <localeId>None</localeId>
                 <location>
                     <x>0</x>
-                    <y>297</y>
+                    <y>495</y>
                 </location>
                 <margins>
                     <android>

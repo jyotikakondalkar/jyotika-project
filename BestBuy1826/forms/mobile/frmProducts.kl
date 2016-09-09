@@ -14521,7 +14521,7 @@
                                                 <datatype>string</datatype>
                                                 <paramName>sku</paramName>
                                                 <valType>0</valType>
-                                                <value>frmProducts.segProductList.selectedItems[0]["lblSku"]</value>
+                                                <value></value>
                                                 <valueMap>
                                                     <entry>
                                                         <key>js</key>
@@ -14543,6 +14543,49 @@
                                                     <entry>
                                                         <key>js</key>
                                                         <value>frmProducts.segProductList.selectedItems[0]["sku"];</value>
+                                                    </entry>
+                                                </valueMap>
+                                            </paramList>
+                                        </value>
+                                    </entry>
+                                </paramDataMap>
+                            </actionList>
+                            <actionList xsi:type="eventFunctionAction">
+                                <enabled>true</enabled>
+                                <name></name>
+                                <type>6</type>
+                                <functionName>None</functionName>
+                                <functionNameMap>
+                                    <entry>
+                                        <key>js</key>
+                                        <value>moveFlexDownUp2</value>
+                                    </entry>
+                                </functionNameMap>
+                                <paramData>
+                                    <datatype>string</datatype>
+                                    <paramName>eventobject</paramName>
+                                    <valType>0</valType>
+                                    <value>eventobject</value>
+                                    <valueMap>
+                                        <entry>
+                                            <key>js</key>
+                                            <value>eventobject</value>
+                                        </entry>
+                                    </valueMap>
+                                </paramData>
+                                <paramDataMap>
+                                    <entry>
+                                        <key>js</key>
+                                        <value>
+                                            <paramList>
+                                                <datatype>string</datatype>
+                                                <paramName>eventobject</paramName>
+                                                <valType>0</valType>
+                                                <value>eventobject</value>
+                                                <valueMap>
+                                                    <entry>
+                                                        <key>js</key>
+                                                        <value>eventobject</value>
                                                     </entry>
                                                 </valueMap>
                                             </paramList>

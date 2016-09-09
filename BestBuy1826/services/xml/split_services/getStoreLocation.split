@@ -63,7 +63,7 @@
         <intemplate></intemplate>
         <ntlmDomain></ntlmDomain>
         <ntlmHost></ntlmHost>
-        <outtemplate>&lt;?xml-stylesheet href="/v1/xsl/xml_pretty_printer.xsl" type="text/xsl"?&gt;&lt;stores canonicalUrl="/v1/stores(city=&amp;quot;dallas&amp;quot;)?apiKey=sjzp9njep4syta6sdx827stk" currentPage="1" from="1" partial="false" queryTime="0.003" to="10" total="12" totalPages="2" totalTime="0.015"&gt;
+        <outtemplate>&lt;?xml-stylesheet href="/v1/xsl/xml_pretty_printer.xsl" type="text/xsl"?&gt;&lt;stores canonicalUrl="/v1/stores(city=&amp;quot;dallas&amp;quot;)?apiKey=sjzp9njep4syta6sdx827stk" currentPage="1" from="1" partial="false" queryTime="0.012" to="10" total="12" totalPages="2" totalTime="0.045"&gt;
    &lt;store&gt;
       &lt;storeId&gt;58&lt;/storeId&gt;
       &lt;storeType&gt;BigBox&lt;/storeType&gt;
@@ -78,8 +78,8 @@
       &lt;country&gt;US&lt;/country&gt;
       &lt;lat&gt;32.876068&lt;/lat&gt;
       &lt;lng&gt;-96.768257&lt;/lng&gt;
-      &lt;hours&gt;Mon: 10-7; Tue: 10-9; Wed: 10-9; Thurs: 10-9; Fri: 10-10; Sat: 10-10; Sun: 11-8&lt;/hours&gt;
-      &lt;hoursAmPm&gt;Mon: 10am-7pm; Tue: 10am-9pm; Wed: 10am-9pm; Thurs: 10am-9pm; Fri: 10am-10pm; Sat: 10am-10pm; Sun: 11am-8pm&lt;/hoursAmPm&gt;
+      &lt;hours&gt;Mon: 10-9; Tue: 10-9; Wed: 10-9; Thurs: 10-9; Fri: 10-10; Sat: 10-10; Sun: 11-8&lt;/hours&gt;
+      &lt;hoursAmPm&gt;Mon: 10am-9pm; Tue: 10am-9pm; Wed: 10am-9pm; Thurs: 10am-9pm; Fri: 10am-10pm; Sat: 10am-10pm; Sun: 11am-8pm&lt;/hoursAmPm&gt;
       &lt;gmtOffset&gt;-5&lt;/gmtOffset&gt;
       &lt;services&gt;
          &lt;service&gt;Geek Squad Services&lt;/service&gt;
@@ -160,8 +160,8 @@
       &lt;country&gt;US&lt;/country&gt;
       &lt;lat&gt;32.954121&lt;/lat&gt;
       &lt;lng&gt;-96.815371&lt;/lng&gt;
-      &lt;hours&gt;Mon: 10-7; Tue: 10-9; Wed: 10-9; Thurs: 10-9; Fri: 10-10; Sat: 10-10; Sun: 11-8&lt;/hours&gt;
-      &lt;hoursAmPm&gt;Mon: 10am-7pm; Tue: 10am-9pm; Wed: 10am-9pm; Thurs: 10am-9pm; Fri: 10am-10pm; Sat: 10am-10pm; Sun: 11am-8pm&lt;/hoursAmPm&gt;
+      &lt;hours&gt;Mon: 10-9; Tue: 10-9; Wed: 10-9; Thurs: 10-9; Fri: 10-10; Sat: 10-10; Sun: 11-8&lt;/hours&gt;
+      &lt;hoursAmPm&gt;Mon: 10am-9pm; Tue: 10am-9pm; Wed: 10am-9pm; Thurs: 10am-9pm; Fri: 10am-10pm; Sat: 10am-10pm; Sun: 11am-8pm&lt;/hoursAmPm&gt;
       &lt;gmtOffset&gt;-5&lt;/gmtOffset&gt;
       &lt;services&gt;
          &lt;service&gt;Geek Squad Services&lt;/service&gt;
@@ -312,9 +312,9 @@
 </outtemplate>
         <outTemplateHeader>Server: thin 1.6.1 codename Death Proof
 Connection: keep-alive
-X-Mashery-Responder: prod-j-worker-us-east-1e-117.mashery.com
+X-Mashery-Responder: prod-j-worker-us-east-1b-109.mashery.com
 Content-Length: 10412
-Date: Thu, 07 Jul 2016 12:39:13 GMT
+Date: Fri, 09 Sep 2016 05:58:58 GMT
 Content-Type: text/xml; charset=UTF-8
 </outTemplateHeader>
         <outparam>
@@ -356,10 +356,10 @@ Content-Type: text/xml; charset=UTF-8
             <smsname></smsname>
             <source>store/storeId</source>
             <srcformatvalue></srcformatvalue>
-            <target></target>
+            <target>response</target>
             <targetdatatype></targetdatatype>
             <testvalue></testvalue>
-            <value></value>
+            <value>storesDataSet</value>
         </outparam>
         <outparam>
             <category></category>
@@ -378,10 +378,10 @@ Content-Type: text/xml; charset=UTF-8
             <smsname></smsname>
             <source>store/storeType</source>
             <srcformatvalue></srcformatvalue>
-            <target></target>
+            <target>response</target>
             <targetdatatype></targetdatatype>
             <testvalue></testvalue>
-            <value></value>
+            <value>storesDataSet</value>
         </outparam>
         <outparam>
             <category></category>
@@ -400,10 +400,10 @@ Content-Type: text/xml; charset=UTF-8
             <smsname></smsname>
             <source>store/tradeIn</source>
             <srcformatvalue></srcformatvalue>
-            <target></target>
+            <target>response</target>
             <targetdatatype></targetdatatype>
             <testvalue></testvalue>
-            <value></value>
+            <value>storesDataSet</value>
         </outparam>
         <outparam>
             <category></category>
@@ -422,10 +422,10 @@ Content-Type: text/xml; charset=UTF-8
             <smsname></smsname>
             <source>store/name</source>
             <srcformatvalue></srcformatvalue>
-            <target></target>
+            <target>response</target>
             <targetdatatype></targetdatatype>
             <testvalue></testvalue>
-            <value></value>
+            <value>storesDataSet</value>
         </outparam>
         <outparam>
             <category></category>
@@ -444,10 +444,10 @@ Content-Type: text/xml; charset=UTF-8
             <smsname></smsname>
             <source>store/longName</source>
             <srcformatvalue></srcformatvalue>
-            <target></target>
+            <target>response</target>
             <targetdatatype></targetdatatype>
             <testvalue></testvalue>
-            <value></value>
+            <value>storesDataSet</value>
         </outparam>
         <outparam>
             <category></category>
@@ -466,10 +466,10 @@ Content-Type: text/xml; charset=UTF-8
             <smsname></smsname>
             <source>store/address</source>
             <srcformatvalue></srcformatvalue>
-            <target></target>
+            <target>response</target>
             <targetdatatype></targetdatatype>
             <testvalue></testvalue>
-            <value></value>
+            <value>storesDataSet</value>
         </outparam>
         <outparam>
             <category></category>
@@ -488,10 +488,10 @@ Content-Type: text/xml; charset=UTF-8
             <smsname></smsname>
             <source>store/city</source>
             <srcformatvalue></srcformatvalue>
-            <target></target>
+            <target>response</target>
             <targetdatatype></targetdatatype>
             <testvalue></testvalue>
-            <value></value>
+            <value>storesDataSet</value>
         </outparam>
         <outparam>
             <category></category>
@@ -510,10 +510,10 @@ Content-Type: text/xml; charset=UTF-8
             <smsname></smsname>
             <source>store/region</source>
             <srcformatvalue></srcformatvalue>
-            <target></target>
+            <target>response</target>
             <targetdatatype></targetdatatype>
             <testvalue></testvalue>
-            <value></value>
+            <value>storesDataSet</value>
         </outparam>
         <outparam>
             <category></category>
@@ -532,10 +532,10 @@ Content-Type: text/xml; charset=UTF-8
             <smsname></smsname>
             <source>store/fullPostalCode</source>
             <srcformatvalue></srcformatvalue>
-            <target></target>
+            <target>response</target>
             <targetdatatype></targetdatatype>
             <testvalue></testvalue>
-            <value></value>
+            <value>storesDataSet</value>
         </outparam>
         <outparam>
             <category></category>
@@ -554,10 +554,10 @@ Content-Type: text/xml; charset=UTF-8
             <smsname></smsname>
             <source>store/country</source>
             <srcformatvalue></srcformatvalue>
-            <target></target>
+            <target>response</target>
             <targetdatatype></targetdatatype>
             <testvalue></testvalue>
-            <value></value>
+            <value>storesDataSet</value>
         </outparam>
         <outparam>
             <category></category>
@@ -576,10 +576,10 @@ Content-Type: text/xml; charset=UTF-8
             <smsname></smsname>
             <source>store/lat</source>
             <srcformatvalue></srcformatvalue>
-            <target></target>
+            <target>response</target>
             <targetdatatype></targetdatatype>
             <testvalue></testvalue>
-            <value></value>
+            <value>storesDataSet</value>
         </outparam>
         <outparam>
             <category></category>
@@ -598,10 +598,10 @@ Content-Type: text/xml; charset=UTF-8
             <smsname></smsname>
             <source>store/lng</source>
             <srcformatvalue></srcformatvalue>
-            <target></target>
+            <target>response</target>
             <targetdatatype></targetdatatype>
             <testvalue></testvalue>
-            <value></value>
+            <value>storesDataSet</value>
         </outparam>
         <outparam>
             <category></category>
@@ -620,10 +620,10 @@ Content-Type: text/xml; charset=UTF-8
             <smsname></smsname>
             <source>store/hours</source>
             <srcformatvalue></srcformatvalue>
-            <target></target>
+            <target>response</target>
             <targetdatatype></targetdatatype>
             <testvalue></testvalue>
-            <value></value>
+            <value>storesDataSet</value>
         </outparam>
         <outparam>
             <category></category>
@@ -642,10 +642,10 @@ Content-Type: text/xml; charset=UTF-8
             <smsname></smsname>
             <source>store/hoursAmPm</source>
             <srcformatvalue></srcformatvalue>
-            <target></target>
+            <target>response</target>
             <targetdatatype></targetdatatype>
             <testvalue></testvalue>
-            <value></value>
+            <value>storesDataSet</value>
         </outparam>
         <outparam>
             <category></category>
@@ -664,10 +664,10 @@ Content-Type: text/xml; charset=UTF-8
             <smsname></smsname>
             <source>store/gmtOffset</source>
             <srcformatvalue></srcformatvalue>
-            <target></target>
+            <target>response</target>
             <targetdatatype></targetdatatype>
             <testvalue></testvalue>
-            <value></value>
+            <value>storesDataSet</value>
         </outparam>
         <outparam>
             <category></category>
@@ -684,12 +684,12 @@ Content-Type: text/xml; charset=UTF-8
             <passNull>false</passNull>
             <recordid></recordid>
             <smsname></smsname>
-            <source>store/</source>
+            <source>store/phone</source>
             <srcformatvalue></srcformatvalue>
-            <target></target>
+            <target>response</target>
             <targetdatatype></targetdatatype>
             <testvalue></testvalue>
-            <value></value>
+            <value>storesDataSet</value>
         </outparam>
         <outparam>
             <category></category>
@@ -706,12 +706,12 @@ Content-Type: text/xml; charset=UTF-8
             <passNull>false</passNull>
             <recordid></recordid>
             <smsname></smsname>
-            <source>store/</source>
+            <source>store/postalCode</source>
             <srcformatvalue></srcformatvalue>
-            <target></target>
+            <target>response</target>
             <targetdatatype></targetdatatype>
             <testvalue></testvalue>
-            <value></value>
+            <value>storesDataSet</value>
         </outparam>
         <outparam>
             <category></category>
@@ -730,7 +730,7 @@ Content-Type: text/xml; charset=UTF-8
             <smsname></smsname>
             <source>@currentPage</source>
             <srcformatvalue></srcformatvalue>
-            <target></target>
+            <target>response</target>
             <targetdatatype></targetdatatype>
             <testvalue></testvalue>
             <value></value>
@@ -752,7 +752,7 @@ Content-Type: text/xml; charset=UTF-8
             <smsname></smsname>
             <source>@total</source>
             <srcformatvalue></srcformatvalue>
-            <target></target>
+            <target>response</target>
             <targetdatatype></targetdatatype>
             <testvalue></testvalue>
             <value></value>
@@ -774,7 +774,7 @@ Content-Type: text/xml; charset=UTF-8
             <smsname></smsname>
             <source>@totalPages</source>
             <srcformatvalue></srcformatvalue>
-            <target></target>
+            <target>response</target>
             <targetdatatype></targetdatatype>
             <testvalue></testvalue>
             <value></value>
