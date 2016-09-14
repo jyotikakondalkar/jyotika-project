@@ -11,3 +11,4 @@ gblCatId = "";
 gblBackFrom = "";
 gblSku = "";
 gblProdImages = [];
+gblReviewPos = true;

@@ -152,7 +152,7 @@ function onClickSearchCancel(){
 	frmHome.flxFilterContainer.height = "2%";
 }
 
-function moveFlexDownUp(eventobject) {
+/*function moveFlexDownUp(eventobject) {
 return AS_Button_60d459e79c6b4c8885e37668e1721d2f(eventobject);
 }
 function AS_Button_60d459e79c6b4c8885e37668e1721d2f(eventobject) {
@@ -165,6 +165,7 @@ kony.ui.createAnimation({"100":{"top":"66%","stepConfig":{"timingFunction":kony.
  {"animationEnd" : MOVE_ACTION____dddb79cf20ef4b139f73836968233b44_Callback});
 
 }
+*/
 
 function moveFlexDownUp2(eventobject) {
 return AS_Button_60d459e79c6b4c8885e37668e1721d2f2(eventobject);
@@ -174,8 +175,56 @@ function MOVE_ACTION____dddb79cf20ef4b139f73836968233b44_Callback2(){
 
 }
 frmProductDetails["flxReviews"].animate(
-kony.ui.createAnimation({"100":{"top":"66%","stepConfig":{"timingFunction":kony.anim.EASE}}}),
+kony.ui.createAnimation({"100":{"top":"110%","stepConfig":{"timingFunction":kony.anim.EASE}}}),
 {"delay":0,"iterationCount":1,"fillMode":kony.anim.FILL_MODE_FORWARDS,"duration":0.3},
  {"animationEnd" : MOVE_ACTION____dddb79cf20ef4b139f73836968233b44_Callback2});
 
+}
+
+function moveUp(eventobject) {
+function MOVE_ACTION____c20cae3d7a424750b4c0d2253e3ead01_Callback(){
+
+}function ___onClick_d090813b761c45f4ad05f75350e48227_Callback(){
+
+}
+frmProductDetails["flxReviews"].animate(
+kony.ui.createAnimation({"100":{"top":"65%","stepConfig":{"timingFunction":kony.anim.EASE}}}),
+{"delay":0,"iterationCount":1,"fillMode":kony.anim.FILL_MODE_FORWARDS,"duration":0.3},
+ {"animationEnd" : ___onClick_d090813b761c45f4ad05f75350e48227_Callback});
+
+frmProductDetails["btnArrow"].animate(
+kony.ui.createAnimation({"100":{"top":"61%","stepConfig":{"timingFunction":kony.anim.EASE}}}),
+{"delay":0,"iterationCount":1,"fillMode":kony.anim.FILL_MODE_FORWARDS,"duration":0.25},
+ {"animationEnd" : MOVE_ACTION____c20cae3d7a424750b4c0d2253e3ead01_Callback});
+
+frmProductDetails.btnArrow.skin = sknImageDown;
+kony.print("Skin of Arrow=> "+frmProductDetails.btnArrow.skin);
+}
+
+function moveFlexDownUp(eventobject) {
+if(frmProductDetails.btnArrow.skin == sknImageDown || frmProductDetails.btnArrow.skin == "sknImageDown"){
+	kony.print("sknImageDown====");
+	moveDown(eventobject);
+}else{
+	kony.print("sknImageUp====");
+	moveUp(eventobject);
+}
+}
+
+function moveDown(eventobject) {
+function MOVE_ACTION____4052ea1d10ec4038a60e08c77578fa4e_Callback(){
+
+}function MOVE_ACTION____2d1df80a16b44f18b36e7164622836f9_Callback(){
+
+}
+frmProductDetails["flxReviews"].animate(
+kony.ui.createAnimation({"100":{"top":"110%","stepConfig":{"timingFunction":kony.anim.EASE}}}),
+{"delay":0,"iterationCount":1,"fillMode":kony.anim.FILL_MODE_FORWARDS,"duration":0.25},
+ {"animationEnd" : MOVE_ACTION____2d1df80a16b44f18b36e7164622836f9_Callback});
+
+frmProductDetails["btnArrow"].animate(
+kony.ui.createAnimation({"100":{"top":"96%","stepConfig":{"timingFunction":kony.anim.EASE}}}),
+{"delay":0,"iterationCount":1,"fillMode":kony.anim.FILL_MODE_FORWARDS,"duration":0.25},
+ {"animationEnd" : MOVE_ACTION____4052ea1d10ec4038a60e08c77578fa4e_Callback});
+	frmProductDetails.btnArrow.skin = sknImageUp;
 }

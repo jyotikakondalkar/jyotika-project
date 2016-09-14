@@ -1,7 +1,9 @@
 function getProductDetails(sku) {
     try {
         showLoadingIndicator();
-     
+     	frmProductDetails.btnArrow.top = "96%";
+		frmProductDetails.flxReviews.top = "100%";
+		
         var inputParams = {};
         inputParams["serviceID"] = "getProductDetails";
         inputParams["ServiceName"] = "getProductDetails";
@@ -111,43 +113,7 @@ function callBackGetProductDetails(status, resultTable) {
 						var element = {imgUrl: largeImage, imgSize: "Large"};
 						gblProdImages.push(element);
 					}
-					if(topViewImage != null && topViewImage != "" && topViewImage != undefined){
-						var element = {imgUrl: topViewImage, imgSize: "Top View"};
-						gblProdImages.push(element);
-					}
-					if(rightViewImage != null && rightViewImage != "" && rightViewImage != undefined){
-						var element = {imgUrl: rightViewImage, imgSize: "Right View"};
-						gblProdImages.push(element);
-					}
-					if(remoteControlImage != null && remoteControlImage != "" && remoteControlImage != undefined){
-						var element = {imgUrl: remoteControlImage, imgSize: "Remote Control"};
-						gblProdImages.push(element);
-					}
-					if(accessoriesImage != null && accessoriesImage != "" && accessoriesImage != undefined){
-						var element = {imgUrl: accessoriesImage, imgSize: "Accessories"};
-						gblProdImages.push(element);
-					}
-					if(leftViewImage != null && leftViewImage != "" && leftViewImage != undefined){
-						var element = {imgUrl: leftViewImage, imgSize: "Left View"};
-						gblProdImages.push(element);
-					}
-					if(energyGuideImage != null && energyGuideImage != "" && energyGuideImage != undefined){
-						var element = {imgUrl: energyGuideImage, imgSize: "Energy Guide"};
-						gblProdImages.push(element);
-					}
-					if(backViewImage != null && backViewImage != "" && backViewImage != undefined){
-						var element = {imgUrl: backViewImage, imgSize: "Back View"};
-						gblProdImages.push(element);
-					}
-					if(angleImage != null && angleImage != "" && angleImage != undefined){
-						var element = {imgUrl: angleImage, imgSize: "Angle"};
-						gblProdImages.push(element);
-					}
-					if(alternateViewsImage != null && alternateViewsImage != "" && alternateViewsImage != undefined){
-						var element = {imgUrl: alternateViewsImage, imgSize: "Alternate View"};
-						gblProdImages.push(element);
-					}
-					
+							
 					var reviewAvg = "";
 					if(customerReviewAverage.trim()=="" ||customerReviewAverage==null){
 						reviewAvg = "";
@@ -198,9 +164,10 @@ function callBackGetProductDetails(status, resultTable) {
 					frmProductDetails.imgProduct.src = prodImage;
 					frmProductDetails.show();
 				}else{
+					dismissLoadingIndicator();
 					alert("Product Details are not available.");
 				}			
-			dismissLoadingIndicator();
+		//	dismissLoadingIndicator();
 
 		} else {
 			dismissLoadingIndicator();
@@ -215,7 +182,7 @@ function callBackGetProductDetails(status, resultTable) {
 
 function getProductReviews(sku, page) {
     try {
-        showLoadingIndicator();
+      //  showLoadingIndicator();
      
         var inputParams = {};
         inputParams["serviceID"] = "getProductReview";
@@ -274,10 +241,13 @@ function callBackGetProductReview(status, resultTable) {
 					kony.print("total no of reviews"+totalNoOfReviews);
 					
 					frmProductDetails.segReviews.setData(segProdDtlsReviews);
+					dismissLoadingIndicator();
 					if(totalNoOfReviews==0){
 						frmProductDetails.lblReviews.text = "No of Reviews";
+						frmProductDetails.btnArrow.setVisibility(false);
 						//flxProductDetails.flexUserReviews.setVisibility(false);
 					}else{
+						frmProductDetails.btnArrow.setVisibility(true);
 						frmProductDetails.lblReviews.text = totalNoOfReviews;
 						//flxProductDetails.lblNumberOfReviews.text="Total Num of Reviews :"+totalNoOfReviews;
 						//flxProductDetails.flexUserReviews.setVisibility(true);
@@ -298,7 +268,7 @@ function callBackGetProductReview(status, resultTable) {
 					
 					
 					//frmProductDetails.show();
-					dismissLoadingIndicator();
+				//	dismissLoadingIndicator();
 				
 
 		} else {
