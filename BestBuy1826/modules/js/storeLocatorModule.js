@@ -8,6 +8,7 @@ function getStoreDetails() {
 	     kony.print("storeSearch=> "+storeSearch);
 	      if (storeSearch == null || storeSearch == "") {
 	      	showAlert("Please Enter City.", "Info!");
+	      	frmStoreLocator.MapStore.locationData = [];
 	      	return;
 	      }
         showLoadingIndicator();
@@ -82,6 +83,8 @@ function callBackGetStoreDetails(status, resultTable) {
 				}else{
 					//alert("Product are not available.");
 					showAlert("Stores are not available.", "Store Data:");
+					//frmStoreLocator.MapStore.locationData = [];
+					showCurrentLocation();
 				}			
 			dismissLoadingIndicator();
 
@@ -99,9 +102,19 @@ function callBackGetStoreDetails(status, resultTable) {
 //------------Default Location on map---------
 
 function showCurrentLocation() {
+//var locationData = {
+//lat :"32",lon :"-96.3",name: "Texas",desc: "map_default_loc"
+//};
+
+  /*lat: "40.712784",
+        lon: "-74.005941"*/
 var locationData = {
-lat :"32",lon :"-96.3",name: "Texas",desc: "map_default_loc"
-};
-frmStoreLocator.MapStore.navigateToLocation(locationData, false, true);
+         lat: "32.876068",
+        lon: "-96.768257"
+    };
+    
+    
+//frmStoreLocator.MapStore.locationData = [];
+frmStoreLocator.MapStore.navigateToLocation(locationData, false, false);
 }
 

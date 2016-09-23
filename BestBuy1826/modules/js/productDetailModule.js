@@ -59,7 +59,7 @@ function callBackGetProductDetails(status, resultTable) {
 				kony.print("dataSet=> "+JSON.stringify(dataSet));
 				kony.print("dataSet.length=> "+dataSet.length);
 				//Calling getReviews service to get the pagination segment data.
-				getProductReviews(gblSku, 0);
+				getProductReviews(gblSku, 1);
 				if(dataSet.length>0){
 				//frmProducts.segProductList.removeAll();
 				//for(var i = 0; i < dataSet.length; i++) {
@@ -185,12 +185,14 @@ function callBackGetProductDetails(status, resultTable) {
 function getProductReviews(sku, page) {
     try {
       //  showLoadingIndicator();
-     
+		kony.print("getProductReviews=> "+page);
+     	gblCurrentPage = page;
         var inputParams = {};
         inputParams["serviceID"] = "getProductReview";
         inputParams["ServiceName"] = "getProductReview";
         inputParams["apiKey"] = gblApiKey;
         inputParams["sku"] = sku;
+        inputParams["page"] = page;
 
         invokeServiceAsync(inputParams, callBackGetProductReview);
     } catch (e) {
@@ -243,6 +245,20 @@ function callBackGetProductReview(status, resultTable) {
 					kony.print("total no of reviews"+totalNoOfReviews);
 					
 					frmProductDetails.segReviews.setData(segProdDtlsReviews);
+					if(totalNoOfPages == 1 || totalNoOfPages == "1"){
+						frmProductDetails.lblPageResult.text = "Page " + gblCurrentPage + " of " +totalNoOfPages;
+						frmProductDetails.pageNoList.isVisible = false;
+					}else{
+						kony.print("In else..");
+						var masterArray = [];
+						for(var i=0; i < 3;i++){
+							masterArray.push([ i, i+1]);
+						}
+						kony.print("Review masterArray=> "+JSON.stringify(masterArray));
+						frmProductDetails.pageNoList.masterData = masterArray;
+						frmProductDetails.pageNoList.masterData="0.0";
+						frmProductDetails.pageNoList.isVisible = true;
+					}
 					dismissLoadingIndicator();
 					if(totalNoOfReviews==0){
 						frmProductDetails.lblReviews.text = "No of Reviews";
@@ -282,6 +298,14 @@ function callBackGetProductReview(status, resultTable) {
 	kony.print(e.toString());
 	dismissLoadingIndicator();
 }
+}
+
+function onPageSelction(){
+	var selectedSize = frmProductDetails.pageNoList.selectedKey;
+	kony.print("onPageSelction selectedSize=> "+selectedSize);
+	var index = kony.os.toNumber(selectedSize);
+	kony.print("onPageSelction Roundup value => "+index);
+	getProductReviews(gblSku, index+1);
 }
 
 function onProdDetailsBack(){

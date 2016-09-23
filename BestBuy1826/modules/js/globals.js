@@ -22,3 +22,6 @@ var gblFreeShipping = [];
 var mainPriceForSpa = []; // to be changed.
 var gblPriceSub = 0.00;
 var gblOnSale = false;
+
+//for Pagination
+gblCurrentPage = 1;

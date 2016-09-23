@@ -79,32 +79,19 @@
             <srcformatvalue></srcformatvalue>
             <target></target>
             <targetdatatype></targetdatatype>
-            <testvalue>1</testvalue>
+            <testvalue>2</testvalue>
             <value></value>
         </inparam>
         <intemplate></intemplate>
         <ntlmDomain></ntlmDomain>
         <ntlmHost></ntlmHost>
-        <outtemplate>&lt;?xml-stylesheet href="/v1/xsl/xml_pretty_printer.xsl" type="text/xsl"?&gt;&lt;reviews canonicalUrl="/v1/reviews(sku=4360373)?apiKey=sjzp9njep4syta6sdx827stk" currentPage="1" from="1" partial="false" queryTime="0.007" to="1" total="1" totalPages="1" totalTime="0.011"&gt;
-   &lt;review&gt;
-      &lt;id&gt;5714804&lt;/id&gt;
-      &lt;sku&gt;4360373&lt;/sku&gt;
-      &lt;reviewer&gt;
-         &lt;name&gt;NSYNCISAWESOME&lt;/name&gt;
-      &lt;/reviewer&gt;
-      &lt;aboutMe/&gt;
-      &lt;rating&gt;5.0&lt;/rating&gt;
-      &lt;title&gt;Awesome concert&lt;/title&gt;
-      &lt;comment&gt;I love NSYNC they were my childhood band. If you remember there music you will love this concert. It takes you back to that time. I love the energy they give off when they're on stage.&lt;/comment&gt;
-      &lt;submissionTime&gt;2011-09-22T02:36:43&lt;/submissionTime&gt;
-   &lt;/review&gt;
-&lt;/reviews&gt;
+        <outtemplate>&lt;?xml-stylesheet href="/v1/xsl/xml_pretty_printer.xsl" type="text/xsl"?&gt;&lt;reviews canonicalUrl="/v1/reviews(sku=4360373)?page=2&amp;amp;apiKey=sjzp9njep4syta6sdx827stk" currentPage="2" from="11" partial="false" queryTime="0.004" to="1" total="1" totalPages="1" totalTime="0.005"/&gt;
 </outtemplate>
         <outTemplateHeader>Server: thin 1.6.1 codename Death Proof
 Connection: keep-alive
-X-Mashery-Responder: prod-j-worker-us-east-1e-126.mashery.com
-Content-Length: 791
-Date: Fri, 23 Sep 2016 05:34:52 GMT
+X-Mashery-Responder: prod-j-worker-us-east-1e-105.mashery.com
+Content-Length: 316
+Date: Fri, 23 Sep 2016 05:55:51 GMT
 Content-Type: text/xml; charset=UTF-8
 </outTemplateHeader>
         <outparam>

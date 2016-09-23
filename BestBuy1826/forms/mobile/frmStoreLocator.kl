@@ -3598,7 +3598,10 @@
                                     <value>counter=1;
 gblCategories = [];
 gblBreadCrumbs=[];
-gblSelectedValue="Home";</value>
+gblSelectedValue="Home";
+
+frmHome.flxFadeContainer.isVisible = false;
+frmHome.flxFilterContainer.isVisible = false;</value>
                                 </entry>
                             </exprMap>
                         </actionList>
@@ -7089,11 +7092,11 @@ gblSelectedValue="Home";</value>
                                             <datatype>string</datatype>
                                             <paramName>frmObj</paramName>
                                             <valType>0</valType>
-                                            <value></value>
+                                            <value>frmStoreLocator</value>
                                             <valueMap>
                                                 <entry>
                                                     <key>js</key>
-                                                    <value>frmHome</value>
+                                                    <value>frmStoreLocator</value>
                                                 </entry>
                                             </valueMap>
                                         </paramList>
@@ -7125,6 +7128,10 @@ gblSelectedValue="Home";</value>
                             <functionName>None</functionName>
                             <functionNameMap>
                                 <entry>
+                                    <key>lua</key>
+                                    <value>None</value>
+                                </entry>
+                                <entry>
                                     <key>js</key>
                                     <value>showStoreLocatorScreen</value>
                                 </entry>
@@ -7132,6 +7139,10 @@ gblSelectedValue="Home";</value>
                             <paramDataMap>
                                 <entry>
                                     <key>js</key>
+                                    <value/>
+                                </entry>
+                                <entry>
+                                    <key>lua</key>
                                     <value/>
                                 </entry>
                             </paramDataMap>
@@ -10444,6 +10455,10 @@ gblSelectedValue="Home";</value>
                             <functionName>None</functionName>
                             <functionNameMap>
                                 <entry>
+                                    <key>lua</key>
+                                    <value>None</value>
+                                </entry>
+                                <entry>
                                     <key>js</key>
                                     <value>showHideSideMenu</value>
                                 </entry>
@@ -10452,7 +10467,7 @@ gblSelectedValue="Home";</value>
                                 <datatype>string</datatype>
                                 <paramName>frmObj</paramName>
                                 <valType>0</valType>
-                                <value>frmStoreLocator</value>
+                                <value></value>
                                 <valueMap>
                                     <entry>
                                         <key>js</key>
@@ -10468,7 +10483,24 @@ gblSelectedValue="Home";</value>
                                             <datatype>string</datatype>
                                             <paramName>frmObj</paramName>
                                             <valType>0</valType>
-                                            <value>frmStoreLocator</value>
+                                            <value></value>
+                                            <valueMap>
+                                                <entry>
+                                                    <key>js</key>
+                                                    <value>frmStoreLocator</value>
+                                                </entry>
+                                            </valueMap>
+                                        </paramList>
+                                    </value>
+                                </entry>
+                                <entry>
+                                    <key>lua</key>
+                                    <value>
+                                        <paramList>
+                                            <datatype>string</datatype>
+                                            <paramName>frmObj</paramName>
+                                            <valType>0</valType>
+                                            <value></value>
                                             <valueMap>
                                                 <entry>
                                                     <key>js</key>
@@ -10490,6 +10522,22 @@ gblSelectedValue="Home";</value>
                             <newOutputMapping/>
                             <outputMapping/>
                             <platform>0</platform>
+                        </actionList>
+                        <actionList xsi:type="eventExpressionAction">
+                            <enabled>true</enabled>
+                            <name></name>
+                            <type>5</type>
+                            <expr></expr>
+                            <exprMap>
+                                <entry>
+                                    <key>js</key>
+                                    <value> if (total &lt; 1 || total == NaN) {
+        	frmCart.lblCartdesc.isVisible = true;
+        	frmCart.lblTotal.isVisible = false;
+        	frmCart.lblShipping.isVisible = false;
+    }</value>
+                                </entry>
+                            </exprMap>
                         </actionList>
                         <enabled>true</enabled>
                         <seqname></seqname>
