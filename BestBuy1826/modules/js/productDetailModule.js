@@ -121,11 +121,13 @@ function callBackGetProductDetails(status, resultTable) {
 						reviewAvg = "Avg review: "+customerReviewAverage;
 					}
 					if(onSale == true || onSale == "true"){
+						gblOnSale = true;
 						priceToShow = salePrice;
 					}else{
+						gblOnSale = false;
 						priceToShow = regularPrice;
 					}
-					
+					gblFreeShippingVar = freeShipping;
 					//frmProductDetails.imgProduct
 					frmProductDetails.lblProdName.text = name;
 					frmProductDetails.lblProdPrice.text = priceToShow;

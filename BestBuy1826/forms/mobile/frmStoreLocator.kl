@@ -10437,6 +10437,60 @@ gblSelectedValue="Home";</value>
                 </event_onTouchCancel>
                 <event_onTouchEnd>
                     <evtSequence>
+                        <actionList xsi:type="eventFunctionAction">
+                            <enabled>true</enabled>
+                            <name></name>
+                            <type>6</type>
+                            <functionName>None</functionName>
+                            <functionNameMap>
+                                <entry>
+                                    <key>js</key>
+                                    <value>showHideSideMenu</value>
+                                </entry>
+                            </functionNameMap>
+                            <paramData>
+                                <datatype>string</datatype>
+                                <paramName>frmObj</paramName>
+                                <valType>0</valType>
+                                <value>frmStoreLocator</value>
+                                <valueMap>
+                                    <entry>
+                                        <key>js</key>
+                                        <value>frmStoreLocator</value>
+                                    </entry>
+                                </valueMap>
+                            </paramData>
+                            <paramDataMap>
+                                <entry>
+                                    <key>js</key>
+                                    <value>
+                                        <paramList>
+                                            <datatype>string</datatype>
+                                            <paramName>frmObj</paramName>
+                                            <valType>0</valType>
+                                            <value>frmStoreLocator</value>
+                                            <valueMap>
+                                                <entry>
+                                                    <key>js</key>
+                                                    <value>frmStoreLocator</value>
+                                                </entry>
+                                            </valueMap>
+                                        </paramList>
+                                    </value>
+                                </entry>
+                            </paramDataMap>
+                        </actionList>
+                        <actionList xsi:type="eventFormAction">
+                            <enabled>true</enabled>
+                            <name></name>
+                            <type>1</type>
+                            <destType>0</destType>
+                            <navigateFrom>frmStoreLocator</navigateFrom>
+                            <navigateTo>frmCart</navigateTo>
+                            <newOutputMapping/>
+                            <outputMapping/>
+                            <platform>0</platform>
+                        </actionList>
                         <enabled>true</enabled>
                         <seqname></seqname>
                     </evtSequence>

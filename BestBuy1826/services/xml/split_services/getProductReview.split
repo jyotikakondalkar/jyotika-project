@@ -60,10 +60,32 @@
             <testvalue>sjzp9njep4syta6sdx827stk</testvalue>
             <value></value>
         </inparam>
+        <inparam>
+            <category></category>
+            <datatype>string</datatype>
+            <defaultvalue></defaultvalue>
+            <description></description>
+            <encode>true</encode>
+            <format>None</format>
+            <formatvalue></formatvalue>
+            <id>page</id>
+            <invalue></invalue>
+            <name></name>
+            <order></order>
+            <passNull>false</passNull>
+            <recordid></recordid>
+            <smsname></smsname>
+            <source>request</source>
+            <srcformatvalue></srcformatvalue>
+            <target></target>
+            <targetdatatype></targetdatatype>
+            <testvalue>1</testvalue>
+            <value></value>
+        </inparam>
         <intemplate></intemplate>
         <ntlmDomain></ntlmDomain>
         <ntlmHost></ntlmHost>
-        <outtemplate>&lt;?xml-stylesheet href="/v1/xsl/xml_pretty_printer.xsl" type="text/xsl"?&gt;&lt;reviews canonicalUrl="/v1/reviews(sku=4360373)?apiKey=sjzp9njep4syta6sdx827stk" currentPage="1" from="1" partial="false" queryTime="0.003" to="1" total="1" totalPages="1" totalTime="0.006"&gt;
+        <outtemplate>&lt;?xml-stylesheet href="/v1/xsl/xml_pretty_printer.xsl" type="text/xsl"?&gt;&lt;reviews canonicalUrl="/v1/reviews(sku=4360373)?apiKey=sjzp9njep4syta6sdx827stk" currentPage="1" from="1" partial="false" queryTime="0.007" to="1" total="1" totalPages="1" totalTime="0.011"&gt;
    &lt;review&gt;
       &lt;id&gt;5714804&lt;/id&gt;
       &lt;sku&gt;4360373&lt;/sku&gt;
@@ -80,9 +102,9 @@
 </outtemplate>
         <outTemplateHeader>Server: thin 1.6.1 codename Death Proof
 Connection: keep-alive
-X-Mashery-Responder: prod-j-worker-us-east-1e-120.mashery.com
+X-Mashery-Responder: prod-j-worker-us-east-1e-126.mashery.com
 Content-Length: 791
-Date: Thu, 07 Jul 2016 12:31:49 GMT
+Date: Fri, 23 Sep 2016 05:34:52 GMT
 Content-Type: text/xml; charset=UTF-8
 </outTemplateHeader>
         <outparam>
@@ -360,7 +382,7 @@ Content-Type: text/xml; charset=UTF-8
         <smscode></smscode>
         <smsenabled>false</smsenabled>
         <timeout></timeout>
-        <url>http://api.remix.bestbuy.com/v1/reviews(sku=$sku)?apiKey=$apiKey</url>
+        <url>http://api.remix.bestbuy.com/v1/reviews(sku=$sku)?apiKey=$apiKey&amp;pageSize=10&amp;page=$page</url>
         <urlprovider></urlprovider>
         <userid></userid>
     </plainxmlservice>

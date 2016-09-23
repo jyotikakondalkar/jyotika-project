@@ -18813,6 +18813,160 @@
                 </event_onTouchCancel>
                 <event_onTouchEnd>
                     <evtSequence>
+                        <actionList xsi:type="eventExpressionAction">
+                            <enabled>true</enabled>
+                            <name></name>
+                            <type>5</type>
+                            <expr></expr>
+                            <exprMap>
+                                <entry>
+                                    <key>js</key>
+                                    <value>counter=1;
+gblCategories = [];
+gblBreadCrumbs=[];
+gblSelectedValue="Home";</value>
+                                </entry>
+                            </exprMap>
+                        </actionList>
+                        <actionList xsi:type="eventFunctionAction">
+                            <enabled>true</enabled>
+                            <name></name>
+                            <type>6</type>
+                            <functionName>None</functionName>
+                            <functionNameMap>
+                                <entry>
+                                    <key>lua</key>
+                                    <value>None</value>
+                                </entry>
+                                <entry>
+                                    <key>js</key>
+                                    <value>getCategories</value>
+                                </entry>
+                            </functionNameMap>
+                            <paramData>
+                                <datatype>string</datatype>
+                                <paramName>catId</paramName>
+                                <valType>0</valType>
+                                <value></value>
+                                <valueMap>
+                                    <entry>
+                                        <key>js</key>
+                                        <value>firstLevelCatId</value>
+                                    </entry>
+                                </valueMap>
+                            </paramData>
+                            <paramDataMap>
+                                <entry>
+                                    <key>js</key>
+                                    <value>
+                                        <paramList>
+                                            <datatype>string</datatype>
+                                            <paramName>catId</paramName>
+                                            <valType>0</valType>
+                                            <value></value>
+                                            <valueMap>
+                                                <entry>
+                                                    <key>js</key>
+                                                    <value>firstLevelCatId</value>
+                                                </entry>
+                                            </valueMap>
+                                        </paramList>
+                                    </value>
+                                </entry>
+                                <entry>
+                                    <key>lua</key>
+                                    <value>
+                                        <paramList>
+                                            <datatype>string</datatype>
+                                            <paramName>catId</paramName>
+                                            <valType>0</valType>
+                                            <value></value>
+                                            <valueMap>
+                                                <entry>
+                                                    <key>js</key>
+                                                    <value>firstLevelCatId</value>
+                                                </entry>
+                                            </valueMap>
+                                        </paramList>
+                                    </value>
+                                </entry>
+                            </paramDataMap>
+                        </actionList>
+                        <actionList xsi:type="eventFunctionAction">
+                            <enabled>true</enabled>
+                            <name></name>
+                            <type>6</type>
+                            <functionName>None</functionName>
+                            <functionNameMap>
+                                <entry>
+                                    <key>lua</key>
+                                    <value>None</value>
+                                </entry>
+                                <entry>
+                                    <key>js</key>
+                                    <value>showHideSideMenu</value>
+                                </entry>
+                            </functionNameMap>
+                            <paramData>
+                                <datatype>string</datatype>
+                                <paramName>frmObj</paramName>
+                                <valType>0</valType>
+                                <value></value>
+                                <valueMap>
+                                    <entry>
+                                        <key>js</key>
+                                        <value>frmProducts</value>
+                                    </entry>
+                                </valueMap>
+                            </paramData>
+                            <paramDataMap>
+                                <entry>
+                                    <key>js</key>
+                                    <value>
+                                        <paramList>
+                                            <datatype>string</datatype>
+                                            <paramName>frmObj</paramName>
+                                            <valType>0</valType>
+                                            <value></value>
+                                            <valueMap>
+                                                <entry>
+                                                    <key>js</key>
+                                                    <value>frmProducts</value>
+                                                </entry>
+                                            </valueMap>
+                                        </paramList>
+                                    </value>
+                                </entry>
+                                <entry>
+                                    <key>lua</key>
+                                    <value>
+                                        <paramList>
+                                            <datatype>string</datatype>
+                                            <paramName>frmObj</paramName>
+                                            <valType>0</valType>
+                                            <value></value>
+                                            <valueMap>
+                                                <entry>
+                                                    <key>js</key>
+                                                    <value>frmProducts</value>
+                                                </entry>
+                                            </valueMap>
+                                        </paramList>
+                                    </value>
+                                </entry>
+                            </paramDataMap>
+                        </actionList>
+                        <actionList xsi:type="eventFormAction">
+                            <enabled>true</enabled>
+                            <name></name>
+                            <type>1</type>
+                            <destType>0</destType>
+                            <navigateFrom>frmProducts</navigateFrom>
+                            <navigateTo>frmHome</navigateTo>
+                            <newOutputMapping/>
+                            <outputMapping/>
+                            <platform>0</platform>
+                        </actionList>
                         <enabled>true</enabled>
                         <seqname></seqname>
                     </evtSequence>
@@ -22126,6 +22280,67 @@
                 </event_onTouchCancel>
                 <event_onTouchEnd>
                     <evtSequence>
+                        <actionList xsi:type="eventFunctionAction">
+                            <enabled>true</enabled>
+                            <name></name>
+                            <type>6</type>
+                            <functionName>None</functionName>
+                            <functionNameMap>
+                                <entry>
+                                    <key>js</key>
+                                    <value>showHideSideMenu</value>
+                                </entry>
+                            </functionNameMap>
+                            <paramData>
+                                <datatype>string</datatype>
+                                <paramName>frmObj</paramName>
+                                <valType>0</valType>
+                                <value>frmProducts</value>
+                                <valueMap>
+                                    <entry>
+                                        <key>js</key>
+                                        <value>frmProducts</value>
+                                    </entry>
+                                </valueMap>
+                            </paramData>
+                            <paramDataMap>
+                                <entry>
+                                    <key>js</key>
+                                    <value>
+                                        <paramList>
+                                            <datatype>string</datatype>
+                                            <paramName>frmObj</paramName>
+                                            <valType>0</valType>
+                                            <value>frmProducts</value>
+                                            <valueMap>
+                                                <entry>
+                                                    <key>js</key>
+                                                    <value>frmProducts</value>
+                                                </entry>
+                                            </valueMap>
+                                        </paramList>
+                                    </value>
+                                </entry>
+                            </paramDataMap>
+                        </actionList>
+                        <actionList xsi:type="eventFunctionAction">
+                            <enabled>true</enabled>
+                            <name></name>
+                            <type>6</type>
+                            <functionName>None</functionName>
+                            <functionNameMap>
+                                <entry>
+                                    <key>js</key>
+                                    <value>showStoreLocatorScreen</value>
+                                </entry>
+                            </functionNameMap>
+                            <paramDataMap>
+                                <entry>
+                                    <key>js</key>
+                                    <value/>
+                                </entry>
+                            </paramDataMap>
+                        </actionList>
                         <enabled>true</enabled>
                         <seqname></seqname>
                     </evtSequence>
@@ -25439,6 +25654,60 @@
                 </event_onTouchCancel>
                 <event_onTouchEnd>
                     <evtSequence>
+                        <actionList xsi:type="eventFunctionAction">
+                            <enabled>true</enabled>
+                            <name></name>
+                            <type>6</type>
+                            <functionName>None</functionName>
+                            <functionNameMap>
+                                <entry>
+                                    <key>js</key>
+                                    <value>showHideSideMenu</value>
+                                </entry>
+                            </functionNameMap>
+                            <paramData>
+                                <datatype>string</datatype>
+                                <paramName>frmObj</paramName>
+                                <valType>0</valType>
+                                <value>frmProducts</value>
+                                <valueMap>
+                                    <entry>
+                                        <key>js</key>
+                                        <value>frmProducts</value>
+                                    </entry>
+                                </valueMap>
+                            </paramData>
+                            <paramDataMap>
+                                <entry>
+                                    <key>js</key>
+                                    <value>
+                                        <paramList>
+                                            <datatype>string</datatype>
+                                            <paramName>frmObj</paramName>
+                                            <valType>0</valType>
+                                            <value>frmProducts</value>
+                                            <valueMap>
+                                                <entry>
+                                                    <key>js</key>
+                                                    <value>frmProducts</value>
+                                                </entry>
+                                            </valueMap>
+                                        </paramList>
+                                    </value>
+                                </entry>
+                            </paramDataMap>
+                        </actionList>
+                        <actionList xsi:type="eventFormAction">
+                            <enabled>true</enabled>
+                            <name></name>
+                            <type>1</type>
+                            <destType>0</destType>
+                            <navigateFrom>frmProducts</navigateFrom>
+                            <navigateTo>frmCart</navigateTo>
+                            <newOutputMapping/>
+                            <outputMapping/>
+                            <platform>0</platform>
+                        </actionList>
                         <enabled>true</enabled>
                         <seqname></seqname>
                     </evtSequence>
