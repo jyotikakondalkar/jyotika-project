@@ -3633,17 +3633,20 @@
                             <exprMap>
                                 <entry>
                                     <key>js</key>
-                                    <value>counter=1;
+                                    <value>//counter=1;
 gblCategories = [];
-gblBreadCrumbs=[];
-gblSelectedValue="Home";
+//gblBreadCrumbs=[];
+//gblSelectedValue="Home";
 frmHome.flxFadeContainer.isVisible = false;
-frmHome.flxFilterContainer.isVisible = false;</value>
+frmHome.flxFilterContainer.isVisible = false;
+frmHome.destroy();
+frmHome.listFilterby.selectedKey = "0.0";
+frmHome.txtSearch.text = "";</value>
                                 </entry>
                             </exprMap>
                         </actionList>
                         <actionList xsi:type="eventFunctionAction">
-                            <enabled>true</enabled>
+                            <enabled>false</enabled>
                             <name></name>
                             <type>6</type>
                             <functionName>None</functionName>

@@ -85,13 +85,13 @@
         <intemplate></intemplate>
         <ntlmDomain></ntlmDomain>
         <ntlmHost></ntlmHost>
-        <outtemplate>&lt;?xml-stylesheet href="/v1/xsl/xml_pretty_printer.xsl" type="text/xsl"?&gt;&lt;reviews canonicalUrl="/v1/reviews(sku=4360373)?page=2&amp;amp;apiKey=sjzp9njep4syta6sdx827stk" currentPage="2" from="11" partial="false" queryTime="0.004" to="1" total="1" totalPages="1" totalTime="0.005"/&gt;
+        <outtemplate>&lt;?xml-stylesheet href="/v1/xsl/xml_pretty_printer.xsl" type="text/xsl"?&gt;&lt;reviews canonicalUrl="/v1/reviews(sku=4360373)?page=2&amp;amp;apiKey=sjzp9njep4syta6sdx827stk" currentPage="2" from="11" partial="false" queryTime="0.005" to="1" total="1" totalPages="1" totalTime="0.006"/&gt;
 </outtemplate>
         <outTemplateHeader>Server: thin 1.6.1 codename Death Proof
 Connection: keep-alive
-X-Mashery-Responder: prod-j-worker-us-east-1e-105.mashery.com
+X-Mashery-Responder: prod-j-worker-us-east-1e-114.mashery.com
 Content-Length: 316
-Date: Fri, 23 Sep 2016 05:55:51 GMT
+Date: Mon, 26 Sep 2016 09:09:00 GMT
 Content-Type: text/xml; charset=UTF-8
 </outTemplateHeader>
         <outparam>

@@ -68,8 +68,10 @@ function callBackGetCategories(status, resultTable) {
 				}
 				frmHome.lblHomeFlow.text = breadCrumb;
 				}else{
-					alert("Product are not available.");
-					kony.print("gblCatId=> "+gblCatId);
+					//alert("Product are not available.");
+						//showLoadingIndicator();
+					kony.print("HERE=> gblCatId=> "+gblCatId);
+					gblSearchedText = "";
 					getProducts(gblCatId);
 				}			
 			dismissLoadingIndicator();

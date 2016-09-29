@@ -3595,18 +3595,21 @@
                             <exprMap>
                                 <entry>
                                     <key>js</key>
-                                    <value>counter=1;
+                                    <value>//counter=1;
 gblCategories = [];
-gblBreadCrumbs=[];
-gblSelectedValue="Home";
+//gblBreadCrumbs=[];
+//gblSelectedValue="Home";
 
 frmHome.flxFadeContainer.isVisible = false;
-frmHome.flxFilterContainer.isVisible = false;</value>
+frmHome.flxFilterContainer.isVisible = false;
+frmHome.destroy();
+frmHome.listFilterby.selectedKey = "0.0";
+frmHome.txtSearch.text = "";</value>
                                 </entry>
                             </exprMap>
                         </actionList>
                         <actionList xsi:type="eventFunctionAction">
-                            <enabled>true</enabled>
+                            <enabled>false</enabled>
                             <name></name>
                             <type>6</type>
                             <functionName>None</functionName>
@@ -13072,7 +13075,7 @@ frmHome.flxFilterContainer.isVisible = false;</value>
                         <height>100</height>
                     </sizePercent>
                     <skinId>sknBtnMenu</skinId>
-                    <focusSkinId>sknHomeMenuFocus</focusSkinId>
+                    <focusSkinId>sknBtnMenu</focusSkinId>
                     <localeId>None</localeId>
                     <visible>true</visible>
                     <rendererData>
@@ -15485,7 +15488,7 @@ frmHome.flxFilterContainer.isVisible = false;</value>
                         <maxWidth></maxWidth>
                         <minHeight></minHeight>
                         <minWidth></minWidth>
-                        <preferredHeight>32</preferredHeight>
+                        <preferredHeight>28</preferredHeight>
                         <preferredWidth>234</preferredWidth>
                         <propertyVsUnit>
                             <entry>
@@ -15582,7 +15585,7 @@ frmHome.flxFilterContainer.isVisible = false;</value>
                     </location>
                     <size>
                         <width>234</width>
-                        <height>32</height>
+                        <height>28</height>
                     </size>
                     <sizePercent>
                         <width>100</width>
@@ -16451,7 +16454,7 @@ frmHome.flxFilterContainer.isVisible = false;</value>
                         <maxWidth></maxWidth>
                         <minHeight></minHeight>
                         <minWidth></minWidth>
-                        <preferredHeight>35</preferredHeight>
+                        <preferredHeight>29</preferredHeight>
                         <preferredWidth>112</preferredWidth>
                         <propertyVsUnit>
                             <entry>
@@ -16548,14 +16551,14 @@ frmHome.flxFilterContainer.isVisible = false;</value>
                     </location>
                     <size>
                         <width>112</width>
-                        <height>35</height>
+                        <height>29</height>
                     </size>
                     <sizePercent>
                         <width>100</width>
                         <height>100</height>
                     </sizePercent>
                     <skinId>btnSearchskin</skinId>
-                    <focusSkinId>Skin Defaults</focusSkinId>
+                    <focusSkinId>btnSearchskin</focusSkinId>
                     <localeId>None</localeId>
                     <visible>true</visible>
                     <rendererData>
@@ -17377,18 +17380,18 @@ frmHome.flxFilterContainer.isVisible = false;</value>
                     <contentOffsetY></contentOffsetY>
                     <contentSizeHeight></contentSizeHeight>
                     <contentSizeWidth></contentSizeWidth>
-                    <height>47</height>
+                    <height>40</height>
                     <left>0</left>
                     <maxHeight></maxHeight>
                     <maxWidth></maxWidth>
                     <minHeight></minHeight>
                     <minWidth></minWidth>
-                    <preferredHeight>47</preferredHeight>
+                    <preferredHeight>40</preferredHeight>
                     <preferredWidth>450</preferredWidth>
                     <propertyVsUnit>
                         <entry>
                             <key>Top</key>
-                            <value>dp</value>
+                            <value>%</value>
                         </entry>
                         <entry>
                             <key>Left</key>
@@ -17466,10 +17469,10 @@ frmHome.flxFilterContainer.isVisible = false;</value>
                     <right></right>
                     <rowHeight>40</rowHeight>
                     <rowWidth>100</rowWidth>
-                    <top>68</top>
+                    <top>11.0</top>
                     <width>100</width>
                     <xlocation>0</xlocation>
-                    <ylocation>68</ylocation>
+                    <ylocation>49</ylocation>
                     <zOrder>1</zOrder>
                 </flexConstraints>
                 <focusSkinId>Skin Defaults</focusSkinId>
@@ -17494,7 +17497,7 @@ frmHome.flxFilterContainer.isVisible = false;</value>
                 <localeId>None</localeId>
                 <location>
                     <x>0</x>
-                    <y>68</y>
+                    <y>49</y>
                 </location>
                 <margins>
                     <android>
@@ -18081,7 +18084,7 @@ frmHome.flxFilterContainer.isVisible = false;</value>
                 </rendererData>
                 <size>
                     <width>450</width>
-                    <height>47</height>
+                    <height>40</height>
                 </size>
                 <sizePercent>
                     <width>0</width>
@@ -18114,18 +18117,18 @@ frmHome.flxFilterContainer.isVisible = false;</value>
                     <contentOffsetY></contentOffsetY>
                     <contentSizeHeight></contentSizeHeight>
                     <contentSizeWidth></contentSizeWidth>
-                    <height>71.78</height>
-                    <left>0</left>
+                    <height>79.78</height>
+                    <left>4</left>
                     <maxHeight></maxHeight>
                     <maxWidth></maxWidth>
                     <minHeight></minHeight>
                     <minWidth></minWidth>
-                    <preferredHeight>323</preferredHeight>
+                    <preferredHeight>359</preferredHeight>
                     <preferredWidth>450</preferredWidth>
                     <propertyVsUnit>
                         <entry>
                             <key>Top</key>
-                            <value>dp</value>
+                            <value>%</value>
                         </entry>
                         <entry>
                             <key>Left</key>
@@ -18203,21 +18206,21 @@ frmHome.flxFilterContainer.isVisible = false;</value>
                     <right></right>
                     <rowHeight>40</rowHeight>
                     <rowWidth>100</rowWidth>
-                    <top>123</top>
+                    <top>19.78</top>
                     <width>100</width>
-                    <xlocation>0</xlocation>
-                    <ylocation>123</ylocation>
+                    <xlocation>4</xlocation>
+                    <ylocation>89</ylocation>
                     <zOrder>1</zOrder>
                 </flexConstraints>
                 <widgetID>6378ebf599b84698a6553e8dd07142c3</widgetID>
                 <createdGAVersion>6.5.0</createdGAVersion>
                 <location>
-                    <x>0</x>
-                    <y>123</y>
+                    <x>4</x>
+                    <y>89</y>
                 </location>
                 <size>
                     <width>450</width>
-                    <height>323</height>
+                    <height>359</height>
                 </size>
                 <sizePercent>
                     <width>100</width>
@@ -19064,12 +19067,12 @@ frmHome.flxFilterContainer.isVisible = false;</value>
                 <pbScaleMode>0</pbScaleMode>
                 <pbWidth>0</pbWidth>
                 <pbHeight>0</pbHeight>
-                <calloutTemplate>TempCustomCallOut</calloutTemplate>
+                <calloutTemplate>None</calloutTemplate>
                 <winphone8_view>0</winphone8_view>
                 <winphone7_zoomlevel>0</winphone7_zoomlevel>
                 <winphone8_zoomlevel>0</winphone8_zoomlevel>
                 <windows8_zoomlevel>2</windows8_zoomlevel>
-                <calloutWidth>80</calloutWidth>
+                <calloutWidth>65</calloutWidth>
                 <containerWeight>100</containerWeight>
                 <projectState>1</projectState>
                 <general_containerHeight></general_containerHeight>

@@ -1,4 +1,6 @@
 function showHideSideMenu(frmObj){
+
+
 	kony.print("Home positioning:=> "+frmObj.flxMain.left);
 	if(frmObj.flxMain.left.trim() == "0dp" || frmObj.flxMain.left.trim() == "0%" || frmObj.flxMain.left.trim() == "0"){
 		kony.print("in anim if");
@@ -56,6 +58,7 @@ function moveActionHomeMainMenuRight() {}
 function moveActionHomeSideMenuRight() {}
 
 function animSlideHomeMenuLeft(frmObj) {
+	kony.print("In animSlideHomeMenuLeft==> ");
 	frmObj["flxSideMenu"].animate(
 		kony.ui.createAnimation({
 			"100" : {
@@ -188,12 +191,12 @@ function MOVE_ACTION____c20cae3d7a424750b4c0d2253e3ead01_Callback(){
 
 }
 frmProductDetails["flxReviews"].animate(
-kony.ui.createAnimation({"100":{"top":"65%","stepConfig":{"timingFunction":kony.anim.EASE}}}),
+kony.ui.createAnimation({"100":{"top":"63%","stepConfig":{"timingFunction":kony.anim.EASE}}}),
 {"delay":0,"iterationCount":1,"fillMode":kony.anim.FILL_MODE_FORWARDS,"duration":0.3},
  {"animationEnd" : ___onClick_d090813b761c45f4ad05f75350e48227_Callback});
 
 frmProductDetails["btnArrow"].animate(
-kony.ui.createAnimation({"100":{"top":"61%","stepConfig":{"timingFunction":kony.anim.EASE}}}),
+kony.ui.createAnimation({"100":{"top":"60%","stepConfig":{"timingFunction":kony.anim.EASE}}}),
 {"delay":0,"iterationCount":1,"fillMode":kony.anim.FILL_MODE_FORWARDS,"duration":0.25},
  {"animationEnd" : MOVE_ACTION____c20cae3d7a424750b4c0d2253e3ead01_Callback});
 
@@ -223,7 +226,7 @@ kony.ui.createAnimation({"100":{"top":"110%","stepConfig":{"timingFunction":kony
  {"animationEnd" : MOVE_ACTION____2d1df80a16b44f18b36e7164622836f9_Callback});
 
 frmProductDetails["btnArrow"].animate(
-kony.ui.createAnimation({"100":{"top":"96%","stepConfig":{"timingFunction":kony.anim.EASE}}}),
+kony.ui.createAnimation({"100":{"top":"94%","stepConfig":{"timingFunction":kony.anim.EASE}}}),
 {"delay":0,"iterationCount":1,"fillMode":kony.anim.FILL_MODE_FORWARDS,"duration":0.25},
  {"animationEnd" : MOVE_ACTION____4052ea1d10ec4038a60e08c77578fa4e_Callback});
 	frmProductDetails.btnArrow.skin = sknImageUp;

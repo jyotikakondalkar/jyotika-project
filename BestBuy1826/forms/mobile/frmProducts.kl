@@ -898,6 +898,42 @@
         <symbian_defaultTransition>true</symbian_defaultTransition>
         <symbian_resetFocus>false</symbian_resetFocus>
         <symbian_defaultOutTransition>true</symbian_defaultOutTransition>
+        <android_onDevBack_root>
+            <evtSequence>
+                <actionList xsi:type="eventExpressionAction">
+                    <enabled>true</enabled>
+                    <name></name>
+                    <type>5</type>
+                    <expr></expr>
+                    <exprMap>
+                        <entry>
+                            <key>js</key>
+                            <value>gblBackFrom = "Product";</value>
+                        </entry>
+                    </exprMap>
+                </actionList>
+                <actionList xsi:type="eventFunctionAction">
+                    <enabled>true</enabled>
+                    <name></name>
+                    <type>6</type>
+                    <functionName>None</functionName>
+                    <functionNameMap>
+                        <entry>
+                            <key>js</key>
+                            <value>onBackButtonClick</value>
+                        </entry>
+                    </functionNameMap>
+                    <paramDataMap>
+                        <entry>
+                            <key>js</key>
+                            <value/>
+                        </entry>
+                    </paramDataMap>
+                </actionList>
+                <enabled>true</enabled>
+                <seqname></seqname>
+            </evtSequence>
+        </android_onDevBack_root>
         <androidTitleBarData>
             <background_image></background_image>
             <skinID>Skin Defaults</skinID>
@@ -951,6 +987,36 @@
         </spa_onOrientation_root>
         <spa_onDeviceBack>
             <evtSequence>
+                <actionList xsi:type="eventExpressionAction">
+                    <enabled>true</enabled>
+                    <name></name>
+                    <type>5</type>
+                    <expr></expr>
+                    <exprMap>
+                        <entry>
+                            <key>js</key>
+                            <value>gblBackFrom = "Product";</value>
+                        </entry>
+                    </exprMap>
+                </actionList>
+                <actionList xsi:type="eventFunctionAction">
+                    <enabled>true</enabled>
+                    <name></name>
+                    <type>6</type>
+                    <functionName>None</functionName>
+                    <functionNameMap>
+                        <entry>
+                            <key>js</key>
+                            <value>onBackButtonClick</value>
+                        </entry>
+                    </functionNameMap>
+                    <paramDataMap>
+                        <entry>
+                            <key>js</key>
+                            <value/>
+                        </entry>
+                    </paramDataMap>
+                </actionList>
                 <enabled>true</enabled>
                 <seqname></seqname>
             </evtSequence>
@@ -1000,13 +1066,13 @@
                         <contentOffsetY></contentOffsetY>
                         <contentSizeHeight></contentSizeHeight>
                         <contentSizeWidth></contentSizeWidth>
-                        <height>60</height>
+                        <height>57.0</height>
                         <left>40</left>
                         <maxHeight></maxHeight>
                         <maxWidth></maxWidth>
                         <minHeight></minHeight>
                         <minWidth></minWidth>
-                        <preferredHeight>27</preferredHeight>
+                        <preferredHeight>25</preferredHeight>
                         <preferredWidth>112</preferredWidth>
                         <propertyVsUnit>
                             <entry>
@@ -1089,21 +1155,21 @@
                         <right></right>
                         <rowHeight>40</rowHeight>
                         <rowWidth>100</rowWidth>
-                        <top>1</top>
+                        <top>3.0</top>
                         <width>25</width>
                         <xlocation>180</xlocation>
-                        <ylocation>0</ylocation>
+                        <ylocation>1</ylocation>
                         <zOrder>1</zOrder>
                     </flexConstraints>
                     <widgetID>7d9d5cd55b4c45bb847a1c568deef4a6</widgetID>
                     <location>
                         <x>180</x>
-                        <y>0</y>
+                        <y>1</y>
                     </location>
                     <createdGAVersion>6.5.0</createdGAVersion>
                     <size>
                         <width>112</width>
-                        <height>27</height>
+                        <height>25</height>
                     </size>
                     <sizePercent>
                         <width>100</width>
@@ -1981,7 +2047,7 @@
                         <height>100</height>
                     </sizePercent>
                     <skinId>sknBtnMenu</skinId>
-                    <focusSkinId>sknMenuFocus</focusSkinId>
+                    <focusSkinId>sknBtnMenu</focusSkinId>
                     <localeId>None</localeId>
                     <visible>true</visible>
                     <rendererData>
@@ -2776,13 +2842,13 @@
                         <contentOffsetY></contentOffsetY>
                         <contentSizeHeight></contentSizeHeight>
                         <contentSizeWidth></contentSizeWidth>
-                        <height>60</height>
+                        <height>58.0</height>
                         <left>18</left>
                         <maxHeight></maxHeight>
                         <maxWidth></maxWidth>
                         <minHeight></minHeight>
                         <minWidth></minWidth>
-                        <preferredHeight>27</preferredHeight>
+                        <preferredHeight>26</preferredHeight>
                         <preferredWidth>45</preferredWidth>
                         <propertyVsUnit>
                             <entry>
@@ -2865,28 +2931,28 @@
                         <right></right>
                         <rowHeight>40</rowHeight>
                         <rowWidth>100</rowWidth>
-                        <top>2</top>
+                        <top>3.0</top>
                         <width>10</width>
                         <xlocation>81</xlocation>
-                        <ylocation>0</ylocation>
+                        <ylocation>1</ylocation>
                         <zOrder>1</zOrder>
                     </flexConstraints>
                     <widgetID>52fbe9049f2743d19dbd7f7944f326b2</widgetID>
                     <createdGAVersion>6.5.0</createdGAVersion>
                     <location>
                         <x>81</x>
-                        <y>0</y>
+                        <y>1</y>
                     </location>
                     <size>
                         <width>45</width>
-                        <height>27</height>
+                        <height>26</height>
                     </size>
                     <sizePercent>
                         <width>100</width>
                         <height>100</height>
                     </sizePercent>
                     <skinId>sknBtnBack</skinId>
-                    <focusSkinId>sknBackFocus</focusSkinId>
+                    <focusSkinId>sknBtnBack</focusSkinId>
                     <localeId>None</localeId>
                     <visible>true</visible>
                     <rendererData>
@@ -14637,7 +14703,7 @@
                     <releaseToPushRefreshi18nKey>None</releaseToPushRefreshi18nKey>
                     <render_seperator>true</render_seperator>
                     <retainSelection>false</retainSelection>
-                    <rowFocusSkin>seg2Focus</rowFocusSkin>
+                    <rowFocusSkin>seg2Normal</rowFocusSkin>
                     <rowItemWidth></rowItemWidth>
                     <rowSkin>seg2Normal</rowSkin>
                     <rowTemplate>None</rowTemplate>
@@ -18821,18 +18887,21 @@
                             <exprMap>
                                 <entry>
                                     <key>js</key>
-                                    <value>counter=1;
+                                    <value>//counter=1;
 gblCategories = [];
-gblBreadCrumbs=[];
-gblSelectedValue="Home";
+//gblBreadCrumbs=[];
+//gblSelectedValue="Home";
 
 frmHome.flxFadeContainer.isVisible = false;
-frmHome.flxFilterContainer.isVisible = false;</value>
+frmHome.flxFilterContainer.isVisible = false;
+frmHome.destroy();
+frmHome.listFilterby.selectedKey = "0.0";
+frmHome.txtSearch.text = "";</value>
                                 </entry>
                             </exprMap>
                         </actionList>
                         <actionList xsi:type="eventFunctionAction">
-                            <enabled>true</enabled>
+                            <enabled>false</enabled>
                             <name></name>
                             <type>6</type>
                             <functionName>None</functionName>

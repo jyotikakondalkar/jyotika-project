@@ -130,7 +130,7 @@ function callBackGetProductDetails(status, resultTable) {
 					gblFreeShippingVar = freeShipping;
 					//frmProductDetails.imgProduct
 					frmProductDetails.lblProdName.text = name;
-					frmProductDetails.lblProdPrice.text = priceToShow;
+					frmProductDetails.lblProdPrice.text = "$"+priceToShow;
 					frmProductDetails.lblProdAvg.text = reviewAvg;
 					var starImage="";
 					var rating=customerReviewAverage;
@@ -184,7 +184,7 @@ function callBackGetProductDetails(status, resultTable) {
 
 function getProductReviews(sku, page) {
     try {
-      //  showLoadingIndicator();
+        showLoadingIndicator();
 		kony.print("getProductReviews=> "+page);
      	gblCurrentPage = page;
         var inputParams = {};
@@ -192,7 +192,7 @@ function getProductReviews(sku, page) {
         inputParams["ServiceName"] = "getProductReview";
         inputParams["apiKey"] = gblApiKey;
         inputParams["sku"] = sku;
-        inputParams["page"] = page;
+        inputParams["page"] = page+"".trim();
 
         invokeServiceAsync(inputParams, callBackGetProductReview);
     } catch (e) {
@@ -243,21 +243,35 @@ function callBackGetProductReview(status, resultTable) {
 						segProdDtlsReviews.push(tempData);
 					}
 					kony.print("total no of reviews"+totalNoOfReviews);
-					
+					kony.print("totalNoOfPages==> "+totalNoOfPages);
 					frmProductDetails.segReviews.setData(segProdDtlsReviews);
-					if(totalNoOfPages == 1 || totalNoOfPages == "1"){
+					var totalPagesInt;
+					if(totalNoOfPages!=""){
+						totalPagesInt = parseInt(totalNoOfPages);
+					}else{
+						totalPagesInt = 0;
+					}
+					
+					if(totalPagesInt <= 1){
 						frmProductDetails.lblPageResult.text = "Page " + gblCurrentPage + " of " +totalNoOfPages;
 						frmProductDetails.pageNoList.isVisible = false;
 					}else{
 						kony.print("In else..");
 						var masterArray = [];
-						for(var i=0; i < 3;i++){
-							masterArray.push([ i, i+1]);
+						for(var i=0; i < totalPagesInt;i++){
+							masterArray.push([ i, (i+1)+""]);
 						}
 						kony.print("Review masterArray=> "+JSON.stringify(masterArray));
 						frmProductDetails.pageNoList.masterData = masterArray;
-						frmProductDetails.pageNoList.masterData="0.0";
+						//frmProductDetails.pageNoList.masterData="0.0";
+						if(gblCurrentPage == "1" || gblCurrentPage == 1){
+							frmProductDetails.pageNoList.selectedKey = "0.0";
+						}else{
+							frmProductDetails.pageNoList.selectedKey = gblCurrentPage +".0";
+						}
+						
 						frmProductDetails.pageNoList.isVisible = true;
+						frmProductDetails.lblPageResult.text = "Page " + gblCurrentPage + " of " +totalNoOfPages;
 					}
 					dismissLoadingIndicator();
 					if(totalNoOfReviews==0){
@@ -302,6 +316,8 @@ function callBackGetProductReview(status, resultTable) {
 
 function onPageSelction(){
 	var selectedSize = frmProductDetails.pageNoList.selectedKey;
+	frmProductDetails.pageNoList.selectedKey = selectedSize;
+	
 	kony.print("onPageSelction selectedSize=> "+selectedSize);
 	var index = kony.os.toNumber(selectedSize);
 	kony.print("onPageSelction Roundup value => "+index);
@@ -351,3 +367,28 @@ function onProdImageBack() {
 	dismissLoadingIndicator();
 }    
 }
+
+//----ideal timeout---
+function timeout()
+  {
+ 	kony.application.registerForIdleTimeout(2, proddetls);
+  }
+ 
+ function proddetls()
+  {
+    //alert("application timed out");
+	kony.print("application timed out");
+	//counter=1;
+	gblCategories = [];
+//gblBreadCrumbs=[];
+//gblSelectedValue="Home";
+	
+	frmHome.flxFadeContainer.isVisible = false;
+	frmHome.flxFilterContainer.isVisible = false;
+	frmHome.destroy();
+	frmHome.listFilterby.selectedKey = "0.0";
+	frmHome.txtSearch.text = "";
+
+ 	frmHome.show();
+   	frmProductDetails.destroy();
+  }

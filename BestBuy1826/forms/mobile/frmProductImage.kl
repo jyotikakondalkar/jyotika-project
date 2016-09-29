@@ -3559,18 +3559,21 @@
                             <exprMap>
                                 <entry>
                                     <key>js</key>
-                                    <value>counter=1;
+                                    <value>//counter=1;
 gblCategories = [];
-gblBreadCrumbs=[];
-gblSelectedValue="Home";
+//gblBreadCrumbs=[];
+//gblSelectedValue="Home";
 
 frmHome.flxFadeContainer.isVisible = false;
-frmHome.flxFilterContainer.isVisible = false;</value>
+frmHome.flxFilterContainer.isVisible = false;
+frmHome.destroy();
+frmHome.listFilterby.selectedKey = "0.0";
+frmHome.txtSearch.text = "";</value>
                                 </entry>
                             </exprMap>
                         </actionList>
                         <actionList xsi:type="eventFunctionAction">
-                            <enabled>true</enabled>
+                            <enabled>false</enabled>
                             <name></name>
                             <type>6</type>
                             <functionName>None</functionName>
@@ -13040,7 +13043,7 @@ frmHome.flxFilterContainer.isVisible = false;</value>
                         <height>100</height>
                     </sizePercent>
                     <skinId>sknBtnMenu</skinId>
-                    <focusSkinId>sknHomeMenuFocus</focusSkinId>
+                    <focusSkinId>sknBtnMenu</focusSkinId>
                     <localeId>None</localeId>
                     <visible>true</visible>
                     <rendererData>
@@ -13966,7 +13969,7 @@ frmHome.flxFilterContainer.isVisible = false;</value>
                         <height>100</height>
                     </sizePercent>
                     <skinId>sknBtnBack</skinId>
-                    <focusSkinId>sknHomeBackFocus</focusSkinId>
+                    <focusSkinId>sknBtnBack</focusSkinId>
                     <localeId>None</localeId>
                     <visible>true</visible>
                     <rendererData>

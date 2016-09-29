@@ -14,7 +14,7 @@ gblProdImages = [];
 gblReviewPos = true;
 gblCartProducts = [];
 gblCartProducts1 = [];
-
+gblSearchedText = "";
 //For Shopping Cart
 var total = 0.00;
 var widgetId = 0;

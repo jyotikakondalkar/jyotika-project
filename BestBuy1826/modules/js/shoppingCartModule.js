@@ -309,8 +309,8 @@ function onShoppingCartBack(){
 function cartProductPriceAddtion(price) {
     try {
     kony.print("in cartProductPriceAddtion=> "+price);
-       // var newPrice = price.slice(1);
-		var newPrice = price;
+       var newPrice = price.slice(1);
+		//var newPrice = price;
         kony.print("newPrice=> "+newPrice);
         total = parseFloat(total) + parseFloat(newPrice);
         kony.print("total=> "+total);

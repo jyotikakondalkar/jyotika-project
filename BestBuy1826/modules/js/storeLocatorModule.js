@@ -109,12 +109,13 @@ function showCurrentLocation() {
   /*lat: "40.712784",
         lon: "-74.005941"*/
 var locationData = {
-         lat: "32.876068",
-        lon: "-96.768257"
+         lat: "40.407655",
+        lon: "-101.599938"
     };
     
     
 //frmStoreLocator.MapStore.locationData = [];
+frmStoreLocator.MapStore.zoomLevel = 6;
 frmStoreLocator.MapStore.navigateToLocation(locationData, false, false);
 }
 
