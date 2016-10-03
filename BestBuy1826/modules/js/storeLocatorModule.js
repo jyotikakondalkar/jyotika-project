@@ -43,7 +43,7 @@ function callBackGetStoreDetails(status, resultTable) {
 				if(dataSet.length>0){
 				
 				frmStoreLocator.MapStore.calloutTemplate = calloutMaps; //hbxname
-                frmStoreLocator.MapStore.calloutWidth = 80;
+                frmStoreLocator.MapStore.calloutWidth = 60;
                 
                 frmStoreLocator.MapStore.widgetDataMapForCallout = {
                     imgLogo: "imgLogo",
@@ -83,7 +83,7 @@ function callBackGetStoreDetails(status, resultTable) {
 				}else{
 					//alert("Product are not available.");
 					showAlert("Stores are not available.", "Store Data:");
-					//frmStoreLocator.MapStore.locationData = [];
+					frmStoreLocator.MapStore.locationData = [];
 					showCurrentLocation();
 				}			
 			dismissLoadingIndicator();
@@ -109,13 +109,13 @@ function showCurrentLocation() {
   /*lat: "40.712784",
         lon: "-74.005941"*/
 var locationData = {
-         lat: "40.407655",
-        lon: "-101.599938"
+         lat: "40.712784",
+        lon: "-74.005941"
     };
     
-    
+    kony.print("in showCurrentLocation");
 //frmStoreLocator.MapStore.locationData = [];
-frmStoreLocator.MapStore.zoomLevel = 6;
+frmStoreLocator.MapStore.zoomLevel = 8;
 frmStoreLocator.MapStore.navigateToLocation(locationData, false, false);
 }
 
