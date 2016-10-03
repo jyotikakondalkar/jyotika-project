@@ -275,12 +275,14 @@ function callBackGetProductReview(status, resultTable) {
 					}
 					dismissLoadingIndicator();
 					if(totalNoOfReviews==0){
-						frmProductDetails.lblReviews.text = "No of Reviews";
+						frmProductDetails.lblReviews.text = "No Reviews";
 						frmProductDetails.btnArrow.setVisibility(false);
+						frmProductDetails.lblnoofReviews.setVisibility(false);
 						//flxProductDetails.flexUserReviews.setVisibility(false);
 					}else{
 						frmProductDetails.btnArrow.setVisibility(true);
 						frmProductDetails.lblReviews.text = totalNoOfReviews;
+						frmProductDetails.lblnoofReviews.setVisibility(false);
 						//flxProductDetails.lblNumberOfReviews.text="Total Num of Reviews :"+totalNoOfReviews;
 						//flxProductDetails.flexUserReviews.setVisibility(true);
 					/*	flxProductDetails.lblPageCount.text="Page "+currentPage+" of "+ totalNoOfPages;
@@ -386,7 +388,7 @@ function timeout()
 	frmHome.flxFadeContainer.isVisible = false;
 	frmHome.flxFilterContainer.isVisible = false;
 	frmHome.destroy();
-	frmHome.listFilterby.selectedKey = "0.0";
+	frmHome.listFilterby.selectedKey = "1";
 	frmHome.txtSearch.text = "";
 
  	frmHome.show();
