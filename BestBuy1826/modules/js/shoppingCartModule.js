@@ -4,11 +4,16 @@
  *	Purpose : This function is called on click of Add to Cart of Product details screen.
  **************************************************************************************************************************************************************************************
  */
+ 
+ //var gblFreeShpng
 function addToCart() {
     try {
         var priceSkin = "";
+        
         kony.print("in func addToCart.. ");
+        
         frmCart.lblCartdesc.setVisibility(false);
+        
         var lblProdNameShopCart = new kony.ui.Label({
             "id": "lblProdNameShopCart" + widgetId,
             "top": "1%",
@@ -31,11 +36,13 @@ function addToCart() {
         kony.print("widget id:- " + widgetId);
         gblFreeShipping[widgetId] = gblFreeShippingVar;
         kony.print("added value >>" + JSON.stringify(gblFreeShipping));
+        
         if (gblOnSale == true) {
             priceSkin = "sknPriceRed";
         } else {
             priceSkin = "sknProdName";
         }
+        
         var lblPriceShopCart = new kony.ui.Label({
             "id": "lblPriceShopCart" + widgetId,
             "top": "27%",
@@ -145,6 +152,7 @@ function setSkin(priceSkin, newProduct) {
 function showFreeShipping() {
     try {
         kony.print("check value >>" + JSON.stringify(gblFreeShipping));
+        kony.print("check value >>" + gblFreeShipping.length);
         frmCart.lblShipping.isVisible = true;
         var tempCounter = 0;
         for (var i = 0; i < gblFreeShipping.length; i++) {
@@ -164,9 +172,9 @@ function showFreeShipping() {
             frmShoppingCart.lblShipping.text = "Normal Shipping Schedule.";
         }*/
         if (tempCounter == gblFreeShipping.length) {
-            frmCart.lblShipping.text = "Free Shipping";
+            frmCart.lblShipping.text = kony.i18n.getLocalizedString("free_Shpng").trim();
         } else {
-            frmCart.lblShipping.text = "Regular shipping rate";
+            frmCart.lblShipping.text = kony.i18n.getLocalizedString("regular_shpng").trim();
         }
     } catch (exception) {
         kony.print("showFreeShipping method Exception catched " + exception);
@@ -196,9 +204,11 @@ function removeItemFromCart() {
         kony.print("itemId = " + itemId);
         kony.print("currentItemId = " + currentItemId);
         kony.print("flexId = " + flexId);
-        gblFreeShipping[currentItemId] = "false";
+       // gblFreeShipping[currentItemId] = "false";
         kony.print("gblFreeShipping[currentItemId]=> " + gblFreeShipping[currentItemId]);
         kony.print("gblFreeShipping in remove item => " + JSON.stringify(gblFreeShipping));
+        //To remove ith position element from gblFreeshiping array
+		gblFreeShipping.splice(currentItemId, 1);
         //#ifdef spaip
         gblPriceSub = 0.00;
         gblPriceSub = parseFloat(mainPriceForSpa[currentItemId]);
@@ -211,6 +221,7 @@ function removeItemFromCart() {
         gblPriceSub = parseFloat(mainPriceForSpa[currentItemId]);
         total = parseFloat(total) - parseFloat(gblPriceSub);
         total = total.toFixed(2);
+       
         showFreeShipping();
         //#else
         CartProductPriceSubtraction(currentItemId);
@@ -269,8 +280,8 @@ function CartProductPriceSubtraction(subPrice) {
         var cartPriceText = frmCart.flxScrollContainer[lblPriceId].text;
         kony.print("cartPriceText ===" + cartPriceText);
 
-        // var cartPriceText = cartPriceText.slice(1);
-        var cartPriceText = cartPriceText;
+         var cartPriceText = cartPriceText.slice(1);
+        //var cartPriceText = cartPriceText;
         kony.print("cartPriceText Slice Val ===" + cartPriceText);
 
         total = parseFloat(total) - parseFloat(cartPriceText);
@@ -285,7 +296,8 @@ function CartProductPriceSubtraction(subPrice) {
 
 function showEmptyCartLabel() {
     try {
-        frmCart.lblTotal.text = "Total: $" + total;
+    	kony.print("showEmptyCartLabel=> "+total);
+        frmCart.lblTotal.text = kony.i18n.getLocalizedString("total").trim()+": $" + total;
         // frmShoppingCart.lblTotalPriceShopCart.text = "Total: $" + total;
         if (total < 1 || total == NaN) {
             frmCart.lblCartdesc.isVisible = true;
@@ -313,13 +325,14 @@ function onShoppingCartBack() {
 function cartProductPriceAddtion(price) {
     try {
         kony.print("in cartProductPriceAddtion=> " + price);
-        // var newPrice = price.slice(1);
-        var newPrice = price;
+         var newPrice = price.slice(1);
+       // var newPrice = price;
         kony.print("newPrice=> " + newPrice);
         total = parseFloat(total) + parseFloat(newPrice);
         kony.print("total=> " + total);
         mainPriceForSpa[widgetId] = parseFloat(newPrice);
         total = total.toFixed(2);
+        kony.print("cartProductPriceAddtion total=> "+total);
         return price;
     } catch (exception) {
         kony.print("cartProductPriceAddtion method Exception catched " + exception);
@@ -329,7 +342,7 @@ function cartProductPriceAddtion(price) {
 function showTotal() {
     try {
         if (widgetId > 0) {
-            frmCart.lblTotal.text = "Total: " + total;
+            frmCart.lblTotal.text = kony.i18n.getLocalizedString("total").trim()+": $"+ total;
             //frmShoppingCart.flexAllShoppingCart.add(lblTotalPriceShopCart);
             kony.print("Total Label Created");
         } else {
